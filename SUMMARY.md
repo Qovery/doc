@@ -40,6 +40,7 @@
 ## Development
 
 * [CLI](development/untitled.md)
+* [SDKs](development/sdks.md)
 * [Local development](development/local-development.md)
 
 ## Going Live

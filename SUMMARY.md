@@ -12,10 +12,9 @@
 
 ## Getting Started
 
-* [Start](getting-started/untitled/README.md)
-  * [Open a free trial account](getting-started/untitled/open-a-free-trial-account.md)
-  * [Create a new project](getting-started/untitled/create-a-new-project.md)
-  * [Commit, Push, Done!](getting-started/untitled/commit-push-done.md)
+* [Open a free trial account](getting-started/open-a-free-trial-account.md)
+* [Setup project](getting-started/setup-project.md)
+* [Commit, Push, Done!](getting-started/commit-push-done.md)
 
 ## Configuration
 

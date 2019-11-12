@@ -36,7 +36,7 @@
 ## Security And Compliance
 
 * [GDPR](security-and-compliance/untitled.md)
-* [2-step Authentication](security-and-compliance/2-step-authentication.md)
+* [2-Step Authentication](security-and-compliance/2-step-authentication.md)
 * [Backup and restore](security-and-compliance/backup-and-restore.md)
 * [Encryption](security-and-compliance/encryption.md)
 * [Updating](security-and-compliance/updating.md)

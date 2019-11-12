@@ -1,2 +1,2 @@
-# 2-step Authentication
+# 2-Step Authentication
 

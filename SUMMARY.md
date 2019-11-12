@@ -20,9 +20,9 @@
 
 * [.qovery.yml](configuration/.qovery.yml/README.md)
   * [Services](configuration/.qovery.yml/services.md)
+* [Git](configuration/git.md)
 * [Dockerfile](configuration/untitled.md)
 * [Multi Applications](configuration/multi-applications.md)
-* [Git](git.md)
 
 ## Services
 

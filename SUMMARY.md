@@ -16,7 +16,8 @@
 
 ## Configuration
 
-* [Untitled](configuration/untitled.md)
+* [.qovery.yml](configuration/.qovery.yml.md)
+* [Dockerfile](configuration/untitled.md)
 
 ## Development
 

@@ -1,4 +1,4 @@
-# introduction
+# welcome page
 
 Qovery documentation
 

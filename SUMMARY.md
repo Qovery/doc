@@ -1,6 +1,6 @@
 # Table of contents
 
-* [introduction](README.md)
+* [welcome page](README.md)
 
 ## The Big Picture
 

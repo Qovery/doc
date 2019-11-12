@@ -47,7 +47,7 @@
 
 ## Production
 
-* [Latency](production/latency.md)
+* [Monitoring and Alerting](production/monitoring-and-alerting.md)
 * [High availability](production/high-availability.md)
 
 ## Administration

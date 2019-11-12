@@ -12,7 +12,8 @@
 
 ## Getting Started
 
-* [Untitled](getting-started/untitled.md)
+* [Start](getting-started/untitled/README.md)
+  * [Open a free trial account](getting-started/untitled/open-a-free-trial-account.md)
 
 ## Configuration
 

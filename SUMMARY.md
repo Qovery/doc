@@ -18,9 +18,17 @@
 
 ## Configuration
 
-* [.qovery.yml](configuration/.qovery.yml.md)
+* [.qovery.yml](configuration/.qovery.yml/README.md)
+  * [Services](configuration/.qovery.yml/services.md)
 * [Dockerfile](configuration/untitled.md)
 * [Git](configuration/git.md)
+
+## Services
+
+* [Databases](services/databases/README.md)
+  * [PostgreSQL](services/databases/postgresql.md)
+* [Brokers](services/brokers/README.md)
+  * [RabbitMQ](services/brokers/rabbitmq.md)
 
 ## Development
 

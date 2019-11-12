@@ -33,7 +33,11 @@
 
 ## Security And Compliance
 
-* [Untitled](security-and-compliance/untitled.md)
+* [GDPR](security-and-compliance/untitled.md)
+* [2-step Authentication](security-and-compliance/2-step-authentication.md)
+* [Backup and restore](security-and-compliance/backup-and-restore.md)
+* [Encryption](security-and-compliance/encryption.md)
+* [Updating](security-and-compliance/updating.md)
 
 ## Tutorials
 

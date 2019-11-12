@@ -42,10 +42,12 @@
 * [CLI](development/untitled.md)
 * [SDKs](development/sdks.md)
 * [Local development](development/local-development.md)
+* [FAQ](development/faq.md)
 
 ## Going Live
 
-* [Untitled](going-live/untitled.md)
+* [DNS](going-live/untitled.md)
+* [Troubleshooting](going-live/troubleshooting.md)
 
 ## Administration
 

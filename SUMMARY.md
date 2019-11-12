@@ -4,6 +4,12 @@
 
 ## The Big Picture
 
+* [Introduction](introduction.md)
+* [Structure](structure.md)
+* [Build & Deploy](build-and-deploy.md)
+* [Pricing](pricing.md)
+* [Getting help](getting-help.md)
+
 ## Getting Started
 
 * [Untitled](getting-started/untitled.md)

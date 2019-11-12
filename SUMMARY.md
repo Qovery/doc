@@ -20,10 +20,12 @@
 
 * [.qovery.yml](configuration/.qovery.yml.md)
 * [Dockerfile](configuration/untitled.md)
+* [Git](configuration/git.md)
 
 ## Development
 
-* [Untitled](development/untitled.md)
+* [CLI](development/untitled.md)
+* [Local development](development/local-development.md)
 
 ## Going Live
 

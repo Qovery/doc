@@ -30,7 +30,7 @@
 * [Databases](services/databases/README.md)
   * [PostgreSQL](services/databases/postgresql.md)
   * [MongoDB](services/databases/mongodb.md)
-  * [MySQL/MariaDB](services/databases/mysql-mariadb.md)
+  * [MySQL](services/databases/mysql-mariadb.md)
   * [Redis](services/databases/redis.md)
   * [Memcached](services/databases/memcached.md)
   * [Elasticsearch](services/databases/elasticsearch.md)

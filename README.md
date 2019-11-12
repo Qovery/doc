@@ -1,5 +1,7 @@
 ---
-description: Qovery - Container as a Service for Developers
+description: >-
+  Qovery - Container as a Service for Developers | To make the developer's life
+  easier
 ---
 
 # Welcome

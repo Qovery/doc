@@ -51,7 +51,9 @@
 
 ## Administration
 
-* [Untitled](administration/untitled.md)
+* [Management interface](administration/management-interface.md)
+* [Backup and restore](administration/untitled.md)
+* [Integrations](administration/integrations.md)
 
 ## Security And Compliance
 

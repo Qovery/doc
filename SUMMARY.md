@@ -15,6 +15,7 @@
 * [Open a free trial account](getting-started/open-a-free-trial-account.md)
 * [Setup project](getting-started/setup-project.md)
 * [Commit, Push, Done!](getting-started/commit-push-done.md)
+* [What's next?](getting-started/whats-next.md)
 
 ## Configuration
 
@@ -22,8 +23,7 @@
   * [App](configuration/.qovery.yml/app.md)
   * [Dependencies](configuration/.qovery.yml/services.md)
 * [Dockerfile](configuration/untitled.md)
-* [Git](configuration/git.md)
-* [Multi Applications](configuration/multi-applications.md)
+* [DNS](configuration/untitled-1.md)
 
 ## Services
 
@@ -40,13 +40,15 @@
 
 ## Development
 
+* [Git](development/git.md)
 * [CLI](development/untitled.md)
 * [SDKs](development/sdks.md)
 * [Local development](development/local-development.md)
 
-## Going Live
+## Production
 
-* [DNS](going-live/untitled.md)
+* [Latency](production/latency.md)
+* [High availability](production/high-availability.md)
 
 ## Administration
 

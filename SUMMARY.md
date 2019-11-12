@@ -19,7 +19,8 @@
 ## Configuration
 
 * [.qovery.yml](configuration/.qovery.yml/README.md)
-  * [Services](configuration/.qovery.yml/services.md)
+  * [App](configuration/.qovery.yml/app.md)
+  * [Dependencies](configuration/.qovery.yml/services.md)
 * [Dockerfile](configuration/untitled.md)
 * [Git](configuration/git.md)
 * [Multi Applications](configuration/multi-applications.md)

@@ -18,11 +18,11 @@
 
 ## Configuration
 
-* [Multi Applications](configuration/multi-applications.md)
 * [.qovery.yml](configuration/.qovery.yml/README.md)
   * [Services](configuration/.qovery.yml/services.md)
 * [Dockerfile](configuration/untitled.md)
-* [Git](configuration/git.md)
+* [Multi Applications](configuration/multi-applications.md)
+* [Git](git.md)
 
 ## Services
 

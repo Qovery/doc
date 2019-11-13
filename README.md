@@ -4,20 +4,6 @@ description: >-
   easier
 ---
 
-# Welcome
-
-## Getting Super Powers
-
-
-
-Becoming a super hero is a fairly straight forward process:
-
-Qovery is a Container-as-a-Service built especially for continuous deployment. It allows you to host web applications on the cloud while making your development and testing workflows more productive.
-
-```
-$ give me super-powers
-```
-
 If you're new to Qovery, we recommend starting with the **Big Picture**, in particular [Structure](structure.md), and [Build & Deploy](build-and-deploy.md) will get you started on the right track to best leverage Qovery.
 
 {% hint style="info" %}

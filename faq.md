@@ -12,11 +12,13 @@ An environment is a standalone copy of your site, complete with code, data, and 
 
 ## Is Qovery production ready?
 
-TODO
+Not yet, the product is currently in beta. We hope having a production ready version for February 2020.
 
 ## Where are located your servers?
 
-Qovery rely on Amazon Web Services infrastructure. 
+Qovery rely on the excellent AWS \(Amazon Web Services\) infrastructure. Qovery is available in United States, Canada, South America, Europe, Africa, Asia. 
 
-## 
+## How can I contact you?
+
+Feel free to contact us by email at [**hello@qovery.com**](mailto:hello@qovery.com)\*\*\*\*
 

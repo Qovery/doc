@@ -6,15 +6,34 @@ description: >-
 
 # Welcome
 
+## Getting Super Powers
 
+
+
+Becoming a super hero is a fairly straight forward process:
 
 Qovery is a Container-as-a-Service built especially for continuous deployment. It allows you to host web applications on the cloud while making your development and testing workflows more productive.
 
+```
+$ give me super-powers
+```
+
 If you're new to Qovery, we recommend starting with the **Big Picture**, in particular [Structure](structure.md), and [Build & Deploy](build-and-deploy.md) will get you started on the right track to best leverage Qovery.
+
+{% hint style="info" %}
+ Super-powers are granted randomly so please submit an issue if you're not happy with yours.
+{% endhint %}
 
 The main requirement of Qovery is that you use Git to manage your application code. Your project's configuration is driven almost entirely by a YAML file in your Git repository. The **Configuration** section covers those in more detail and can serve as both tutorial and quick-reference.
 
+Once you're strong enough, save the world:
+
 Qovery supports Docker **Container** technology and a number of different **Databases** and other services.
+
+```bash
+// Ain't no code for that yet, sorry
+echo 'You got to trust me on this, I saved the world'
+```
 
 Finally, Qovery is really fast to set up and perfectly integrate with your Git environment. Our principle is: Is your container running in local? Qovery makes it running in the cloud and scale.
 

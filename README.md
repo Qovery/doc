@@ -1,39 +1,31 @@
 ---
 description: >-
-  Qovery - Container as a Service for Developers | To make the developer's life
-  easier
+  Qovery - Container as a Service for Developers | To make the developer's life far easier
 ---
 
 If you're new to Qovery, we recommend starting with the **Big Picture**, in particular [Structure](structure.md), and [Build & Deploy](build-and-deploy.md) will get you started on the right track to best leverage Qovery.
 
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
-
-The main requirement of Qovery is that you use Git to manage your application code. Your project's configuration is driven almost entirely by a YAML file in your Git repository. The **Configuration** section covers those in more detail and can serve as both tutorial and quick-reference.
+The main requirement of Qovery is that you use Git to manage your application code. Your project's configuration is driven almost entirely by a YAML files in your Git repository. The **Configuration** section covers those in more detail and can serve as both tutorial and quick-reference.
 
 Once you're strong enough, save the world:
 
 Qovery supports Docker **Container** technology and a number of different **Databases** and other services.
 
-```bash
-// Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
-
 Finally, Qovery is really fast to set up and perfectly integrate with your Git environment. Our principle is: Is your container running in local? Qovery makes it running in the cloud and scale.
 
 ## Git Driven Infrastructure <a id="git-driven-infrastructure"></a>
 
-As a Container as a Service, or CaaS, Qovery automatically manages everything your application needs in order to run. That means you can, and should, view your infrastructure needs as part of your application, and version-control it as part of your application.
+Qovery automatically manages everything your application needs in order to run. That means you view your infrastructure dependencies as part of your application. As well, you version-control it as part of your application.
 
 ### Infrastructure as code <a id="infrastructure-as-code"></a>
 
-Qovery covers not only all of your hosting needs but also most of your DevOps needs. It is a simple, single tool that covers the application life-cycle from development to production and scaling.
+Qovery covers not only all of your hosting needs but also **most of your DevOps needs**. It is a simple tool that covers the application life-cycle **from development to production stage**. Ensuring as well the application is always healthy and **scales it automatically** when workload comes.
 
-You only need to write your code, including a YAML file that specify your desired infrastructure, commit it to Git, and push. You don't need to setup anything manually. The web server is already setup and configured, as is any database, search engine, or cache that you specify.
+You only need to write your code, including a YAML file that specify your desired infrastructure, commit it to Git, and push.
 
-Every branch you push is a fully independent environment—complete with your application code, a copy of your database, a copy of your search index, everything—and its automatically generated URL can be sent to stakeholders or to automated CI systems. It really is "what would my site look like if I merged this to production?" Every time.
+That's it, you don't need to setup anything manually. The web server is already setup and configured, as is any database, search engine, object storage or cache that you specify.
+
+**Every branch you push is a fully independent environment—complete** with your application code, a copy of your database, a copy of your search index, everything—and its automatically generated URL can be sent to stakeholders or to automated CI systems. It really is "what would my site look like if I merged this to production?" Every time.
 
 You can use these concepts to replicate a traditional development/staging/production workflow or even to give every feature its own effective staging environment before merging to production \(empowering you to use git-flow like methodologies even better\). You could also have an intermediary integration branch for several other branches.
 

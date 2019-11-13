@@ -1,9 +1,12 @@
 ---
 description: >-
-  Qovery - Container as a Service for Developers | To make the developer's life far easier
+  Qovery - Container as a Service for Developers | To make the developer's life
+  far easier
 ---
 
-If you're new to Qovery, we recommend starting with the **Big Picture**, in particular [Structure](structure.md), and [Build & Deploy](build-and-deploy.md) will get you started on the right track to best leverage Qovery.
+# Welcome
+
+If you're new to Qovery, we recommend starting with the **Big Picture**, in particular [Structure](the-big-picture/structure.md), and [Build & Deploy](the-big-picture/build-and-deploy.md) will get you started on the right track to best leverage Qovery.
 
 The main requirement of Qovery is that you use Git to manage your application code. Your project's configuration is driven almost entirely by a YAML files in your Git repository. The **Configuration** section covers those in more detail and can serve as both tutorial and quick-reference.
 

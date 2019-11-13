@@ -4,11 +4,11 @@
 
 ## The Big Picture
 
-* [Introduction](introduction.md)
-* [Structure](structure.md)
-* [Build & Deploy](build-and-deploy.md)
-* [Pricing](pricing.md)
-* [Getting help](getting-help.md)
+* [Introduction](the-big-picture/introduction.md)
+* [Structure](the-big-picture/structure.md)
+* [Build & Deploy](the-big-picture/build-and-deploy.md)
+* [Pricing](the-big-picture/pricing.md)
+* [Getting help](the-big-picture/getting-help.md)
 
 ## Getting Started
 
@@ -67,6 +67,6 @@
 ## Tutorials
 
 * [Untitled](tutorials/untitled.md)
-* [FAQ](faq.md)
-* [Troubleshooting](troubleshooting.md)
+* [FAQ](tutorials/faq.md)
+* [Troubleshooting](tutorials/troubleshooting.md)
 

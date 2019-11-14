@@ -2,7 +2,7 @@
 description: Description file to put in the root of your project
 ---
 
-# .qovery.yml
+# Network
 
 ## Getting Super Powers
 

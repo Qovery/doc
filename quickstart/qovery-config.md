@@ -1,4 +1,4 @@
-# Pricing
+# Qovery config
 
 ## Getting Super Powers
 

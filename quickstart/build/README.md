@@ -4,79 +4,79 @@ description: Use containers to build and package your own application
 
 # Build
 
-Building your application is something every developer knows how to. Building a container with the application inside is not more complex but not every developers are familiar with. In order to help them, this page provides examples on how to do it.
+Building your application is something every developer knows how to. Building a container with the application inside is not more complex but not every developers are familiar with. In order to help developers, this page provides examples on how to manage it.
 
-## Create a Dockerfile
+## Generate a Dockerfile
 
-At Qovery we're using the well known Dockerfile to build [multi stage](https://docs.docker.com/develop/develop-images/multistage-build/) containers.
+At Qovery we're using the well known Dockerfile to build multi staged containers.
 
-{% hint style="info" %}
-You can use Qovery CLI to generate a Dockerfile templates, at the root of your git repository: `qovery-cli init`
-{% endhint %}
+From the Qovery cli, you can generate a Dockerfile. Here is how to:
 
-Here are some Dockerfiles examples to **add into the root directory of your git repository:**
-
-{% tabs %}
-{% tab title="Java" %}
 ```bash
+$ cd <your_git_repository>
+$ qovery-cli init
+
+✓ Java application detected, do you want to generate a Dockerfile for it (y/n): y
+✓ Dockerfile generated in the Git root directory
+```
+
+## Define the build and run process
+
+Here is an example of a Dockerfile to build a Java application:
+
+```bash
+# Build your application with this image called "build"
 FROM openjdk:11 AS build
+# Add the required packages
 RUN apk -U add bash
+# Add your specifc dependencies
 RUN cd /usr/local/bin && \
     wget https://services.gradle.org/distributions/gradle-6.0-bin.zip && \
     /usr/bin/unzip gradle-5.6-all.zip && \
     ln -s /usr/local/bin/gradle-5.6/bin/gradle /usr/bin/gradle && \
     mkdir -p /app
+# Copy your code in the build container and move into it
 COPY . /app
 WORKDIR /app
+# Build your application
 RUN gradle build -x test
 
-
+# The container which will run
 FROM openjdk:11-alpine
+# Set the port on which the application will listen on
 EXPOSE 8080
+# Get the build artifact (can be a folder)
 COPY --from=build /app/build/libs/app.jar /app.jar
+# Set specific environment variables
 ENV JAVA_OPTS=""
-
+# Command to run your application
 CMD exec java $JAVA_OPTS -jar /app.jar
 ```
-{% endtab %}
 
-{% tab title="Python" %}
-```text
-FROM python:3.8 AS build
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends build-essential gcc
-RUN python -m venv /opt/venv
-ENV PATH="/opt/venv/bin:$PATH"
-COPY . /app
-WORKDIR /app
-RUN pip3 install -r requirements.txt
+**Build**: The first part \(from the first line to 15\) represent the dependencies and requirements in order to **build the application**. The result of this compilation is called an **artifact** available in the `/app/build/libs/app.jar` directory.
 
-FROM python:3.8-slim AS build-image
-COPY --from=build /opt/venv /opt/venv
-ENV PATH="/opt/venv/bin:$PATH"
-CMD exec myapp
+**Run**: The second part \(from line 18 to last\) represent the content of the container that will **run in production** \([or for a specific branch](../../extending-qovery/branches.md)\). It retrieves the artifact from the build part and store it in the container. 
+
+{% hint style="danger" %}
+**For security reasons**, for we strongly advise you to:
+
+1. Use [Docker Official Images](https://hub.docker.com/search/?q=&type=image&image_filter=official)
+2. Use the lightest image as possible such as scratch or alpine
+{% endhint %}
+
+## Validate your Dockerfile
+
+You can validate your Dockerfile by running a build on your machine. You simply have to run:
+
+```bash
+docker build .
 ```
-{% endtab %}
 
-{% tab title="Go" %}
-```text
-FROM golang:1.13 AS build
-RUN apt-get update && apt-get install go-dep
-# Copy the code from the host and compile it
-WORKDIR $GOPATH/src/github.com/username/repo
-COPY Gopkg.toml Gopkg.lock ./
-RUN dep ensure --vendor-only
-COPY . ./
-RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix nocgo -o /app .
+To get more examples for specific language or frameworks, please refer to the dedicated sections:
 
-FROM scratch
-COPY --from=build /app ./
-CMD exec ./app
-```
-{% endtab %}
-{% endtabs %}
-
-To get more examples on 
+* [Java](java.md)
+* [Python](python.md)
+* [Go](go.md)
 
 ## References
 

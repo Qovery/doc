@@ -40,3 +40,13 @@ sudo mv qovery-cli /usr/local/bin/qovery-cli
 
 You may also find qovery-cli to install from your package manager. Please refer to it to know more.
 
+## Sign Up
+
+To sign up using Qovery CLI, it's simple. Run this command:
+
+```text
+qovery-cli connect
+```
+
+You'll get a window open on your browser to link with your GitHub account. 
+

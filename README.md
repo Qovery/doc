@@ -6,7 +6,22 @@ description: >-
 
 # Welcome
 
-Welcome to Qovery, we recommend starting with the **Big Picture**, in particular Structure, and Build & Deploy will get you started on the right track to best leverage Qovery.
+Welcome to [Qovery](https://www.qovery.com) documentation!
+
+Qovery helps growing tech companies to accelerate and scale application development cycle with zero infrastructure management investment.
+
+```python
+if First_Time:
+    Quickstart
+else:
+    Extending_Qovery
+```
+
+If you want the fastest way to get your application built and deployed, start with the [Quickstart](quickstart/sign-up.md) and it will be done in less than 5 min.
+
+To know more about supported Qovery services, you can read the [Services](services-1/network/) section.
+
+We recommend starting with the **Big Picture**, in particular Structure, and Build & Deploy will get you started on the right track to best leverage Qovery.
 
 The main requirement of Qovery is that you use Git to manage your application code. Your project's configuration is driven almost entirely by a YAML files in your Git repository. The **Configuration** section covers those in more detail and can serve as both tutorial and quick-reference.
 

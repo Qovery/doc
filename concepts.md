@@ -26,21 +26,41 @@ Our promise is simple:
 
 Qovery automatically manages everything your application needs in order to run. That means **you view your infrastructure dependencies as part of your application**. As well, **you version-control it** as part of your application.
 
-### Simple declarative Infrastructure <a id="infrastructure-as-code"></a>
+### Simple Declarative Infrastructure <a id="infrastructure-as-code"></a>
 
 Qovery covers not only all of your hosting needs but also **most of your DevOps needs**. It covers the application life-cycle **from development to production stage**. Ensuring as well the application is always healthy and **scales it automatically** when more workload come.
 
-You only need to write your code, including a YAML file that specify your desired infrastructure, commit it to Git, and push.
+You only need to:
 
-That's it, you don't need to setup anything manually. The web server is already setup and configured, as is any database, search engine, object storage or cache that you specify.
+1. Write your code
+2. Write the Dockerfile to build your application
+3. Include Qovery YAML file that specify your desired infrastructure
+4. Commit it to Git
+5. Push it
 
-**Every branch you push is a fully independent environment—complete** with your application code, a copy of your database, a copy of your search index, everything—and its automatically generated URL can be sent to stakeholders or to automated CI systems. It really is "what would my site look like if I merged this to production?" Every time.
+That's it, **you don't need to setup anything manually**. Everything like the web server, the database, the CDN, the object storage etc... will be setup and available automatically.
 
-You can use these concepts to replicate a traditional development/staging/production workflow or even to give every feature its own effective staging environment before merging to production \(empowering you to use git-flow like methodologies even better\). You could also have an intermediary integration branch for several other branches.
+### Branches
+
+{% hint style="info" %}
+**Every branch you push is a fully independent environment-complete**
+{% endhint %}
+
+As a developer, for developing or testing purpose, have you never been annoyed by being **not able to get a testing environment similar to production**? 99,99% of the time, the answer is **Yes**!
+
+That's why on any [branches](extending-qovery/branches.md), you'll get a copy of your dependencies \(database, search index, object storage...\).
+
+You can use these concepts to replicate a traditional development/staging/production workflow or even to **give every feature its own effective staging environment before merging to production** \(empowering you to use git-flow like methodologies even better\). You could also have an intermediary integration branch for several other branches.
+
+A dedicated generated URL will be provided to those specific branches. This to get something as simple as:
+
+{% hint style="success" %}
+**What my application/site looks like locally is what I'll get in production...every time.**
+{% endhint %}
 
 Qovery respects the structure of branches. It's entirely up to you.
 
-### Full stack management <a id="full-stack-management"></a>
+## Full Stack management
 
 Managing your full stack internally gives Qovery some unique features:
 

@@ -1,24 +1,34 @@
+---
+description: Know more how Qovery works
+---
+
 # Concepts
 
-We recommend to start with the [Quickstart](quickstart/sign-up.md) if you want to start quickly.
+We recommend to start with the [Quickstart](quickstart/sign-up/) if you want to start quickly.
 
 In this page, you'll find information explaining how [Qovery](https://www.qovery.com) works in details.
 
-The main Qovery requirement is Git. As you \(developer\) are already using it to manage your application code. Qovery integrates into your Git repository to Your project's configuration is driven almost entirely by a YAML files in your Git repository. The **Configuration** section covers those in more detail and can serve as both tutorial and quick-reference.
+The main Qovery requirement is **Git**. As you \(developer\) are already using it to manage your application code. Qovery project's configuration is driven entirely by YAML files into your Git repository.
 
-Once you're strong enough, save the world:
+The [Services](services-1/network/) and [Extending](extending-qovery/branches.md) Qovery sections covers those in more detail and can serve as both tutorial and quick-reference.
 
-Qovery supports Docker **Container** technology and a number of different **Databases** and other services.
+Qovery supports the well known [**Docker**](https://www.docker.com/) **containers** technology and a number of different [Databases](services-1/databases/) and other services \(available in [Services](services-1/network/) section\).
 
-Finally, Qovery is really fast to set up and perfectly integrate with your Git environment. Our principle is: Is your container running in local? Qovery makes it running in the cloud and scale.
+Finally, Qovery is really fast to set up and perfectly integrate with your Git environment.
 
-## Git Driven Infrastructure <a id="git-driven-infrastructure"></a>
+Our promise is simple:
 
-Qovery automatically manages everything your application needs in order to run. That means you view your infrastructure dependencies as part of your application. As well, you version-control it as part of your application.
+{% hint style="success" %}
+**If your container can locally run, Qovery makes it running in the Cloud at scale.**
+{% endhint %}
 
-### Infrastructure as code <a id="infrastructure-as-code"></a>
+## Git Driven Infrastructure
 
-Qovery covers not only all of your hosting needs but also **most of your DevOps needs**. It is a simple tool that covers the application life-cycle **from development to production stage**. Ensuring as well the application is always healthy and **scales it automatically** when workload comes.
+Qovery automatically manages everything your application needs in order to run. That means **you view your infrastructure dependencies as part of your application**. As well, **you version-control it** as part of your application.
+
+### Simple declarative Infrastructure <a id="infrastructure-as-code"></a>
+
+Qovery covers not only all of your hosting needs but also **most of your DevOps needs**. It covers the application life-cycle **from development to production stage**. Ensuring as well the application is always healthy and **scales it automatically** when more workload come.
 
 You only need to write your code, including a YAML file that specify your desired infrastructure, commit it to Git, and push.
 

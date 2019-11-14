@@ -10,20 +10,6 @@
 * [Qovery config](quickstart/qovery-config.md)
 * [Deploy](quickstart/deploy.md)
 
-## Extending Qovery
-
-* [Branches](extending-qovery/branches.md)
-* [CI / Tests](extending-qovery/ci.md)
-* [Backups / Restore](extending-qovery/backups-and-restore/README.md)
-  * [Backups](extending-qovery/backups-and-restore/backups.md)
-  * [Restore](extending-qovery/backups-and-restore/restore.md)
-* [Monitoring / Notifications](extending-qovery/monitoring/README.md)
-  * [Observability](extending-qovery/monitoring/observability.md)
-  * [Alerting](extending-qovery/monitoring/alerting.md)
-  * [Notifications](extending-qovery/monitoring/notifications.md)
-* [Scaling](extending-qovery/scaling.md)
-* [Examples](extending-qovery/examples.md)
-
 ## Services <a id="services-1"></a>
 
 * [Network](services-1/network/README.md)
@@ -41,6 +27,20 @@
 * [Brokers](services-1/brokers/README.md)
   * [RabbitMQ](services-1/brokers/rabbitmq.md)
   * [Kafka](services-1/brokers/kafka.md)
+
+## Extending Qovery
+
+* [Branches](extending-qovery/branches.md)
+* [CI / Tests](extending-qovery/ci.md)
+* [Backups / Restore](extending-qovery/backups-and-restore/README.md)
+  * [Backups](extending-qovery/backups-and-restore/backups.md)
+  * [Restore](extending-qovery/backups-and-restore/restore.md)
+* [Monitoring / Notifications](extending-qovery/monitoring/README.md)
+  * [Observability](extending-qovery/monitoring/observability.md)
+  * [Alerting](extending-qovery/monitoring/alerting.md)
+  * [Notifications](extending-qovery/monitoring/notifications.md)
+* [Scaling](extending-qovery/scaling.md)
+* [Examples](extending-qovery/examples.md)
 
 ## Administration
 

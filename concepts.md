@@ -60,5 +60,5 @@ A dedicated generated URL will be provided to those specific branches. This to g
 
 Qovery respects the structure of branches. It's entirely up to you.
 
-## TODO: TECH STACK
+## TODO: TECH STACK \(HOSTING BASED\)
 

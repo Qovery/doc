@@ -1,16 +1,20 @@
+---
+description: Use containers to build and package your own application
+---
+
 # Build
 
-## How to build your container application
+Building your application is something every developer knows how to. Building a container with the application inside is not more complex but not every developers are familiar with. In order to help them, this page provides examples on how to do it.
 
-Building your own application is something every developer knows how to. Building a container with the application inside is not more complex.
+## Create a Dockerfile
 
-At Qovery we're using the well known Dockerfile to build [multi stage](https://docs.docker.com/develop/develop-images/multistage-build/) containers. You can see in the examples below 
+At Qovery we're using the well known Dockerfile to build [multi stage](https://docs.docker.com/develop/develop-images/multistage-build/) containers.
 
-Here are some Dockerfiles examples to **add into the root directory of your git repository**:
+{% hint style="info" %}
+You can use Qovery CLI to generate a Dockerfile templates, at the root of your git repository: `qovery-cli init`
+{% endhint %}
 
-* **Java**: gradle installation to build application and get the uber Jar \(fat Jar\)  to add into a new dedicated slim image
-* **Python**: build dependencies from requirements.txt and get the applications + its dependencies into a new dedicated slim image
-* **Go**: build the application with dependencies \(using dep\) and get the compiled binary to add into a new dedicated slim image
+Here are some Dockerfiles examples to **add into the root directory of your git repository:**
 
 {% tabs %}
 {% tab title="Java" %}
@@ -31,6 +35,7 @@ FROM openjdk:11-alpine
 EXPOSE 8080
 COPY --from=build /app/build/libs/app.jar /app.jar
 ENV JAVA_OPTS=""
+
 CMD exec java $JAVA_OPTS -jar /app.jar
 ```
 {% endtab %}
@@ -71,5 +76,10 @@ CMD exec ./app
 {% endtab %}
 {% endtabs %}
 
+To get more examples on 
 
+## References
+
+* [Dockerfile reference](https://docs.docker.com/engine/reference/builder/)
+* [Multi stages Dockerfiles](https://docs.docker.com/develop/develop-images/multistage-build/)
 

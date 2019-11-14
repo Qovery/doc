@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome](README.md)
+* [Welcome to Qovery](README.md)
 * [Concepts](concepts.md)
 
 ## Quickstart
@@ -8,7 +8,10 @@
 * [Sign Up](quickstart/sign-up/README.md)
   * [CLI](quickstart/sign-up/cli.md)
   * [Web interface](quickstart/sign-up/webui.md)
-* [Build](quickstart/build.md)
+* [Build](quickstart/build/README.md)
+  * [Java](quickstart/build/java.md)
+  * [Python](quickstart/build/python.md)
+  * [Go](quickstart/build/go.md)
 * [Qovery config](quickstart/qovery-config.md)
 * [Deploy](quickstart/deploy.md)
 

@@ -2,7 +2,7 @@
 description: Welcome to Qovery documentation!
 ---
 
-# Welcome
+# Welcome to Qovery
 
 \*\*\*\*[**Qovery**](https://www.qovery.com) **helps growing tech companies to accelerate and scale application development cycle with zero infrastructure management investment.**
 

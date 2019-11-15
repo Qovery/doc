@@ -20,14 +20,18 @@ In the case you have several applications running in the same Qovery project, yo
 
 For example, your application called "AppB" needs to talk to another running application called "AppA". The "AppA" application has to expose its running port.
 
-To do so, in the Qovery configuration file \(.qovery.yaml\) of the "AppA" application, add the "private-port" line:
+To do so, in the Qovery configuration file \(.qovery.yml\) of the "AppA" application, add the "private-port" line:
 
+{% tabs %}
+{% tab title=".qovery.yml" %}
 ```yaml
 app:
   name: myapp
   private-port: 8080
   project: test
 ```
+{% endtab %}
+{% endtabs %}
 
 Here the port "8080" will be securely exposed to other applications. In order to target "AppA" application, "AppB" application has to point to "AppA:8080".
 
@@ -37,6 +41,8 @@ Then commit and push to apply this new change.
 
 If you have multiple ports to privately expose to other applications of the same dedicated area, you need to use "private-ports" instead. Here is an example:
 
+{% tabs %}
+{% tab title=".qovery.yml" %}
 ```yaml
 app:
   name: myapp
@@ -45,6 +51,8 @@ app:
     - 8081
   project: test
 ```
+{% endtab %}
+{% endtabs %}
 
 ## Public Access
 
@@ -52,6 +60,10 @@ To allow public access on a specific application port, you have to first expose 
 
 Then you have to declare in the Qovery configuration file \(.qovery.yaml\), the desired port for external access \(here 80, the http port\):
 
+
+
+{% tabs %}
+{% tab title=".qovery.yml" %}
 ```yaml
 app:
   name: myapp
@@ -59,6 +71,8 @@ app:
   public-port: 80
   project: test
 ```
+{% endtab %}
+{% endtabs %}
 
 Then commit and push to apply this new change.
 
@@ -66,6 +80,10 @@ Then commit and push to apply this new change.
 
 If you have multiple ports to publicly expose, you need to use "public-ports" instead. Here is an example:
 
+
+
+{% tabs %}
+{% tab title=".qovery.yml" %}
 ```yaml
 app:
   name: myapp
@@ -76,6 +94,8 @@ app:
     8081: 1234
   project: test
 ```
+{% endtab %}
+{% endtabs %}
 
 To explain it simply:
 

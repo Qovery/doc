@@ -8,6 +8,8 @@ A DNS \(Domain Name System\) is **automatically generated** on deployed applicat
 
 There is **nothing to do, as soon as you define a public port to your application** in the .qovery.yml file:
 
+{% tabs %}
+{% tab title=".qovery.yml" %}
 ```yaml
 app:
   name: myapp
@@ -15,6 +17,8 @@ app:
   public-port: 80
   project: test
 ```
+{% endtab %}
+{% endtabs %}
 
 Then commit and push to apply this new change.
 
@@ -44,6 +48,10 @@ You can define custom DNS name with your company name.
 
 Simply add "dns" line like this in the .qovery.yml file: 
 
+
+
+{% tabs %}
+{% tab title=".qovery.yml" %}
 ```yaml
 app:
   name: myapp
@@ -52,6 +60,8 @@ app:
   public-port: 80
   project: test
 ```
+{% endtab %}
+{% endtabs %}
 
 Then commit and push to apply this new change.
 

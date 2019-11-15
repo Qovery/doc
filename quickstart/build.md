@@ -28,6 +28,8 @@ No Dockerfile will be generated if one already exists
 
 Here is an example of a Dockerfile to build a Java application:
 
+{% tabs %}
+{% tab title="Dockerfile" %}
 ```bash
 # Build your application with this image called "build"
 FROM openjdk:11 AS build
@@ -54,6 +56,8 @@ ENV JAVA_OPTS=""
 # Command to run your application
 CMD exec java $JAVA_OPTS -jar /app.jar
 ```
+{% endtab %}
+{% endtabs %}
 
 **Build**: The first part \(from the first line to 15\) represent the dependencies and requirements in order to **build the application**. The result of this compilation is called an **artifact** available in the `/app/build/libs/app.jar` directory.
 

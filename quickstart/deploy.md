@@ -6,9 +6,7 @@ description: Deploy in production
 
 ## Deploy
 
-Are you ready to deploy?
-
-**Simply push your git repository, that's it**!
+Are you ready to deploy? **Simply push your git repository, that's it**!!!
 
 ## Deployment status
 
@@ -19,7 +17,6 @@ To know what's currently happening on your Qovery account:
 ```bash
 $ qovery status
 
-Status:
 * Current deployed version        : 7b3aeb5 (Marty McFly) / 2014-05-13 02:56
 * In progress deployment          : b0b03ab (Ada Lovelace) / 75% done
 * Pending deployments in the pipe : 0
@@ -27,12 +24,12 @@ Status:
 * Total rollback today:           : 0
 ```
 
-## Develop a new feature in your code
+## Code a new feature
 
 As soon as you want to develop a new feature in your code, create a new branch!
 
 {% hint style="info" %}
-A new branch will spawn a dedicated \(production replicated\) environment for your to work on this new feature!
+**A new branch will spawn a dedicated \(production replicated\) environment for you**
 {% endhint %}
 
 To know more about it, look at the [branch dedicated section](../extending-qovery/branches.md).

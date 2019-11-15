@@ -27,5 +27,13 @@ Status:
 * Total rollback today:           : 0
 ```
 
+## Develop a new feature in your code
 
+As soon as you want to develop a new feature in your code, create a new branch!
+
+{% hint style="info" %}
+A new branch will spawn a dedicated \(production replicated\) environment for your to work on this new feature!
+{% endhint %}
+
+To know more about it, look at the [branch dedicated section](../extending-qovery/branches.md).
 

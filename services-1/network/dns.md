@@ -4,9 +4,9 @@ description: Manage your DNS
 
 # DNS
 
-A DNS \(Domain Name System\) can be **automatically generated** on applications requesting a [public access](./#public-access).
+A DNS \(Domain Name System\) is **automatically generated** on deployed applications requesting a [public access](./#public-access).
 
-There is nothing especially to do, as soon as you set your application has declared a public port \(in the .qovery.yml file\):
+There is **nothing to do, as soon as you set to your application a public port** in the .qovery.yml file:
 
 ```yaml
 app:

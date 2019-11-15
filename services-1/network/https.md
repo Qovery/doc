@@ -22,5 +22,5 @@ $ qovery status
 ...
 ```
 
-
+You can also see it from the Web interface.
 

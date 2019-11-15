@@ -60,8 +60,6 @@ To allow public access on a specific application port, you have to first expose 
 
 Then you have to declare in the Qovery configuration file \(.qovery.yaml\), the desired port for external access \(here 80, the http port\):
 
-
-
 {% tabs %}
 {% tab title=".qovery.yml" %}
 ```yaml
@@ -79,8 +77,6 @@ Then commit and push to apply this new change.
 ### Multiple public ports
 
 If you have multiple ports to publicly expose, you need to use "public-ports" instead. Here is an example:
-
-
 
 {% tabs %}
 {% tab title=".qovery.yml" %}

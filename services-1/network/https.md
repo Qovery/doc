@@ -4,7 +4,7 @@ description: Add security to your website
 
 # Https \(SSL/TLS\)
 
-The SSL/TLS certificates are mandatory to get a website accessible through https.
+The SSL/TLS certificates are mandatory to get a **secure** website.
 
 In order to get a SSL/TLS certificate, **you simply have to set the "public-port" parameter to "443"** in the .qovery.yml file:
 

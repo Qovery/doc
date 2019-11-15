@@ -82,3 +82,5 @@ To explain it simply:
 * The port exposed 8080 on the private network, is publicly exposed to the port 80 and 443
 * The port exposed 8081 on the private network, is publicly exposed to the port 1234
 
+Then commit and push to apply this new change.
+

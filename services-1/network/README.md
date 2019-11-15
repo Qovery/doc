@@ -4,7 +4,7 @@ description: Know how you manage the network part
 
 # Network
 
-On your Qovery project, you can configure the way your applications are accessible from [the outside \(internet\)](https://docs.qovery.com/services-1/network#public-access) or in a [private, dedicated and secure way](https://docs.qovery.com/services-1/network#private-access) with other applications from the same project.
+On your Qovery project, you can configure the way your applications are accessible from the [outside \(internet\)](./#public-access) or in a [private, dedicated and secure way](./#private-access) with other applications from the same project.
 
 {% hint style="warning" %}
 **By default all the network is private. Nobody can access to your applications until you explicitly specified it.**
@@ -32,14 +32,14 @@ Then commit and push to apply this new change.
 
 ## Public Access
 
-To allow public access on a specific application port, you have to first expose the port as described in the "[Private Access](https://docs.qovery.com/services-1/network#private-access)" section of this page.
+To allow public access on a specific application port, you have to first expose the port as described in the "[Private Access](./#private-access)" section of this page.
 
 Then you have to declare in the Qovery configuration file \(.qovery.yaml\), the desired port for external access \(here 80, the http port\):
 
 ```yaml
 app:
   name: myapp
-  www-port: 80
+  public-port: 80
   project: test
 ```
 

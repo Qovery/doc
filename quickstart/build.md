@@ -14,7 +14,7 @@ From the Qovery cli, you can generate a Dockerfile. Here is how to:
 
 ```bash
 $ cd <your_git_repository>
-$ qovery-cli init
+$ qovery init
 
 ✓ Java application detected, do you want to generate a Dockerfile for it (y/n): y
 ✓ Dockerfile generated in the Git root directory
@@ -55,7 +55,7 @@ CMD exec java $JAVA_OPTS -jar /app.jar
 
 **Build**: The first part \(from the first line to 15\) represent the dependencies and requirements in order to **build the application**. The result of this compilation is called an **artifact** available in the `/app/build/libs/app.jar` directory.
 
-**Run**: The second part \(from line 18 to last\) represent the content of the container that will **run in production** \([or for a specific branch](../../extending-qovery/branches.md)\). It retrieves the artifact from the build part and store it in the container. 
+**Run**: The second part \(from line 18 to last\) represent the content of the container that will **run in production** \([or for a specific branch](../extending-qovery/branches.md)\). It retrieves the artifact from the build part and store it in the container. 
 
 {% hint style="danger" %}
 **For security reasons**, for we strongly advise you to:
@@ -66,17 +66,23 @@ CMD exec java $JAVA_OPTS -jar /app.jar
 
 ## Validate your Dockerfile
 
-You can validate your Dockerfile by running a build on your machine. You simply have to run:
+You can validate your Dockerfile by running a build on your machine.
+
+{% hint style="info" %}
+You need to have Docker installed on your computer to validate the build
+{% endhint %}
+
+You simply have to run:
+
+```bash
+qovery build
+```
+
+or by using Docker:
 
 ```bash
 docker build .
 ```
-
-To get more examples for specific language or frameworks, please refer to the dedicated sections:
-
-* [Java](java.md)
-* [Python](python.md)
-* [Go](go.md)
 
 ## References
 

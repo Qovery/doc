@@ -16,9 +16,13 @@ From the Qovery cli, you can generate a Dockerfile. Here is how to:
 $ cd <your_git_repository>
 $ qovery init
 
-✓ Java application detected, do you want to generate a Dockerfile for it (y/n): y
+➤ Java application detected, do you want to generate a Dockerfile for it (y/n): y
 ✓ Dockerfile generated in the Git root directory
 ```
+
+{% hint style="info" %}
+No Dockerfile will be generated if one already exists
+{% endhint %}
 
 ## Define the build and run process
 
@@ -55,7 +59,7 @@ CMD exec java $JAVA_OPTS -jar /app.jar
 
 **Build**: The first part \(from the first line to 15\) represent the dependencies and requirements in order to **build the application**. The result of this compilation is called an **artifact** available in the `/app/build/libs/app.jar` directory.
 
-**Run**: The second part \(from line 18 to last\) represent the content of the container that will **run in production** \([or for a specific branch](../extending-qovery/branches.md)\). It retrieves the artifact from the build part and store it in the container. 
+**Run**: The second part \(from line 18 to last\) represent the content of the container that will **run in production** \([or for a specific branch](../extending-qovery/branches.md)\). It retrieves the artifact from the build part and store it in the container.
 
 {% hint style="danger" %}
 **For security reasons**, for we strongly advise you to:
@@ -84,7 +88,7 @@ or by using Docker:
 docker build .
 ```
 
-## References
+## Other references
 
 * [Dockerfile reference](https://docs.docker.com/engine/reference/builder/)
 * [Multi stages Dockerfiles](https://docs.docker.com/develop/develop-images/multistage-build/)

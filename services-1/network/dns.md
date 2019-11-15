@@ -11,6 +11,7 @@ There is **nothing to do, as soon as you set to your application a public port**
 ```yaml
 app:
   name: myapp
+  private-port: 8080
   public-port: 80
   project: test
 ```

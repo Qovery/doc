@@ -20,15 +20,31 @@ In the case you have several applications running in the same Qovery project, yo
 
 For example, your application called "AppB" needs to talk to another running application called "AppA". The "AppA" application has to expose its running port.
 
-To do so, in the Dockerfile of the "AppA" application, add this line:
+To do so, in the Qovery configuration file \(.qovery.yaml\) of the "AppA" application, add the "private-port" line:
 
-```bash
-EXPOSE 8080
+```yaml
+app:
+  name: myapp
+  private-port: 8080
+  project: test
 ```
 
 Here the port "8080" will be securely exposed to other applications. In order to target "AppA" application, "AppB" application has to point to "AppA:8080".
 
 Then commit and push to apply this new change.
+
+### Multiple private ports
+
+If you have multiple ports to privately expose to other applications of the same dedicated area, you need to use "private-ports" instead. Here is an example:
+
+```yaml
+app:
+  name: myapp
+  private-port:
+    - 8080
+    - 8081
+  project: test
+```
 
 ## Public Access
 
@@ -39,19 +55,21 @@ Then you have to declare in the Qovery configuration file \(.qovery.yaml\), the 
 ```yaml
 app:
   name: myapp
+  private-port: 8080
   public-port: 80
   project: test
 ```
 
 Then commit and push to apply this new change.
 
-### Multiple public ports access
+### Multiple public ports
 
 If you have multiple ports to publicly expose, you need to use "public-ports" instead. Here is an example:
 
 ```yaml
 app:
   name: myapp
+  private-port: [ 8080, 8081 ]
   public-ports:
     8080: 80
     8080: 443

@@ -47,8 +47,6 @@ RUN gradle build -x test
 
 # The container which will run
 FROM openjdk:11-alpine
-# Set the port on which the application will listen on
-EXPOSE 8080
 # Get the build artifact (can be a folder)
 COPY --from=build /app/build/libs/app.jar /app.jar
 # Set specific environment variables

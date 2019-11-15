@@ -24,7 +24,7 @@ Limitations:
 
 * Maximum upload size per request is limited to 100Mb
 
-To enable Qovery caching, you simply have to add the caching line like:
+To enable Qovery caching, you simply have to add the "cache" line like:
 
 {% tabs %}
 {% tab title=".qovery.yml" %}

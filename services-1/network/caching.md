@@ -8,7 +8,7 @@ A content content distribution network \(CDN\) is a geographically distributed n
 
 A common use case is to accelerate images, CSS or JavaScript browser loading.
 
-## Standard caching
+## Qovery caching
 
 Activating the standard cache on Qovery is the **easiest way to speed up your website**. Here are the advantages of enabling it:
 
@@ -24,7 +24,20 @@ Limitations:
 
 * Maximum upload size per request is limited to 100Mb
 
+To enable Qovery caching, you simply have to add the caching line like:
 
+{% tabs %}
+{% tab title=".qovery.yml" %}
+```yaml
+app:
+  name: myapp
+  private-port: 8080
+  public-port: 443
+  cache: qovery
+  project: test
+```
+{% endtab %}
+{% endtabs %}
 
-
+Then commit and push to apply this new change.
 

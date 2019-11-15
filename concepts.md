@@ -1,5 +1,5 @@
 ---
-description: Know more how Qovery works
+description: Know more about how Qovery works
 ---
 
 # Concepts

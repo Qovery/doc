@@ -39,7 +39,7 @@ You can also see it from the Web interface.
 You can define custom DNS name with your company name.
 
 {% hint style="warning" %}
-**SSL/TLS is not supported on custom DNS name**
+**https \(SSL/TLS\) is not supported on custom DNS name**
 {% endhint %}
 
 {% hint style="info" %}
@@ -47,8 +47,6 @@ You can define custom DNS name with your company name.
 {% endhint %}
 
 Simply add "dns" line like this in the .qovery.yml file: 
-
-
 
 {% tabs %}
 {% tab title=".qovery.yml" %}
@@ -78,4 +76,6 @@ $ qovery status
 The record name should be configured to point to the IP address like:
 
 `myapp.mydomain.name -> ip_address`
+
+
 

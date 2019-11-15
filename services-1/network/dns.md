@@ -4,7 +4,7 @@ description: Manage your DNS
 
 # DNS
 
-A DNS \(Domain Name System\) can be automatically generated on applications requesting a [public access](./#public-access).
+A DNS \(Domain Name System\) can be **automatically generated** on applications requesting a [public access](./#public-access).
 
 There is nothing especially to do, as soon as you set your application has declared a public port \(:
 
@@ -15,7 +15,7 @@ app:
   project: test
 ```
 
-To check your DNS name, you can do it through CLI:
+To check the DNS name, you can do it through CLI:
 
 ```bash
 $ qovery status
@@ -25,7 +25,7 @@ $ qovery status
 ...
 ```
 
-
+You can also see it from the Web interface.
 
 
 

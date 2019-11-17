@@ -19,7 +19,7 @@ $ qovery init
 4. Redis
 5. Memcached
 6. Elasticsearch
-➤ Estimated MySQL data size in Mb: 3000
+➤ Estimated MySQL data size in GB (default: 10): 20
 ➤ Do you need any borker? (y/n): n
 
 ✓ Your Qovery configuration file has been successfuly created (.qovery.yml)!

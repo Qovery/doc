@@ -45,7 +45,7 @@ RUN cd /usr/local/bin && \
 COPY . /app
 WORKDIR /app
 # Build your application
-RUN gradle build -x test
+RUN gradle build
 
 # The container which will run
 FROM openjdk:11-alpine

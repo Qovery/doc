@@ -4,6 +4,8 @@ description: 'MongoDB is a cross-platform, document-oriented database.'
 
 # MongoDB
 
+[MongoDB](https://www.mongodb.com/) is a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schema.
+
 ## Add a new instance to an existing application
 
 To **add a new dedicated MongoDB instance** to an existing application, you can use Qovery CLI to do it:

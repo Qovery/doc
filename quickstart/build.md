@@ -2,7 +2,7 @@
 description: Use containers to build and package your own application
 ---
 
-# Build
+# Build container
 
 Building your application is something every developer knows how to. Building a container with the application inside is not more complex but not every developers are familiar with. In order to help developers, this page provides examples on how to manage it.
 

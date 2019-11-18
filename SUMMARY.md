@@ -8,8 +8,8 @@
 * [Sign Up](quickstart/sign-up/README.md)
   * [CLI](quickstart/sign-up/cli.md)
   * [Web interface](quickstart/sign-up/webui.md)
-* [Build](quickstart/build.md)
-* [Qovery config](quickstart/qovery-config.md)
+* [Build container](quickstart/build.md)
+* [Qovery init](quickstart/qovery-config.md)
 * [Deploy](quickstart/deploy.md)
 
 ## Services <a id="services-1"></a>

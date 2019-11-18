@@ -1,8 +1,8 @@
 ---
-description: Basic Qovery configuration
+description: Qovery configuration initialization
 ---
 
-# Qovery config
+# Qovery init
 
 In order to get a quick Qovery configuration file, you can use the CLI to generate one:
 

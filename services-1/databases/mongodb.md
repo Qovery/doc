@@ -18,7 +18,7 @@ $ qovery add database
 
 ➤ Set the instance name: my-super-instance
 
-➤ Estimated PostgreSQL data size in GiB (default: 10): 20
+➤ Estimated MongoDB data size in GiB (default: 10): 20
 
 ➤ Please choose the kind of performances you need: 3
 1. Tiny   : 1 vCPU / 2GiB Ram
@@ -132,7 +132,7 @@ To delete an instance, there are 2 ways to do it, depending on the scenario you 
 
 ### Delete for all branches
 
-If you want to **delete** a PostgreSQL instance with **all databases and data inside** it. You simply have to **delete the corresponding Qovery configuration** in your YAML file.
+If you want to **delete** a MongoDB instance with **all databases and data inside** it. You simply have to **delete the corresponding Qovery configuration** in your YAML file.
 
 {% tabs %}
 {% tab title=".qovery.yml" %}

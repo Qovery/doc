@@ -4,8 +4,6 @@ description: Deploy in production
 
 # Deploy
 
-## Deploy
-
 Are you ready to deploy? **Simply push your git repository, that's it**!!!
 
 ## Deployment status

@@ -6,6 +6,8 @@ description: Add security to your website
 
 The SSL/TLS certificates are mandatory to get a **secure** website.
 
+## Get a certificate
+
 In order to get a SSL/TLS certificate, **you simply have to set the "public-port" parameter to "443"** in the .qovery.yml file:
 
 {% tabs %}
@@ -22,7 +24,7 @@ app:
 
 Then commit and push to apply this new change.
 
-Get the status of your application from the CLI to get the https URL:
+Then, to get the status of your application from the CLI to get the https URL:
 
 ```bash
 $ qovery status

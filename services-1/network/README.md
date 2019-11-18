@@ -85,9 +85,12 @@ app:
   name: myapp
   private-port: [ 8080, 8081 ]
   public-ports:
-    8080: 80
-    8080: 443
-    8081: 1234
+    - public-port: 8080
+      private-port: 80
+    - public-port: 8080
+      private-port: 443
+    - public-port: 8081
+      private-port: 1234
   project: test
 ```
 {% endtab %}

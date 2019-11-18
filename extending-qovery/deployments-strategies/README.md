@@ -18,7 +18,7 @@ The Ramped strategy implies **having 2 different application versions** \(the ol
 
 | Pros | Cons |
 | :--- | :--- |
-| Upgrade is slowly and safely released | Application should be able to properly with 2 different version |
+| Upgrade is **slowly and safely** released | Application should be able to live properly with 2 different version |
 | Convenient for stateful application | You can't control incoming traffic |
 
 You can either customize the speed and limits of the upgrade strategy in the Qovery configuration file:

@@ -27,9 +27,9 @@ Get the status of your application from the CLI to get the https URL:
 ```bash
 $ qovery status
 
-* External DNS name               : <myapplicationid>.qovery.io
-* SSL/TLS enabled                 : https://<myapplicationid>.qovery.io
-* Current deployed version        : 7b3aeb5 (Marty McFly) / 2014-05-13 02:56
+* External DNS name        : <myapplicationid>.qovery.io
+* SSL/TLS enabled          : https://<myapplicationid>.qovery.io
+* Current deployed version : 7b3aeb5 (Marty McFly) / 2014-05-13 02:56
 ...
 ```
 

@@ -43,10 +43,12 @@ To know more about your instance status, you can do it this way:
 $ qovery status database
 
 ✓ my-super-instance:
-* Type  : PostgreSQL
-* Size  : 20GiB
-* Kind  : Medium (4 vCPU / 16GiB Ram)
-* Backup: Daily / Kept 30 days
+* Branch  : master (Production)
+* Health  : healthy
+* Type    : PostgreSQL
+* Version : 11.4
+* Size    : 20GiB
+* Kind    : Medium (4 vCPU / 16GiB Ram)
 ```
 
 

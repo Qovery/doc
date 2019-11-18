@@ -7,16 +7,18 @@ description: Know how you manage the network part
 On your Qovery project, you can configure the way your applications are accessible from the [outside \(internet\)](./#public-access) or in a [private, dedicated and secure way](./#private-access) with other applications from the same project.
 
 {% hint style="warning" %}
-**By default all the network is private. Nobody can access to your applications until you explicitly specified it.**
+**By default the access to your application network is closed. Nobody can access to your applications until you explicitly specified it.**
 {% endhint %}
 
 ## Closed Access
 
-If your application do not have to expose a port, like just computing or perform any kind of tasks and store the result in S3, you may not need to expose any kind of port. So **you don't have anything to do**.
+This is the default behavior, **you don't have anything to do**.
+
+If your application **do not have to listen to a port** \(eg: pure computing or consuming external API or storing some content in S3...\) you may not need to expose any kind of port. 
 
 ## Private Access
 
-In the case you have several applications running in the same Qovery project, you may need to have applications talking together in a **private, dedicated and secure area**.
+In the case you have **several applications running in the same Qovery project**, you may need to have applications talking together in a **private, dedicated and secure area**.
 
 For example, your application called "AppB" needs to talk to another running application called "AppA". The "AppA" application has to expose its running port.
 

@@ -6,6 +6,8 @@ description: Manage your DNS
 
 A DNS \(Domain Name System\) is **automatically generated** on deployed applications requesting a [public access](./#public-access). This allows you to get a simple way to access your application. You'll get one DNS name per branch as well.
 
+## Qovery DNS \(default\)
+
 There is **nothing to do, as soon as you define a public port to your application** in the .qovery.yml file:
 
 {% tabs %}

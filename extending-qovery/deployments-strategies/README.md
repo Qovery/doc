@@ -34,7 +34,7 @@ app:
 
 As you can see here, there are 2 interesting options:
 
-| Option name | Comment |
+| Options name | Comments |
 | :--- | :--- |
 | max-unavailable \(default: 25%\) | set the maximum unavailable container instances at a time. It can be a percentage or an integer \(eg. you have 10 running containers and want to perform only 1 by 1, you have to set 1 here\) |
 | max-surge \(default 25%\) | set the maximum of containers to create at once to perform the upgrade |

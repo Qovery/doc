@@ -10,7 +10,9 @@ A common use case is to accelerate images, CSS or JavaScript browser loading.
 
 ## Qovery caching
 
-Activating the standard cache on Qovery is the **easiest way to speed up your website**. Here are the advantages of enabling it:
+Activating the standard cache on Qovery is the **easiest way to speed up your website**.
+
+Here are the advantages of enabling this feature:
 
 * Support **SSL/TLS 1.3**
 * **Automatic** [**minify**](https://en.wikipedia.org/wiki/Minification_%28programming%29) of CSS, JavaScript and HTML pages
@@ -20,9 +22,7 @@ Activating the standard cache on Qovery is the **easiest way to speed up your we
 * \*\*\*\*[**Http/3**](https://en.wikipedia.org/wiki/HTTP/3) **with** [**QUIC**](https://en.wikipedia.org/wiki/QUIC) support
 * **IP Geolocation** with "CF-IPCountry” header to all requests
 
-Limitations:
-
-* Maximum upload size per request is limited to 100Mb
+The limitation is the **maximum upload size** per request limited to 100Mb.
 
 To enable Qovery caching, you simply have to add the "cache" line like:
 

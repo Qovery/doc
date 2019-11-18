@@ -8,7 +8,7 @@ description: 'PostgreSQL is a high-performance, standards-compliant relational S
 
 ## Add an instance
 
-To add a new dedicated PostgreSQL instance to your application, you can use Qovery CLI to do it:
+To add a new dedicated PostgreSQL instance to an existing application, you can use Qovery CLI to do it:
 
 ```bash
 $ qovery add database

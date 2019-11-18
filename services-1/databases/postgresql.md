@@ -40,6 +40,25 @@ c. Custom Mode
 The following samples give you the way to access all necessaries information to access your PostgreSQL instance.
 
 {% tabs %}
+{% tab title="NodeJS" %}
+```javascript
+const { Pool } = require('pg');
+const { Qovery } = require('qovery');
+
+const dbConfiguration = new Qovery().databaseConfiguration();
+
+const pool = new Pool({
+    host: dbConfiguration.host,
+    port: dbConfiguration.port,
+    user: dbConfiguration.user,
+    password: dbConfiguration.password,
+    database: 'test', 
+});
+
+// your code
+```
+{% endtab %}
+
 {% tab title="Java" %}
 ```java
 package com.qovery.languages.sample;
@@ -81,12 +100,6 @@ public class PostgreSQLSample {
         }
     }
 }
-```
-{% endtab %}
-
-{% tab title="Python" %}
-```python
-
 ```
 {% endtab %}
 {% endtabs %}

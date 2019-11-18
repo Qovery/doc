@@ -32,7 +32,7 @@ If your language is not supported yet please use the "**Other**" way
 ```javascript
 {
     "dependencies": {
-        "qovery": "^x.x.x"
+        "qovery": "^1.0.0"
     }
 }
 ```

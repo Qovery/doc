@@ -70,13 +70,17 @@ composer require qovery
 {% tabs %}
 {% tab title="pom.xml" %}
 ```markup
-TODO
+<dependency>
+    <groupId>com.qovery</groupId>
+    <artifactId>client</artifactId>
+    <version>1.0.0</version>
+</dependency>
 ```
 {% endtab %}
 
 {% tab title="build.gradle" %}
 ```
-TODO
+compile group: 'com.qovery', name: 'client', version: '1.0.0'
 ```
 {% endtab %}
 {% endtabs %}

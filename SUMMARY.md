@@ -34,7 +34,8 @@
 
 * [Branches](extending-qovery/branches.md)
 * [SDKs](extending-qovery/sdks.md)
-* [Deployments strategies](extending-qovery/deployments-strategies.md)
+* [Upgrade strategies](extending-qovery/deployments-strategies/README.md)
+  * [Safe Guard](extending-qovery/deployments-strategies/safe-guard.md)
 * [Scheduled tasks](extending-qovery/scheduled-tasks.md)
 * [CI / Tests](extending-qovery/ci.md)
 * [Backups / Restore](extending-qovery/backups-and-restore/README.md)

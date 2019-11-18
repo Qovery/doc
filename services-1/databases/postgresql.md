@@ -6,7 +6,7 @@ description: 'PostgreSQL is a high-performance, standards-compliant relational S
 
 [PostgreSQL](https://www.postgresql.org/) is a powerful, open source **object-relational database system** with over 30 years of active development that has earned it a strong reputation for **reliability, feature robustness, and performance**.
 
-## Add an instance to your app
+## Add a new instance
 
 To **add a new dedicated PostgreSQL instance** to an existing application, you can use Qovery CLI to do it:
 

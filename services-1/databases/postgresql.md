@@ -44,8 +44,8 @@ The following samples give you the way to access all necessaries information to 
 ```java
 package com.qovery.languages.sample;
 
-import com.qovery.config.Config;
-import com.qovery.config.Credential;
+import com.qovery.Qovery;
+import com.qovery.DatabaseConfiguration;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -59,28 +59,34 @@ public class PostgreSQLSample {
     public String get() {
         // Create a new config object to ease reading the Qovery environment variables.
         // You can alternatively use getenv() yourself.
-        Config config = new Config();
+        Qovery qovery = new Qovery();
 
         // "my-super-instance" is the database name instance to access
-        Credential credential = config.getCredential("my-super-instance");
+        DatabaseConfiguration config = qovery.getDatabaseConfiguration("my-super-instance");
         
         // your database name
         String databaseName = "test";
 
         // connection URI string
         String uri = "jdbc:postgresql://" + 
-            credential.getHost() + ":" + 
-            credential.getPort() + "/" + 
+            config.getHost() + ":" + 
+            config.getPort() + "/" + 
             databaseName;
 
         // Connect to the database
-        try (Connection connection = DriverManager.getConnection(uri, credential.getUsername(), credential.getPassword())) {
+        try (Connection connection = DriverManager.getConnection(uri, config.getUsername(), config.getPassword())) {
             // your code here :)
         } catch (SQLException exp) {
             throw new RuntimeException("An error when execute PostgreSQL", exp);
         }
     }
 }
+```
+{% endtab %}
+
+{% tab title="Python" %}
+```python
+
 ```
 {% endtab %}
 {% endtabs %}

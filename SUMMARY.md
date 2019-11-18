@@ -33,6 +33,7 @@
 ## Extending Qovery
 
 * [Branches](extending-qovery/branches.md)
+* [SDKs](extending-qovery/sdks.md)
 * [Deployments strategies](extending-qovery/deployments-strategies.md)
 * [Scheduled tasks](extending-qovery/scheduled-tasks.md)
 * [CI / Tests](extending-qovery/ci.md)

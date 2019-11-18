@@ -21,11 +21,33 @@ If your language is not supported yet please use the "**Other**" way
 
 ## NodeJS
 
-TBD
+### Minimum supported version
+
+* 6
+* 8
+* 10
+
+{% tabs %}
+{% tab title="package.json" %}
+```javascript
+{
+    "dependencies": {
+        "qovery": "^x.x.x"
+    }
+}
+```
+
+[Checkout available versions](https://github.com/Qovery/qovery-javascript-sdk)
+{% endtab %}
+{% endtabs %}
 
 ## Python
 
-TBD
+### Supported versions
+
+* 3.x
+
+
 
 ## PHP
 
@@ -33,7 +55,13 @@ TBD
 
 ## Java
 
-TBD
+### Supported versions
+
+* 1.8
+* 11
+* 13
+
+
 
 ## Go
 

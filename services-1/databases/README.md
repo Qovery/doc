@@ -6,6 +6,8 @@ description: All SQL and NoSQL databases provided by Qovery
 
 Qovery provides access to the most famous SQL and NoSQL databases.
 
+For each database we rely on Managed services provided by AWS. Reliability and resiliency is at the hearth of their service.
+
 {% page-ref page="postgresql.md" %}
 
 {% page-ref page="mongodb.md" %}

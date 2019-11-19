@@ -1,5 +1,5 @@
 ---
-description: Speed up your application access
+description: Speed up your web application access
 ---
 
 # Caching \(CDN\)

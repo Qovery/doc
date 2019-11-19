@@ -16,7 +16,7 @@ Here are the advantages of enabling this feature:
 
 * Support **SSL/TLS 1.3**
 * **Automatic** [**minify**](https://en.wikipedia.org/wiki/Minification_%28programming%29) of CSS, JavaScript and HTML pages
-* \*\*\*\*[**Brotli** compression](https://en.wikipedia.org/wiki/Brotli)
+* \*\*\*\*[**Brotli** **compression**](https://en.wikipedia.org/wiki/Brotli)\*\*\*\*
 * Force **browser caching** expiration to **4h**
 * \*\*\*\*[**Http/2**](https://en.wikipedia.org/wiki/HTTP/2) support
 * \*\*\*\*[**Http/3**](https://en.wikipedia.org/wiki/HTTP/3) **with** [**QUIC**](https://en.wikipedia.org/wiki/QUIC) support

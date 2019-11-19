@@ -8,9 +8,9 @@ As described in the [Quickstart](../quickstart/deploy.md#code-a-new-feature), **
 
 ## Restrict production replicated branches
 
-For several reasons \(cost, real usage etc...\) you may not want a "production" like environment to be replicated as soon as you create a new branch. Or at list **you want to control** them.
+For several reasons \(cost, real usage etc...\) you may not want a "production" like environment to be replicated as soon as a new branch is created. Or at list **you want to control** it.
 
-What you need to do is specifying in the Qovery configuration file, a list of name or regex you want to allow:
+What you need to do, is specifying in the Qovery configuration file, a list of name or regex you want to allow:
 
 {% tabs %}
 {% tab title=".qovery.yml" %}
@@ -18,7 +18,7 @@ What you need to do is specifying in the Qovery configuration file, a list of na
 app:
   name: myapp
   project: test
-  restrict-replicated-branch:
+  production-replicated-branch:
     - preprod
     - feat-.*
 ```

@@ -13,7 +13,7 @@ In order to get a SSL/TLS certificate, **you simply have to set the "public-port
 {% tabs %}
 {% tab title=".qovery.yml" %}
 ```yaml
-app:
+application:
   name: myapp
   private-port: 8080
   public-port: 443

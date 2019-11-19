@@ -144,13 +144,13 @@ If you want to **delete** a Memcached instance **with its data**. You simply hav
 {% tabs %}
 {% tab title=".qovery.yml" %}
 ```yaml
-...
-
-databases:
-  - type: Memcached
-    name: my-super-instance
-    version: 11.4
-    size: 2GiB
+application:
+  ...
+  databases:
+    - type: Memcached
+      name: my-super-instance
+      version: 11.4
+      size: 2GiB
 ```
 {% endtab %}
 {% endtabs %}

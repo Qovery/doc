@@ -4,8 +4,8 @@ description: Add routes to your application
 
 # Routes
 
-```text
-app:
+```yaml
+application:
   ...
   routes:
     - path: /api/v1/\w+/user/.*

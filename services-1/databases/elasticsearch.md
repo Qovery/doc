@@ -145,13 +145,13 @@ If you want to **delete** a Elasticsearch instance with **all databases and data
 {% tabs %}
 {% tab title=".qovery.yml" %}
 ```yaml
-...
-
-databases:
-  - type: Elasticsearch
-    name: my-super-instance
-    version: 11.4
-    size: 2GiB
+application:
+  ...
+  databases:
+    - type: Elasticsearch
+      name: my-super-instance
+      version: 11.4
+      size: 2GiB
 ```
 {% endtab %}
 {% endtabs %}

@@ -139,13 +139,13 @@ If you want to **delete** a MongoDB instance with **all databases and data insid
 {% tabs %}
 {% tab title=".qovery.yml" %}
 ```yaml
-...
-
-databases:
-  - type: mongodb
-    name: my-super-instance
-    version: 11.4
-    size: 20GiB
+application:
+  ...
+  databases:
+    - type: mongodb
+      name: my-super-instance
+      version: 11.4
+      size: 20GiB
 ```
 {% endtab %}
 {% endtabs %}

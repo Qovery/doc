@@ -13,7 +13,7 @@ There is **nothing to do, as soon as you define a public port to your applicatio
 {% tabs %}
 {% tab title=".qovery.yml" %}
 ```yaml
-app:
+application:
   name: myapp
   private-port: 8080
   public-port: 80
@@ -53,7 +53,7 @@ Simply add "dns" line like this in the .qovery.yml file:
 {% tabs %}
 {% tab title=".qovery.yml" %}
 ```yaml
-app:
+application:
   name: myapp
   dns: myapp.mydomain.name
   private-port: 8080

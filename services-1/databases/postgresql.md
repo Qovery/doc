@@ -139,13 +139,13 @@ If you want to **delete** a PostgreSQL instance with **all databases and data in
 {% tabs %}
 {% tab title=".qovery.yml" %}
 ```yaml
-...
-
-databases:
-  - type: postgresql
-    name: my-super-instance
-    version: 11.4
-    size: 20GiB
+application:
+  ...
+  databases:
+    - type: postgresql
+      name: my-super-instance
+      version: 11.4
+      size: 20GiB
 ```
 {% endtab %}
 {% endtabs %}

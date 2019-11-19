@@ -15,7 +15,7 @@ What you need to do, is specifying in the Qovery configuration file, a list of n
 {% tabs %}
 {% tab title=".qovery.yml" %}
 ```yaml
-app:
+application:
   name: myapp
   project: test
   production-replicated-branch:
@@ -40,7 +40,7 @@ To do so, simply update the Qovery configuration file this way:
 {% tabs %}
 {% tab title=".qovery.yml" %}
 ```yaml
-app:
+application:
   name: myapp
   project: test
   production-branch: prod

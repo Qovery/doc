@@ -15,7 +15,7 @@ To **add a new dedicated Redis instance** to an existing application, you can us
 ```bash
 $ qovery add database
 
-➤ Choose the database instance you want to add: 2
+➤ Choose the database instance you want to add: 4
 1. PostgreSQL
 2. MongoDB
 3. MySQL
@@ -158,5 +158,5 @@ Once done, commit and push to apply the changes.
 
 ### Delete for one branch
 
-Once you've finished to work on a feature branch, simply delete the branch and **the instance will automatically be delete** as well.COMING SOON...
+Once you've finished to work on a feature branch, simply delete the branch and **the instance will automatically be delete** as well.
 

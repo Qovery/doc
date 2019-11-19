@@ -8,17 +8,19 @@ Qovery provides access to the most famous SQL and NoSQL databases.
 
 For each database we rely on Managed services provided by AWS. Reliability and resiliency is at the hearth of their service.
 
+## SQL
+
 {% page-ref page="postgresql.md" %}
 
-{% page-ref page="mongodb.md" %}
-
 {% page-ref page="mysql-mariadb.md" %}
+
+## NoSQL
+
+{% page-ref page="mongodb.md" %}
 
 {% page-ref page="redis.md" %}
 
 {% page-ref page="memcached.md" %}
 
 {% page-ref page="elasticsearch.md" %}
-
-
 

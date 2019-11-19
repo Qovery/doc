@@ -86,7 +86,26 @@ app:
 {% endtab %}
 {% endtabs %}
 
+## Blue/Green
 
+The blue/green strategy allows to quickly switch from one version to another in an instant. It starts as many new containers version \(green\) as there are already started old container version \(blue\). Then, when all the containers \(green\) are started, all the traffic is redirected at once to the green containers. The blue containers are then stopped.
 
+| Pros | Cons |
+| :--- | :--- |
+| Instant rollout | Requires to double the resources |
+| Avoid API/Application versioning issue | Perfect application testing is required before going to production |
 
+Here is the strategy configuration to set in the Qovery configuration file:
+
+{% tabs %}
+{% tab title=".qovery.yml" %}
+```yaml
+app:
+  name: myapp
+  project: test
+  upgrade-strategy:
+    type: blue-green
+```
+{% endtab %}
+{% endtabs %}
 

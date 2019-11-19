@@ -1,5 +1,5 @@
 ---
-description: Deploy in production
+description: Deploy in production/staging/dev/whatever..
 ---
 
 # Deploy

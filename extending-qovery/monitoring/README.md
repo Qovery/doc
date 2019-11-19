@@ -1,2 +1,2 @@
-# Monitoring / Notifications
+# Monitoring
 

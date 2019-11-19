@@ -129,7 +129,7 @@ To delete an instance, there are 2 ways to do it, depending on the scenario you 
 {% endhint %}
 
 {% hint style="success" %}
-**Backups will be kept for 1 month if you need to recover \(just in case** 😉**\)**
+**Backups will be kept for 1 month if you need to recover \(just in case**😉**\)**
 {% endhint %}
 
 ### Delete for all branches

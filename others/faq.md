@@ -22,6 +22,10 @@ Not yet, the product is currently in beta. We hope having a production ready ver
 
 Qovery rely on the excellent AWS \(Amazon Web Services\) infrastructure. Qovery is available in United States, Canada, South America, Europe, Africa, Asia. 
 
+## My application is not able to start, I've a timeout error
+
+This can happen if your application is too long to start. Please take a look on how to change the [boot time](../extending-qovery/monitoring/monitoring.md#change-start-time-delay).
+
 ## How can I contact you?
 
 Feel free to contact us by email at [**hello@qovery.com**](mailto:hello@qovery.com)\*\*\*\*

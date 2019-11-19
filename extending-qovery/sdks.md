@@ -7,14 +7,10 @@ description: List of all provided SDKs to easily access to Qovery resources
 Qovery provides SDKs for most popular languages. We aim to make the usage of any services in very easy and efficient way. 
 
 {% hint style="info" %}
-SDKs are just wrappers around Qovery API to get services \(databases, brokers..\) configuration information
+Qovery SDKs are wrappers around Qovery API to get services \(databases, brokers..\) configuration information
 {% endhint %}
 
-## Supported languages:
-
-{% hint style="info" %}
-If your language is not supported yet please use the "**Other**" way
-{% endhint %}
+Here is the list of supported languages:
 
 * [NodeJS](sdks.md#nodejs)
 * [Python](sdks.md#python)
@@ -23,9 +19,13 @@ If your language is not supported yet please use the "**Other**" way
 * [Go](sdks.md#go)
 * [Other](sdks.md#other)
 
+{% hint style="info" %}
+If your language is not supported yet please use the "**Other**" way
+{% endhint %}
+
 ## NodeJS
 
-### Minimum supported version
+Minimum supported version:
 
 * 6
 * 8
@@ -39,7 +39,7 @@ npm install qovery
 
 ## Python
 
-### Supported versions
+Supported versions:
 
 * 3.x
 
@@ -51,7 +51,7 @@ pip install qovery
 
 ## PHP
 
-### Supported versions
+Supported versions:
 
 * 5.6+
 
@@ -63,7 +63,7 @@ composer require qovery
 
 ## Java
 
-### Supported versions
+Supported versions:
 
 * 1.8+
 
@@ -89,7 +89,7 @@ compile group: 'com.qovery', name: 'client', version: '1.0.0'
 
 ## Go
 
-### Supported versions
+Supported versions:
 
 * 1.10+
 

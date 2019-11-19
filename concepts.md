@@ -4,7 +4,9 @@ description: Know more about how Qovery works
 
 # Concepts
 
+{% hint style="info" %}
 We recommend to start with the [Quickstart](quickstart/sign-up/) if you want to start quickly.
+{% endhint %}
 
 In this page, you'll find information explaining how [Qovery](https://www.qovery.com) works in details.
 
@@ -13,6 +15,10 @@ The main Qovery requirement is **Git**. As you \(developer\) are already using i
 The [Services](services-1/network/) and [Extending](extending-qovery/branches.md) Qovery sections covers those in more detail and can serve as both tutorial and quick-reference.
 
 Qovery supports the well known [**Docker**](https://www.docker.com/) **containers** technology and a number of different [Databases](services-1/databases/) and other services \(available in [Services](services-1/network/) section\).
+
+{% hint style="info" %}
+Databases are running on resilient and dedicated instances. [Learn more..](services-1/databases/)
+{% endhint %}
 
 Finally, Qovery is really fast to set up and perfectly integrate with your Git environment.
 

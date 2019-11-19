@@ -32,7 +32,7 @@ To enable Qovery caching, you simply have to add the "cache" line like:
 {% tabs %}
 {% tab title=".qovery.yml" %}
 ```yaml
-app:
+application:
   name: myapp
   private-port: 8080
   public-port: 443

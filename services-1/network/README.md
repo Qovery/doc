@@ -46,7 +46,7 @@ If you have multiple ports to privately expose to other applications of the same
 {% tabs %}
 {% tab title=".qovery.yml" %}
 ```yaml
-app:
+application:
   name: myapp
   private-port:
     - 8080
@@ -65,7 +65,7 @@ Then you have to declare in the Qovery configuration file \(.qovery.yaml\), the 
 {% tabs %}
 {% tab title=".qovery.yml" %}
 ```yaml
-app:
+application:
   name: myapp
   private-port: 8080
   public-port: 80
@@ -83,7 +83,7 @@ If you have multiple ports to publicly expose, you need to use "public-ports" in
 {% tabs %}
 {% tab title=".qovery.yml" %}
 ```yaml
-app:
+application:
   name: myapp
   private-port: [ 8080, 8081 ]
   public-ports:

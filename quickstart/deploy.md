@@ -32,5 +32,5 @@ As soon as you want to develop a new feature in your code, create a new branch!
 **A new branch will spawn a dedicated \(production replicated\) environment for you**
 {% endhint %}
 
-To know more about it, look at the [branch dedicated section](../extending-qovery/branches.md).
+To know more about it, look at the [branch dedicated page](../extending-qovery/branches.md).
 

@@ -22,7 +22,10 @@ Here are the advantages of enabling this feature:
 * \*\*\*\*[**Http/3**](https://en.wikipedia.org/wiki/HTTP/3) **with** [**QUIC**](https://en.wikipedia.org/wiki/QUIC) support
 * **IP Geolocation** with "CF-IPCountry” header to all requests
 
-The limitation is the **maximum upload size** per request limited to 100Mb.
+The limitation are:
+
+* you can't disable or customize one of the feature listed above
+* the **maximum upload size** per request limited to 100Mb
 
 To enable Qovery caching, you simply have to add the "cache" line like:
 

@@ -22,7 +22,7 @@ $ qovery status
 * Total rollback today:           : 0
 ```
 
-To know more about deployments process, you can read the [deployment strategies](../extending-qovery/deployments-strategies/) section.
+To know more about deployments process, you can read the [deployment strategies](../extending-qovery/deployments-strategies.md) section.
 
 ## Code a new feature
 

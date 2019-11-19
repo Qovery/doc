@@ -88,7 +88,7 @@ app:
 
 ## Blue/Green
 
-The blue/green strategy allows to quickly switch from one version to another in an instant. It starts as many new containers version \(green\) as there are already started old container version \(blue\). Then, when all the containers \(green\) are started, all the traffic is redirected at once to the green containers. The blue containers are then stopped.
+The blue/green strategy allows to **quickly switch from one version to another in an instant**. It starts as many new containers version \(green\) as there are already started old container version \(blue\). Then, when all the containers \(green\) are started, all the traffic is redirected at once to the green containers. The blue containers are then stopped.
 
 | Pros | Cons |
 | :--- | :--- |

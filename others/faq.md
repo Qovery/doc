@@ -10,6 +10,10 @@ A project is the site that you're working on. Each project can contain multiple 
 
 An environment is a standalone copy of your site, complete with code, data, and running services. The master branch is the production environment, while any other branch can be setup as an otherwise identical testing environment. 
 
+## Are databases backed-up?
+
+Yes, Qovery databases rely on Managed Services provided by AWS \(Amazon Web Services\). All databases are very resilient, highly available and are backed-up every 15 minutes.
+
 ## Is Qovery production ready?
 
 Not yet, the product is currently in beta. We hope having a production ready version for February 2020.

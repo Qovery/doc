@@ -47,7 +47,7 @@ You can change it with this parameter in your Qovery configuration file \(in sec
 {% tabs %}
 {% tab title=".qovery.yml" %}
 ```yaml
-app:
+application:
   name: myapp
   project: test
   start-time-delay: 60

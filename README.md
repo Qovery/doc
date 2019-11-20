@@ -6,7 +6,7 @@ description: Welcome to Qovery documentation!
 
 ![](.gitbook/assets/qovery-logo-01__-copy.png)
 
-\*\*\*\*[**Qovery**](https://www.qovery.com) **helps growing tech companies to accelerate and scale application development cycle with zero infrastructure management investment.**
+[**Qovery**](https://www.qovery.com) **helps growing tech companies to accelerate and scale application development cycle with zero infrastructure management investment.**
 
 ```python
 if (qovery.use == "first time") {

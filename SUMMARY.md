@@ -37,7 +37,7 @@
 * [Upgrade strategies](extending-qovery/deployments-strategies.md)
 * [Scheduled tasks](extending-qovery/scheduled-tasks.md)
 * [CI / Tests](extending-qovery/ci.md)
-* [Monitoring](extending-qovery/monitoring/README.md)
+* [Monitoring & Alerts](extending-qovery/monitoring/README.md)
   * [Health monitoring](extending-qovery/monitoring/monitoring.md)
   * [Observability](extending-qovery/monitoring/observability.md)
   * [Notifications](extending-qovery/monitoring/notifications.md)

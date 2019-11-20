@@ -6,9 +6,9 @@ description: Manages your environment workspaces
 
 As described in the [Quickstart](../quickstart/deploy.md#code-a-new-feature), **a new branch will spawn a dedicated \(production replicated\) environment for you**. Qovery is not limited to this and offers many more features. This page will explain them in details.
 
-## Restrict production replicated branches
+## Restrict production replicated environment
 
-For several reasons \(cost, real usage etc...\) you may not want a "production" like environment to be replicated as soon as a new branch is created. Or at list **you want to control** it.
+For several reasons \(cost, real usage etc...\) you may not want to have a "production-like" environment to be replicated, as soon as a new branch is created. Or at list **you want to control** it.
 
 What you need to do, is specifying in the Qovery configuration file, a list of name or regex you want to allow:
 

@@ -15,14 +15,12 @@ There is **nothing to do, as soon as you define a public port to your applicatio
 ```yaml
 application:
   name: myapp
+  project: test
   private-port: 8080
   public-port: 80
-  project: test
 ```
 {% endtab %}
 {% endtabs %}
-
-Then commit and push to apply this new change.
 
 To check the DNS name, you can do it through CLI:
 
@@ -55,10 +53,10 @@ Simply add "dns" line like this in the .qovery.yml file:
 ```yaml
 application:
   name: myapp
+  project: test
   dns: myapp.mydomain.name
   private-port: 8080
   public-port: 80
-  project: test
 ```
 {% endtab %}
 {% endtabs %}

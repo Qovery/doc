@@ -34,13 +34,11 @@ To enable Qovery caching, you simply have to add the "cache" line like:
 ```yaml
 application:
   name: myapp
+  project: test
+  cache: qovery
   private-port: 8080
   public-port: 443
-  cache: qovery
-  project: test
 ```
 {% endtab %}
 {% endtabs %}
-
-Then commit and push to apply this new change.
 

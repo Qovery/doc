@@ -26,7 +26,7 @@ You can either customize the speed and limits of the upgrade strategy in the Qov
 {% tabs %}
 {% tab title=".qovery.yml" %}
 ```yaml
-app:
+application:
   name: myapp
   project: test
   upgrade-strategy:
@@ -77,7 +77,7 @@ Here is the strategy configuration to set in the Qovery configuration file:
 {% tabs %}
 {% tab title=".qovery.yml" %}
 ```yaml
-app:
+application:
   name: myapp
   project: test
   upgrade-strategy:
@@ -100,7 +100,7 @@ Here is the strategy configuration to set in the Qovery configuration file:
 {% tabs %}
 {% tab title=".qovery.yml" %}
 ```yaml
-app:
+application:
   name: myapp
   project: test
   upgrade-strategy:

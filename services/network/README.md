@@ -29,15 +29,13 @@ To do so, in the Qovery configuration file \(.qovery.yml\) of the "AppA" applica
 ```yaml
 app:
   name: myapp
-  private-port: 8080
   project: test
+  private-port: 8080
 ```
 {% endtab %}
 {% endtabs %}
 
 Here the port "8080" will be securely exposed to other applications. In order to target "AppA" application, "AppB" application has to point to "AppA:8080".
-
-Then commit and push to apply this new change.
 
 ### Multiple private ports
 
@@ -48,10 +46,10 @@ If you have multiple ports to privately expose to other applications of the same
 ```yaml
 application:
   name: myapp
+  project: test
   private-port:
     - 8080
     - 8081
-  project: test
 ```
 {% endtab %}
 {% endtabs %}
@@ -67,14 +65,12 @@ Then you have to declare in the Qovery configuration file \(.qovery.yaml\), the 
 ```yaml
 application:
   name: myapp
+  project: test
   private-port: 8080
   public-port: 80
-  project: test
 ```
 {% endtab %}
 {% endtabs %}
-
-Then commit and push to apply this new change.
 
 ### Multiple public ports
 
@@ -85,6 +81,7 @@ If you have multiple ports to publicly expose, you need to use "public-ports" in
 ```yaml
 application:
   name: myapp
+  project: test
   private-port: [ 8080, 8081 ]
   public-ports:
     - public-port: 8080
@@ -93,7 +90,6 @@ application:
       private-port: 443
     - public-port: 8081
       private-port: 1234
-  project: test
 ```
 {% endtab %}
 {% endtabs %}
@@ -102,6 +98,4 @@ To explain it simply:
 
 * The port exposed 8080 on the private network, is publicly exposed to the port 80 and 443
 * The port exposed 8081 on the private network, is publicly exposed to the port 1234
-
-Then commit and push to apply this new change.
 

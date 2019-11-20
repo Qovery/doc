@@ -17,7 +17,7 @@ Once done, your Slack account is linked to your project. In order to receive not
 {% tabs %}
 {% tab title=".qovery.yml" %}
 ```yaml
-app:
+application:
   name: myapp
   project: test
   notification:
@@ -36,7 +36,7 @@ You can receive email notifications simply by configuring the receiver email in 
 {% tabs %}
 {% tab title=".qovery.yml" %}
 ```yaml
-app:
+application:
   name: myapp
   project: test
   notification:

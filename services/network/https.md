@@ -15,9 +15,9 @@ In order to get a SSL/TLS certificate, **you simply have to set the "public-port
 ```yaml
 application:
   name: myapp
+  project: test
   private-port: 8080
   public-port: 443
-  project: test
 ```
 {% endtab %}
 {% endtabs %}

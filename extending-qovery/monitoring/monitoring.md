@@ -2,14 +2,14 @@
 description: Regularly check your application health state
 ---
 
-# Monitoring
+# Health monitoring
 
-One of the Qovery goal is to ensure your application is working well and do what is necessary if it's not the case.
+One of the Qovery goal is to ensure your application is working well. Qovery manage the application failure!
 
-In order to **get a better monitoring for your application**, you have to provide a dedicated ready that understand well your application.
+In order to **get a better availability of your application**, we need to better monitor it. To do so, you have to provide a dedicated monitoring way that understand well your application.
 
 {% hint style="warning" %}
-**Qovery strongly advise to create a** [**Ready check**](monitoring.md#application-ready-check) **to enhance the support of your application**
+**Qovery strongly advise to create a** [**Ready check**](monitoring.md#application-ready-check) **to significantly enhance the availability of your application**
 {% endhint %}
 
 ## Standard check
@@ -20,7 +20,11 @@ The standard check is used to know when your application is started. For this, Q
 By default, Qovery **automatically** perform TCP checks to the declared [private port\(s\)](../../services/network/#private-access)
 {% endhint %}
 
-If no ports are declared, Qovery assume the application works until exit.
+{% hint style="info" %}
+Standard check is performed every 10 seconds
+{% endhint %}
+
+**If no ports are declared**, Qovery assume the application works until exit \(when the application PID dies\).
 
 ## Ready check
 
@@ -34,6 +38,10 @@ To use a Ready check, you have 2 solutions:
 
 1. \*\*\*\*[**HTTP check**](monitoring.md#http-check): simplest way to validate your application
 2. \*\*\*\*[**Command check**](monitoring.md#command-check): call a command/script embedded in your container
+
+{% hint style="info" %}
+Ready check is performed every 15 seconds
+{% endhint %}
 
 ### HTTP check
 
@@ -83,7 +91,7 @@ application:
 You may need to change the start time delay parameter if your application takes a long time to start.
 
 {% hint style="info" %}
-By default, application have 30s to boot
+**By default, application have 30 seconds to boot**
 {% endhint %}
 
 You can change it with this parameter in your Qovery configuration file \(in seconds\):

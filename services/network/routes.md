@@ -10,17 +10,17 @@ description: Add routes to your application
 {% tab title=".qovery.yml" %}
 ```yaml
 application:
-  name: myapp
+  name: my-backend-api
   project: test
 ...
-routes:
-  - router-name: router1
-    dns: myapplication.qovery.io
-    - application-name: app1
-      - path: /api/v1/\w+/user/.*
-      - path: /.*
-    - application-name: app2
-      - path: /service/.*
+routers:
+  - name: backend-router
+    dns: api.toto.io
+    routes:
+      - application-name: myapp
+        paths:
+          - /api/v1/user/\w+/.*
+          - /api/v1/stat/\w+/.*
 ```
 {% endtab %}
 {% endtabs %}

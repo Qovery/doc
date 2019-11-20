@@ -41,7 +41,7 @@ c. Custom Mode
 
 In your current directory, you now have a ".qovery.yml" file describing the desired configuration you've just asked for.
 
-If you want more services or get a fined grained configuration, you can take a look at the [Services section](../services-1/network/).
+If you want more services or get a fined grained configuration, you can take a look at the [Services section](../services/network/).
 
 
 

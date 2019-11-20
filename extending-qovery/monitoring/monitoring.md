@@ -17,7 +17,7 @@ In order to **get a better monitoring for your application**, you have to provid
 The standard check is the way for Qovery to know when your application is started. 
 
 {% hint style="success" %}
-By default, Qovery **automatically** perform TCP checks to the declared [private port\(s\)](../../services-1/network/#private-access)
+By default, Qovery **automatically** perform TCP checks to the declared [private port\(s\)](../../services/network/#private-access)
 {% endhint %}
 
 ## Application ready check

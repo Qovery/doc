@@ -12,12 +12,12 @@ In this page, you'll find information explaining how [Qovery](https://www.qovery
 
 The main Qovery requirement is **Git**. As you \(developer\) are already using it to manage your application code. Qovery project's configuration is driven entirely by YAML files into your Git repository.
 
-The [Services](services-1/network/) and [Extending](extending-qovery/branches.md) Qovery sections covers those in more detail and can serve as both tutorial and quick-reference.
+The [Services](services/network/) and [Extending](extending-qovery/branches.md) Qovery sections covers those in more detail and can serve as both tutorial and quick-reference.
 
-Qovery supports the well known [**Docker**](https://www.docker.com/) **containers** technology and a number of different [Databases](services-1/databases/) and other services \(available in [Services](services-1/network/) section\).
+Qovery supports the well known [**Docker**](https://www.docker.com/) **containers** technology and a number of different [Databases](services/databases/) and other services \(available in [Services](services/network/) section\).
 
 {% hint style="info" %}
-Databases are running on resilient and dedicated instances. [Learn more..](services-1/databases/)
+Databases are running on resilient and dedicated instances. [Learn more..](services/databases/)
 {% endhint %}
 
 Finally, Qovery is really fast to set up and perfectly integrate with your Git environment.

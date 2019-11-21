@@ -82,11 +82,11 @@ To access this information, you can use the CLI:
 $ qovery job status
 
 History of the last job status:
-* clean old data - 00:00:00 01/01/2020 : ok
-* delete all tmp files - 00:00:00 01/01/2020: ok
-* delete all tmp files - 22:00:00 31/12/2019: ok
-* delete all tmp files - 20:00:00 31/12/2019: ok
-* delete all tmp files - 18:00:00 31/12/2019: ok
+1. clean old data - 00:00:00 01/01/2020 : ok
+2. delete all tmp files - 00:00:00 01/01/2020: ok
+3. delete all tmp files - 22:00:00 31/12/2019: ok
+4. delete all tmp files - 20:00:00 31/12/2019: ok
+5. delete all tmp files - 18:00:00 31/12/2019: ok
 ...
 ```
 
@@ -97,6 +97,16 @@ If you configured the [notifications](monitoring/notifications.md), **you'll rec
 ## Jobs logs
 
 You can get the jobs logs status easily through the CLI or the Web interface.
+
+For the CLI, from the `qovery job status` command, just get the number 
+
+```bash
+$ qovery job log 1
+
+2019-11-21 13:31:59.423  INFO [core,3938bfb6adaa8a38,3938bfb6adaa8a38,true]
+2019-11-21 13:41:59.424  INFO [core,323e8fcef1d6c99b,323e8fcef1d6c99b,true]
+...
+```
 
 
 

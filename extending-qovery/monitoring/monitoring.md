@@ -36,14 +36,14 @@ As soon as the declared private ports are open, incoming traffic is routed to ap
 
 To use a Ready check, you have 2 solutions:
 
-1. \*\*\*\*[**HTTP check**](monitoring.md#http-check): simplest way to validate your application
+1. \*\*\*\*[**http check**](monitoring.md#http-check): simplest way to validate your application
 2. \*\*\*\*[**Command check**](monitoring.md#command-check): call a command/script embedded in your container
 
 {% hint style="info" %}
 Ready check is performed every 15 seconds
 {% endhint %}
 
-### HTTP check
+### http check
 
 If you already have a web service listening for your app, you can **add a ping url**. It should **return an http code**. Otherwize, in most of the languages, you can easily create one just for it.
 

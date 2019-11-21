@@ -2,7 +2,7 @@
 description: Add security to your website
 ---
 
-# Https \(SSL/TLS\)
+# https \(SSL/TLS\)
 
 The SSL/TLS certificates are mandatory to get a **secure** website.
 

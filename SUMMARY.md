@@ -16,7 +16,7 @@
 
 * [Network](services/network/README.md)
   * [DNS](services/network/dns.md)
-  * [Https \(SSL/TLS\)](services/network/https.md)
+  * [https \(SSL/TLS\)](services/network/https.md)
   * [Routes](services/network/routes.md)
   * [Caching \(CDN\)](services/network/caching.md)
 * [Databases](services/databases/README.md)
@@ -43,7 +43,7 @@
   * [Notifications](extending-qovery/monitoring/notifications.md)
   * [Alerting](extending-qovery/monitoring/alerting.md)
 * [Backups and Restore](extending-qovery/backups-and-restore.md)
-* [Scaling](extending-qovery/scaling.md)
+* [Auto-Scaling](extending-qovery/scaling.md)
 * [Examples](extending-qovery/examples.md)
 
 ## Administration

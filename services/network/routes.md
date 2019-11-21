@@ -6,9 +6,11 @@ description: Add routes to your application
 
 Qovery allows you to manage routing to your multiple applications.
 
-You have to create a router by simply naming it. You can optionaly request a dns name and associated routes paths to an application.
+Here is how to do it in the Qovery configuration file:
 
-Here is an example to add in your Qovery configuration file:
+1. Create a router and name it
+2. You can optionaly request a dns name
+3. Create associated routes paths to an application
 
 {% tabs %}
 {% tab title=".qovery.yml" %}
@@ -39,7 +41,7 @@ As you can see:
 Any other applications of the same project can create rules for any applications
 {% endhint %}
 
-{% hint style="warning" %}
-Qovery takes care about duplicated routes and deny the latest created one to avoid issues on the initial one
+{% hint style="success" %}
+Qovery takes care about duplicated routes and deny the latest created one to avoid unattended override
 {% endhint %}
 

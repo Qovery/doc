@@ -45,7 +45,7 @@ Ready check is performed every 15 seconds
 
 ### http check
 
-If you already have a web service listening for your app, you can **add a ping url**. It should **return an http code**. Otherwize, in most of the languages, you can easily create one just for it.
+If you already have a web service listening for your app, you can **add a ping url**. It should **return an** [**http code**](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes). Otherwize, in most of the languages, you can easily create one just for it.
 
 {% hint style="info" %}
 Port should be listen to all interfaces to be reachable. You don't have to declare any private or public access to get it work

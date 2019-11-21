@@ -27,15 +27,18 @@
   * [Memcached](services/databases/memcached.md)
   * [Elasticsearch](services/databases/elasticsearch.md)
 * [Brokers](services/brokers/README.md)
+  * [Untitled](services/brokers/untitled.md)
   * [RabbitMQ](services/brokers/rabbitmq.md)
   * [Kafka](services/brokers/kafka.md)
+* [Storage](services/storage/README.md)
+  * [Object storage \(S3\)](services/storage/s3.md)
 
 ## Extending Qovery
 
 * [Branches](extending-qovery/branches.md)
 * [SDKs](extending-qovery/sdks.md)
 * [Upgrade strategies](extending-qovery/deployments-strategies.md)
-* [Scheduled tasks](extending-qovery/scheduled-tasks.md)
+* [Scheduled jobs](extending-qovery/scheduled-tasks.md)
 * [CI / Tests](extending-qovery/ci.md)
 * [Monitoring & Alerts](extending-qovery/monitoring/README.md)
   * [Health monitoring](extending-qovery/monitoring/monitoring.md)

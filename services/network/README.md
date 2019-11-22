@@ -15,7 +15,7 @@ On your Qovery project, you can configure the way your applications are accessib
 This is the default behavior, **you don't have anything to do**.
 
 {% hint style="info" %}
-Nobody is able to talk to your application but it can talk to anyone
+Nobody is able to talk to your application. But your application can talk to anyone
 {% endhint %}
 
 Here App1 can't be contacted by App2, but App1 is able to use S3 and Internet.

@@ -12,7 +12,9 @@ On your Qovery project, you can configure the way your applications are accessib
 
 ## Closed Access
 
-This is the default behavior, **you don't have anything to do**.
+This is the default behavior, **you don't have anything to do**. No other application is able to talk to it but your application can talk to anyone.
+
+![](../../.gitbook/assets/qovery-closed-network.png)
 
 If your application **do not have to listen to a port** \(eg: pure computing or consuming external API or storing some content in [S3](../storage/s3.md)...\) you may not need to expose any kind of port. 
 

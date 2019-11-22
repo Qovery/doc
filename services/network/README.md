@@ -30,7 +30,7 @@ In the case you have **several applications running in the same Qovery project**
 
 ![](../../.gitbook/assets/qovery-private-network.png)
 
-For example, your application called "App2" needs to talk to another running application called "App1". The "App1" application has to expose its running port.
+For example, your application "App2" needs to talk to another running application "App1". The "App1" application has to expose its own running port.
 
 To do so, in the Qovery configuration file \(.qovery.yml\) of the "App1" application, add the "private-port" line:
 

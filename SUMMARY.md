@@ -31,7 +31,6 @@
   * [Kafka](services/brokers/kafka.md)
 * [Storages](services/storage/README.md)
   * [Object storage \(S3\)](services/storage/s3.md)
-  * [NFS](services/storage/nfs.md)
 
 ## Extending Qovery
 

@@ -8,8 +8,6 @@ Qovery provides several kind of storage depending on your needs.
 
 {% page-ref page="s3.md" %}
 
-{% page-ref page="nfs.md" %}
-
 
 
 

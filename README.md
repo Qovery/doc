@@ -1,5 +1,5 @@
 ---
-description: Welcome to Qovery documentation!
+description: Welcome to the official Qovery documentation!
 ---
 
 # Welcome to Qovery

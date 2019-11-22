@@ -38,6 +38,7 @@
   * [OCFS2](services/storage/ocfs2.md)
   * [GFS](services/storage/gfs.md)
   * [CephFS](services/storage/cephfs.md)
+  * [RoroFS](services/storage/rorofs.md)
 
 ## Extending Qovery
 

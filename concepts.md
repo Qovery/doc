@@ -72,3 +72,7 @@ Qovery relies on AWS to run components of its own infrastructure.
 
 Qovery manages the CI/CD by its own and uses AWS services for the [Network](services/network/), [Databases](services/databases/), [Brokers](services/brokers/) and [Storage](services/storage/) part.
 
+{% hint style="success" %}
+Our clients benefits of the best guaranties in term of stability, availability and scalability
+{% endhint %}
+

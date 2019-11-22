@@ -26,6 +26,10 @@ No Dockerfile will be generated if one already exists
 
 ## Define the build and run process
 
+We'll need to first build the application and then create a dedicated minimal container with the application embedded.
+
+![](../.gitbook/assets/q-quickstart-build.png)
+
 Here is an example of a Dockerfile to build a Java application:
 
 {% tabs %}
@@ -74,7 +78,7 @@ CMD exec java $JAVA_OPTS -jar /app.jar
 You can validate your Dockerfile by running a build on your machine.
 
 {% hint style="info" %}
-You need to have Docker installed on your computer to validate the build
+You need to have [Docker binary installed](https://docs.docker.com/install/) on your computer to validate the build
 {% endhint %}
 
 You simply have to run:

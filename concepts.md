@@ -8,7 +8,7 @@ description: Know more about how Qovery works
 We recommend to start with the [Quickstart](quickstart/sign-up/) if you want to start quickly.
 {% endhint %}
 
-In this page, you'll find information explaining how [Qovery](https://www.qovery.com) works in details.
+In this page, you'll find information explaining how [Qovery](https://www.qovery.com) works.
 
 The main Qovery requirement is **Git**. As you \(developer\) are already using it to manage your application code. Qovery project's configuration is driven entirely by YAML files into your Git repository.
 
@@ -34,7 +34,7 @@ Qovery automatically manages everything your application needs in order to run. 
 
 ### Simple Declarative Infrastructure <a id="infrastructure-as-code"></a>
 
-Qovery covers not only all of your hosting needs but also **most of your DevOps needs**. It covers the application life-cycle **from development to production stage**. Ensuring as well the application is always healthy and **scales it automatically** when more workload come.
+Qovery not only covers all of your hosting needs but also **most of your DevOps needs**. It covers the application life-cycle **from development to production stage**. Ensuring as well the application is always healthy and **scales it automatically** when more workload come.
 
 You only need to:
 
@@ -44,7 +44,7 @@ You only need to:
 4. Commit it to Git
 5. Push it
 
-That's it, **you don't need to setup anything manually**. Everything like the web server, the database, the CDN, the object storage etc... will be setup and available automatically.
+That's it, **you don't need to setup anything manually**. Everything like the web server, the database, the CDN, the object storage etc... declared in the Qovery configuration file, will be setup and available automatically.
 
 ### Branches
 
@@ -73,6 +73,6 @@ Qovery relies on AWS to run components of its own infrastructure.
 Qovery manages the CI/CD by its own and uses AWS services for the [Network](services/network/), [Databases](services/databases/), [Brokers](services/brokers/) and [Storage](services/storage/) part.
 
 {% hint style="success" %}
-Our clients benefits of the best guaranties in term of stability, availability and scalability
+**Our clients benefits of the best guaranties in term of stability, availability and scalability**
 {% endhint %}
 

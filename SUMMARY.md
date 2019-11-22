@@ -29,7 +29,7 @@
 * [Brokers](services/brokers/README.md)
   * [RabbitMQ](services/brokers/rabbitmq.md)
   * [Kafka](services/brokers/kafka.md)
-* [Storage](services/storage/README.md)
+* [Storages](services/storage/README.md)
   * [Object storage \(S3\)](services/storage/s3.md)
 
 ## Extending Qovery

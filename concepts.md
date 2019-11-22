@@ -66,5 +66,9 @@ A dedicated generated URL will be provided to those specific branches. This to g
 
 Qovery respects the structure of branches. It's entirely up to you.
 
-## TODO: TECH STACK \(HOSTING BASED\)
+## Technical stack \(hosting\)
+
+Qovery relies on AWS to run components of its own infrastructure.
+
+Qovery manages the CI/CD by its own and uses AWS services for the [Network](services/network/), [Databases](services/databases/), [Brokers](services/brokers/) and [Storage](services/storage/) part.
 

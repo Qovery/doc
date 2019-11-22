@@ -146,11 +146,11 @@ If you want to **delete** a Memcached instance **with its data**. You simply hav
 ```yaml
 application:
   ...
-  databases:
-    - type: Memcached
-      name: my-super-instance
-      version: 11.4
-      size: 2GiB
+databases:
+  - type: Memcached
+    name: my-super-instance
+    version: 11.4
+    size: 2GiB
 ```
 {% endtab %}
 {% endtabs %}

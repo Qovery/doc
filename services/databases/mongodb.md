@@ -141,11 +141,11 @@ If you want to **delete** a MongoDB instance with **all databases and data insid
 ```yaml
 application:
   ...
-  databases:
-    - type: mongodb
-      name: my-super-instance
-      version: 11.4
-      size: 20GiB
+databases:
+  - type: mongodb
+    name: my-super-instance
+    version: 11.4
+    size: 20GiB
 ```
 {% endtab %}
 {% endtabs %}

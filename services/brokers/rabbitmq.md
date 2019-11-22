@@ -140,11 +140,11 @@ If you want to **delete** a RabbitMQ instance with **data inside** it. You simpl
 ```yaml
 application:
   ...
-  databases:
-    - type: rabbitmq
-      name: my-super-instance
-      version: 11.4
-      size: 20GiB
+brokers:
+  - type: rabbitmq
+    name: my-super-instance
+    version: 11.4
+    size: 20GiB
 ```
 {% endtab %}
 {% endtabs %}

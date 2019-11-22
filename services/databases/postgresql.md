@@ -141,11 +141,11 @@ If you want to **delete** a PostgreSQL instance with **all databases and data in
 ```yaml
 application:
   ...
-  databases:
-    - type: postgresql
-      name: my-super-instance
-      version: 11.4
-      size: 20GiB
+databases:
+  - type: postgresql
+    name: my-super-instance
+    version: 11.4
+    size: 20GiB
 ```
 {% endtab %}
 {% endtabs %}

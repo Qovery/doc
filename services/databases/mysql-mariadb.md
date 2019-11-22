@@ -142,11 +142,11 @@ If you want to **delete** a MySQL instance with **all databases and data inside*
 ```yaml
 application:
   ...
-  databases:
-    - type: mysql
-      name: my-super-instance
-      version: 11.4
-      size: 20GiB
+databases:
+  - type: mysql
+    name: my-super-instance
+    version: 11.4
+    size: 20GiB
 ```
 {% endtab %}
 {% endtabs %}

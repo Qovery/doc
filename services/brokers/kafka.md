@@ -142,11 +142,11 @@ If you want to **delete** a Kafka instance with **data inside** it. You simply h
 ```yaml
 application:
   ...
-  databases:
-    - type: kafka
-      name: my-super-instance
-      version: 11.4
-      size: 20GiB
+brokers:
+  - type: kafka
+    name: my-super-instance
+    version: 11.4
+    size: 20GiB
 ```
 {% endtab %}
 {% endtabs %}

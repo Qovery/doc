@@ -63,7 +63,7 @@ CMD exec java $JAVA_OPTS -jar /app.jar
 {% endtab %}
 {% endtabs %}
 
-1. **Build**: The first part \(from the first line to 15\) represent the dependencies and requirements in order to **build the application**. The result of this compilation is called an **artifact** available in the `/app/build/libs/app.jar` directory.
+1. **Build**: The first part \(from the first line to 15\) represent the dependencies and requirements in order to **build the application**. The application final form is called an **artifact** available in the `/app/build/libs/app.jar` directory.
 2. **Run**: The second part \(from line 18 to last\) represent the content of the container that will **run in production** \([or for a specific branch](../extending-qovery/branches.md)\). It retrieves the artifact from the build part and store it in the container.
 
 {% hint style="danger" %}

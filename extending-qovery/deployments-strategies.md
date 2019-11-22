@@ -1,5 +1,5 @@
 ---
-description: Choose the way you want your application will be upgraded
+description: Select the strategy you want to upgrade your application
 ---
 
 # Upgrade strategies

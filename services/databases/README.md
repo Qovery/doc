@@ -1,5 +1,5 @@
 ---
-description: All SQL and NoSQL databases provided by Qovery
+description: SQL and NoSQL databases provided by Qovery
 ---
 
 # Databases

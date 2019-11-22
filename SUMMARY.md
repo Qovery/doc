@@ -27,7 +27,6 @@
   * [Memcached](services/databases/memcached.md)
   * [Elasticsearch](services/databases/elasticsearch.md)
 * [Brokers](services/brokers/README.md)
-  * [Untitled](services/brokers/untitled.md)
   * [RabbitMQ](services/brokers/rabbitmq.md)
   * [Kafka](services/brokers/kafka.md)
 * [Storage](services/storage/README.md)

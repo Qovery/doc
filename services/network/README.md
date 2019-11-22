@@ -12,7 +12,13 @@ On your Qovery project, you can configure the way your applications are accessib
 
 ## Closed Access
 
-This is the default behavior, **you don't have anything to do**. No other application is able to talk to it but your application can talk to anyone.
+This is the default behavior, **you don't have anything to do**.
+
+{% hint style="info" %}
+Nobody is able to talk to your application but it can talk to anyone
+{% endhint %}
+
+Here App1 can't be contacted by App2, but App1 is able to use S3 and Internet.
 
 ![](../../.gitbook/assets/qovery-closed-network.png)
 
@@ -22,9 +28,11 @@ If your application **do not have to listen to a port** \(eg: pure computing or 
 
 In the case you have **several applications running in the same Qovery project**, you may need to have applications talking together in a **private, dedicated and secure area**.
 
-For example, your application called "AppB" needs to talk to another running application called "AppA". The "AppA" application has to expose its running port.
+![](../../.gitbook/assets/qovery-private-network.png)
 
-To do so, in the Qovery configuration file \(.qovery.yml\) of the "AppA" application, add the "private-port" line:
+For example, your application called "App2" needs to talk to another running application called "App1". The "App1" application has to expose its running port.
+
+To do so, in the Qovery configuration file \(.qovery.yml\) of the "App1" application, add the "private-port" line:
 
 {% tabs %}
 {% tab title=".qovery.yml" %}
@@ -37,7 +45,7 @@ app:
 {% endtab %}
 {% endtabs %}
 
-Here the port "8080" will be securely exposed to other applications. In order to target "AppA" application, "AppB" application has to point to "AppA:8080".
+Here the port "8080" will be securely exposed to other applications. In order to target "App1" application, "App2" application has to point to "App1:8080".
 
 ### Multiple private ports
 
@@ -59,6 +67,8 @@ application:
 ## Public Access
 
 To allow public access on a specific application port, you have to first expose the port as described in the "[Private Access](./#private-access)" section of this page.
+
+![](../../.gitbook/assets/qovery-pulic-network.png)
 
 Then you have to declare in the Qovery configuration file \(.qovery.yaml\), the desired port for external access \(here 80, the http port\):
 

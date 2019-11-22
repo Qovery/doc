@@ -1,5 +1,5 @@
 ---
-description: Share filesystem content across all your container
+description: Shared filesystem content across your containers
 ---
 
 # NFS
@@ -19,7 +19,7 @@ application:
   nfs:
     - name: my-shared-data
       mount-point: /mnt/data
-  
+...
 storage:
   - name: my-shared-data
     type: nfs

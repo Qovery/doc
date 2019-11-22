@@ -6,9 +6,11 @@ description: Storages services provided by Qovery
 
 Qovery provides several kind of storage depending on your needs.
 
+{% page-ref page="s3.md" %}
+
 {% page-ref page="nfs.md" %}
 
-{% page-ref page="s3.md" %}
+
 
 
 

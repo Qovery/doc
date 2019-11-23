@@ -31,14 +31,6 @@
   * [Kafka](services/brokers/kafka.md)
 * [Storages](services/storage/README.md)
   * [Object storage \(S3\)](services/storage/s3.md)
-  * [Samba](services/storage/samba.md)
-  * [NFS](services/storage/nfs.md)
-  * [iSCSI](services/storage/iscsi.md)
-  * [DRBD](services/storage/drbd.md)
-  * [OCFS2](services/storage/ocfs2.md)
-  * [GFS](services/storage/gfs.md)
-  * [CephFS](services/storage/cephfs.md)
-  * [RoroFS](services/storage/rorofs.md)
 
 ## Extending Qovery
 

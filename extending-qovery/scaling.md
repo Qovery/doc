@@ -6,7 +6,7 @@ description: Your application automatically scale depending on their performance
 
 **Managing your application resources** when you're in a development phase, **is never an easy part**. Even more, most of the time it's **nearly impossible for developers** to exactly know how resources will be used.
 
-In traditional medium/large industries, Ops/System Administrators/DevOps are requiring those information to **provision resources for production usage**. This to ensure the requested resources are aligned with the available resources and financially planned projects \(also called [Capacity planing](https://en.wikipedia.org/wiki/Capacity_management)\). This is ideal for companies financial planning, but **this is a nightmare and a waste of time for developers and companies.**
+In traditional medium/large industries, Ops/System Administrators/DevOps are requiring those information to **provision resources for production usage**. This to ensure the requested resources are aligned with the available resources and financially planned projects \(also called [Capacity planing](https://en.wikipedia.org/wiki/Capacity_management)\). This is ideal for companies financial planning, but **this is a nightmare and a waste of time for developers \(and so the companies\).**
 
 We decided to **simplify** this, by managing resources per project and not per application.
 

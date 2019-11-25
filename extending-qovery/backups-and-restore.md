@@ -14,7 +14,7 @@ When containers' applications are successfully built, **all containers are kept 
 
 ### Services
 
-Please take a look at the desired service to know how they are backup and how you can change the frequency.
+Please take a look at the desired service to know how they are backup.
 
 ## Restore
 

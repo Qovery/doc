@@ -9,7 +9,7 @@ One of the Qovery goal is to ensure your application is working well. Qovery man
 In order to **get a better availability of your application**, we need to better monitor it. To do so, you have to provide a dedicated monitoring way that understand well your application.
 
 {% hint style="warning" %}
-**Qovery strongly advise to create a** [**Ready check**](monitoring.md#application-ready-check) **to significantly enhance the availability of your application**
+**Qovery strongly advise to create a** [**Ready check**](monitoring.md#application-ready-check) **to significantly enhance the availability and reliability of your application**
 {% endhint %}
 
 ## Standard check
@@ -45,7 +45,7 @@ Ready check is performed every 15 seconds
 
 ### http check
 
-If you already have a web service listening for your app, you can **add a ping url**. It should **return an** [**http code**](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes). Otherwize, in most of the languages, you can easily create one just for it.
+If you already have a web service listening for your app, you can **add a ping url**. It should **return an** [**http code**](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes). Otherwise, in most of the languages, you can easily create one just for it.
 
 {% hint style="info" %}
 Port should be listen to all interfaces to be reachable. You don't have to declare any private or public access to get it work

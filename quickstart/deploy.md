@@ -6,6 +6,10 @@ description: Deploy in production/staging/dev/whatever..
 
 Are you ready to deploy? **Simply push your git repository, that's it**!!!
 
+{% hint style="info" %}
+**We strongly encourage you to always dedicate a commit for Qovery configuration change \(in order to simplify possible rollback\)**
+{% endhint %}
+
 ## Deployment status
 
 You'll be able to watch the activity with Qovery CLI or from the Web interface.

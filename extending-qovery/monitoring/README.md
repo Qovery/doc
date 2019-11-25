@@ -8,7 +8,7 @@ description: Keep control of your applications and be aware of their performance
 
 However **deploying all the required tools** to get relevant information is something **complex and long to setup**. That's why **Qovery automate all this part** for you and brings useful information about your applications and dependencies.
 
-You'll find in the Health Monitoring section, the ways to **enhance your application availability**:
+You'll find in the Health Monitoring section, the ways to **enhance your application availability and reliability**:
 
 {% page-ref page="monitoring.md" %}
 

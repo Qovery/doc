@@ -10,6 +10,9 @@ In order to get a quick Qovery configuration file, you can use the CLI to genera
 $ qovery init
 
 ✓ Dockerfile detected in your root directory
+
+➤ Enter the project name: my-project
+
 ➤ What port number your application ir running on? (Hit enter if none): 8080
 
 ➤ Is this port accessible from other applications of the same project? (y/n): y

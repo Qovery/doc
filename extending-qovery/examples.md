@@ -16,8 +16,8 @@ In this example, we need to go fast and quickly deploy an application.
 
 We'll start new project which needs to have:
 
-* 1 application \(port 8080\)
-* Being exposed through internet on https \(port 443\)
+* 1 application \(private port 8080\)
+* Being exposed through internet on https \(public port 443\)
 * 1 database \(PostgreSQL\)
 * Store images on an object storage \(S3\)
 
@@ -61,7 +61,7 @@ c. Custom Mode
 
 If you do not already have your Dockerfile, one will be suggested according to your repository content.
 
-Now that you have your application and database declared in your Qovery configure file. 
+Now that you have your application and database declared in your Qovery configuration file. 
 
 Now we need to add an S3 storage. Your full Qovery configuration will look like this:
 

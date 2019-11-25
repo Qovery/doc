@@ -58,5 +58,4 @@
 ## Others
 
 * [FAQ](others/faq.md)
-* [Troubleshooting](others/troubleshooting.md)
 

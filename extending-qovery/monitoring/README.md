@@ -16,11 +16,7 @@ To **observe your application** performances and availability:
 
 {% page-ref page="observability.md" %}
 
-Configure the way you want to be notified:
-
-{% page-ref page="../../administration/integrations/notifications.md" %}
-
-To **be alerted on important events**:
+Configure the waTo **be alerted on important events**:
 
 {% page-ref page="alerting.md" %}
 

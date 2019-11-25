@@ -9,9 +9,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Check broken links
+    - name: Install broken-link-checker
       run: |
         sudo apt-get update
-        sudo apt-get-y install npm
+        sudo apt-get -y install npm
         npm install broken-link-checker -g
+    - name: Check broken links
+      run: |
         blc -g -r https://docs.qovery.com

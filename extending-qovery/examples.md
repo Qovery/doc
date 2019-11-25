@@ -89,5 +89,16 @@ storage:
 {% endtab %}
 {% endtabs %}
 
-Then you have to add to your 
+Then you have to add in your code the Qovery SDK to easily manage the credentials part.
+
+Finally, once commited and pushed, you can check the status and retrieve the URL like this:
+
+```bash
+$ qovery status
+
+* External DNS name        : <myapplicationid>.qovery.io
+* SSL/TLS enabled          : https://<myapplicationid>.qovery.io
+* Current deployed version : 7b3aeb5 (Marty McFly) / 2014-05-13 02:56
+...
+```
 

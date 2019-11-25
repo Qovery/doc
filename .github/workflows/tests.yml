@@ -4,16 +4,17 @@ on: [push]
 
 jobs:
   build:
-
-    runs-on: ubuntu-latest
-
+    strategy:
+      matrix:
+        node-version: [12]
+        os: [ubuntu-latest]
     steps:
     - uses: actions/checkout@v1
-    - name: Install broken-link-checker
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: npm install, build, and test
       run: |
-        sudo apt-get update
-        sudo apt-get -y install npm
-        sudo npm install broken-link-checker -g
-    - name: Check broken links
-      run: |
+        npm install broken-link-checker -g
         blc -g --filter-level 2 -r https://docs.qovery.com

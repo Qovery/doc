@@ -91,7 +91,7 @@ History of the last job status:
 ```
 
 {% hint style="success" %}
-If you configured the [notifications](monitoring/notifications.md), **you'll receive alerts when a job fail**
+If you configured the [notifications](../administration/integrations/notifications.md), **you'll receive alerts when a job fail**
 {% endhint %}
 
 ## Jobs logs

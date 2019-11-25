@@ -8,7 +8,7 @@ We give you the possibility to be alerted on specific events.
 
 ## Configuration
 
-In order to configure alerting on specific events, you first have to get your [Notifications](notifications.md) configured.
+In order to configure alerting on specific events, you first have to get your [Notifications](../../administration/integrations/notifications.md) configured.
 
 ## Events list
 

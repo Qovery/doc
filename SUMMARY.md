@@ -42,7 +42,6 @@
 * [Monitoring & Alerts](extending-qovery/monitoring/README.md)
   * [Health monitoring](extending-qovery/monitoring/monitoring.md)
   * [Observability](extending-qovery/monitoring/observability.md)
-  * [Notifications](extending-qovery/monitoring/notifications.md)
   * [Alerting](extending-qovery/monitoring/alerting.md)
 * [Backups and Restore](extending-qovery/backups-and-restore.md)
 * [Auto-Scaling](extending-qovery/scaling.md)
@@ -52,7 +51,9 @@
 
 * [Management interface](administration/management-interface/README.md)
   * [2-Step Authentication](administration/management-interface/2-step-authentication.md)
-* [Integrations](administration/integrations.md)
+* [Integrations](administration/integrations/README.md)
+  * [Git](administration/integrations/git.md)
+  * [Notifications](administration/integrations/notifications.md)
 
 ## Security And Compliance
 

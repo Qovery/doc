@@ -147,8 +147,8 @@ If you want to **delete** a Memcached instance **with its data**. You simply hav
 application:
   ...
 databases:
-  - type: Memcached
-    name: my-super-instance
+  - name: my-super-instance
+    type: memcached
     version: 11.4
     size: 2GiB
 ```
@@ -160,4 +160,53 @@ Once done, commit and push to apply the changes.
 ### Delete for one branch
 
 Once you've finished to work on a feature branch, simply delete the branch and **the instance will automatically be delete** as well.
+
+## Backups
+
+{% hint style="success" %}
+By default, backups are made every day between 1h and 5h.
+{% endhint %}
+
+You can change the window very easily \(use 24h format\):
+
+{% tabs %}
+{% tab title=".qovery.yml" %}
+```yaml
+application:
+  ...
+databases:
+  - name: my-super-instance
+    type: memcached
+    backup-window: 21-23
+```
+{% endtab %}
+{% endtabs %}
+
+As described here, the backup will occur between 9PM and 11PM.
+
+## Restore
+
+You can restore through the CLI or the web interface.
+
+From the CLI:
+
+```bash
+$ qovery restore <instance-name>
+
+➤ Choose the version you want to restore:
+  25/11/2019 - 22h
+  24/11/2019 - 22h
+> 23/11/2019 - 22h
+  22/11/2019 - 22h
+  21/11/2019 - 22h
+  
+✓ You're going to restore this backup: 23/11/2019 - 22h
+
+➤ Do you want to perform a backup before restoring? (y/n): y
+
+➤ Please confirm by typing the instance name: my-super-instance
+
+✓ Backup successfuly created
+✓ Backup as successfuly been restored (23/11/2019 - 22h)
+```
 

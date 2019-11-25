@@ -55,10 +55,6 @@
   * [Git](administration/integrations/git.md)
   * [Notifications](administration/integrations/notifications.md)
 
-## Security And Compliance
-
-* [GDPR](security-and-compliance/untitled.md)
-
 ## Others
 
 * [FAQ](others/faq.md)

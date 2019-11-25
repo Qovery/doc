@@ -15,7 +15,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm install, build, and test
+    - name: Install broken-link-checker
       run: |
         npm install broken-link-checker -g
+        blc -g --filter-level 2 -r https://docs.qovery.com
+    - name: Check broken links
+      run: |
         blc -g --filter-level 2 -r https://docs.qovery.com

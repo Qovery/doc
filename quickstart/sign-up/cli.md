@@ -48,5 +48,13 @@ To sign up using Qovery CLI, it's simple. Run this command:
 qovery connect
 ```
 
-You'll get a window open on your browser to link with your GitHub account. 
+You'll get a window open on your browser to link with your GitHub account.
+
+## Help
+
+To list all available commands
+
+```text
+qovery help
+```
 

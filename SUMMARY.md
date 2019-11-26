@@ -46,7 +46,9 @@
 * [Backups and Restore](extending-qovery/backups-and-restore.md)
 * [Auto-Scaling](extending-qovery/scaling.md)
 * [Examples](extending-qovery/examples/README.md)
-  * [Simple application with database](extending-qovery/examples/simple-application-with-database.md)
+  * [Simple application](extending-qovery/examples/simple-application-with-database.md)
+  * [Micro-services application](extending-qovery/examples/micro-services-application.md)
+  * [Developing new feature with live data](extending-qovery/examples/developing-new-feature-with-live-data.md)
 
 ## Administration
 

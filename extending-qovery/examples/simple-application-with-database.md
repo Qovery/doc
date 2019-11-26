@@ -1,6 +1,6 @@
-# Simple application with database
+# Simple application
 
-## Simple application with database
+## Simple application
 
 In this example, we need to go fast and quickly deploy an application.
 

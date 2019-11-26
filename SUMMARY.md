@@ -45,7 +45,8 @@
   * [Alerting](extending-qovery/monitoring/alerting.md)
 * [Backups and Restore](extending-qovery/backups-and-restore.md)
 * [Auto-Scaling](extending-qovery/scaling.md)
-* [Examples](extending-qovery/examples.md)
+* [Examples](extending-qovery/examples/README.md)
+  * [Simple application with database](extending-qovery/examples/simple-application-with-database.md)
 
 ## Administration
 

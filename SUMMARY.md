@@ -2,6 +2,7 @@
 
 * [Welcome to Qovery](README.md)
 * [Concepts](concepts.md)
+* [Pricing](pricing.md)
 
 ## Quickstart
 

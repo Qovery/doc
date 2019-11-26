@@ -4,10 +4,10 @@ description: List of all provided SDKs to easily access to Qovery resources
 
 # SDKs
 
-Qovery provides SDKs for most popular languages. We aim to make the usage of any services in very easy and efficient way. 
+Qovery provides SDKs for most popular languages. The end goal of SDKs is to make the usage of Qovery services very easy for your favorite language. 
 
 {% hint style="info" %}
-Qovery SDKs are wrappers around Qovery API to get services \(databases, brokers..\) configuration information
+Qovery SDKs are wrappers around Qovery API to get services \(databases, brokers..\) configuration information like credentials, host, port and much more.
 {% endhint %}
 
 Here is the list of supported languages:

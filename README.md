@@ -16,7 +16,7 @@ if (qovery.use == "first time") {
 }
 ```
 
-If you want the **fastest way** to get your application built and deployed, start with the [Quickstart](quickstart/sign-up/) and it will be done in **less than 5 min**.
+If you want the **fastest way** to get your application built and deployed, start with the [Quickstart](quickstart/sign-up.md) and it will be done in **less than 5 min**.
 
 **To know more** about supported Qovery services, you can read the [Services](services/network/) section. **To go further** with what can Qovery offers, read the [Extending Qovery](extending-qovery/branches.md) section.
 

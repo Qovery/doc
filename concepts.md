@@ -5,7 +5,7 @@ description: Know more about how Qovery works
 # Concepts
 
 {% hint style="info" %}
-We recommend to start with the [Quickstart](quickstart/sign-up/) if you want to start quickly.
+We recommend to start with the [Quickstart](quickstart/sign-up.md) if you want to start quickly.
 {% endhint %}
 
 In this page, you'll find information explaining how [Qovery](https://www.qovery.com) works.

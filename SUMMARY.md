@@ -6,9 +6,7 @@
 
 ## Quickstart
 
-* [Sign Up](quickstart/sign-up/README.md)
-  * [CLI](quickstart/sign-up/cli.md)
-  * [Web interface](quickstart/sign-up/webui.md)
+* [Sign Up](quickstart/sign-up.md)
 * [Build container](quickstart/build.md)
 * [Initialization](quickstart/qovery-config.md)
 * [Deploy](quickstart/deploy.md)

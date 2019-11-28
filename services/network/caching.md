@@ -24,8 +24,8 @@ Here are the advantages of enabling this feature:
 
 The limitation are:
 
-* you can't disable or customize one of the feature listed above
-* the **maximum upload size** per request limited to 100Mb
+* you can't disable or customise one of the feature listed above
+* the **maximum upload size** per request limited to **100Mb**
 
 To enable Qovery caching, you simply have to add the "cache" line like:
 

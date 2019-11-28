@@ -4,7 +4,13 @@ description: Deploy in production/staging/dev/whatever..
 
 # Deploy
 
-Are you ready to deploy? **Simply push your git repository, that's it**!!!
+Are you ready to deploy?
+
+```bash
+git push
+```
+
+ That's it!!!
 
 {% hint style="info" %}
 **We strongly encourage you to always dedicate a commit for Qovery configuration change \(in order to simplify possible rollback\)**

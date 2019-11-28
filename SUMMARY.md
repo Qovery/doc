@@ -10,7 +10,7 @@
   * [CLI](quickstart/sign-up/cli.md)
   * [Web interface](quickstart/sign-up/webui.md)
 * [Build container](quickstart/build.md)
-* [Qovery init](quickstart/qovery-config.md)
+* [Initialization](quickstart/qovery-config.md)
 * [Deploy](quickstart/deploy.md)
 
 ## Services

@@ -2,12 +2,12 @@
 description: Qovery configuration initialization
 ---
 
-# Qovery init
+# Initialization
 
 In order to get a quick Qovery configuration file, you can use the CLI to generate one:
 
 ```text
-$ qovery init
+$ qovery wizard
 
 ✓ Dockerfile detected in your root directory
 
@@ -35,7 +35,7 @@ c. Custom Mode
 
 ➤ Do you need any other database? (y/n): n
 
-➤ Do you need any borker? (y/n): n
+➤ Do you need any broker? (y/n): n
 
 ✓ Your Qovery configuration file has been successfuly created (.qovery.yml)!
 

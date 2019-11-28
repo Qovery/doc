@@ -33,6 +33,7 @@
 
 ## Extending Qovery
 
+* [Dockerfile](extending-qovery/dockerfile.md)
 * [Branches](extending-qovery/branches.md)
 * [SDKs](extending-qovery/sdks.md)
 * [Upgrade strategies](extending-qovery/deployments-strategies.md)

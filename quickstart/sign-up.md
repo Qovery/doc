@@ -4,7 +4,7 @@ description: Qovery Sigh Up
 
 # Sign Up
 
-Qovery Sign Up is the first step before using it.
+**Qovery Sign Up is the first step before using it.**
 
 To do so, you have 2 options, select the one you're more familiar with:
 

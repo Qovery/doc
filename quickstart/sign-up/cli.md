@@ -58,3 +58,5 @@ To list all available commands
 qovery help
 ```
 
+CLI [source code](https://github.com/Qovery/qovery-cli) is available on github
+

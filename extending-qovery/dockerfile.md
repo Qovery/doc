@@ -24,8 +24,10 @@ FROM adoptopenjdk/openjdk8:alpine AS build
 RUN apk update && apk upgrade && apk add bash
 
 # Add your specifc dependencies
-RUN cd /usr/local/bin && wget https://services.gradle.org/distributions/gradle-5.6-all.zip && \
-/usr/bin/unzip gradle-5.6-all.zip && ln -s /usr/local/bin/gradle-5.6/bin/gradle /usr/bin/gradle
+RUN cd /usr/local/bin && \
+    wget https://services.gradle.org/distributions/gradle-5.6-all.zip && \
+    /usr/bin/unzip gradle-5.6-all.zip && \
+    ln -s /usr/local/bin/gradle-5.6/bin/gradle /usr/bin/gradle
 
 # Copy your code in the build container and move into it
 RUN mkdir -p /app

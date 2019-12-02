@@ -11,7 +11,7 @@
 
 ## Services
 
-* [Application](services/application.md)
+* [Applications](services/applications.md)
 * [Network](services/network/README.md)
   * [DNS](services/network/dns.md)
   * [https \(SSL/TLS\)](services/network/https.md)

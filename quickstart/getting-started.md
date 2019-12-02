@@ -86,8 +86,6 @@ $ qovery status
 Your application is automatically available on https://myexample.qovery.io
 {% endhint %}
 
-You can also get those information from the Web interface of course. To know more about deployments process, you can read the [deployment strategies](../extending-qovery/deployments-strategies.md) section.
-
 ## Code a new feature
 
 As soon as you want to develop a new feature in your code, create a new branch!
@@ -97,4 +95,20 @@ As soon as you want to develop a new feature in your code, create a new branch!
 {% endhint %}
 
 To know more about it, look at the [branch dedicated page](../extending-qovery/branches.md).
+
+## Add new services
+
+Qovery allows you to do more by **adding new services, new functionalities and continue to simplify your developer life**.
+
+Read the dedicated sections to know more:
+
+* [Applications](../services/applications.md)
+* [Network](../services/network/)
+* [Databases](../services/databases/)
+* [Brokers](../services/brokers/)
+* [Storages](../services/storage/)
+
+And feel free to look at "Extending Qovery" section to **push your application at a higher level**.
+
+
 

@@ -2,27 +2,30 @@
 description: Use containers to build and package your own application
 ---
 
-# Build container
+# Sample project
 
-Building your application is something every developer knows how to. Building a container with the application inside is not more complex but not every developers are familiar with. In order to help developers, this page provides examples on how to manage it.
+You'll find here a sample project to quickly run an application with a Dockerfile example.
 
-## Generate a Dockerfile
+## Fork a sample project
 
-At Qovery we're using the well known Dockerfile to build multi staged containers.
+Fork a Qovery sample project \([https://github.com/Qovery/doc-examples](https://github.com/Qovery/doc-examples)\) by **clicking on the Fork button**:
 
-From the Qovery cli, you can generate a Dockerfile. Here is how to do with a sample project:
+![](../.gitbook/assets/github_fork.png)
+
+Then, clone your repository:
 
 ```bash
-$ git clone git@github.com:Qovery/doc-examples.git
+$ git clone git@github.com:<your-github-nickname>/doc-examples.git
 $ cd doc-examples/java/spring-boot/simple-example
-$ qovery init
 ```
 
 {% hint style="info" %}
-No Dockerfile will be generated if one already exists
+No Dockerfile will be generated as one already exists
 {% endhint %}
 
-In the example, you'll find a Dockerfile with this content:
+## Dockerfile example
+
+In the repository, you'll find an existing Dockerfile with this content:
 
 {% tabs %}
 {% tab title="Dockerfile" %}
@@ -63,5 +66,5 @@ CMD exec java $JAVA_OPTS -jar /app.jar
 {% endtab %}
 {% endtabs %}
 
-In the case you're not familiar with Dockerfiles, you can look to the [dedicated section here](../extending-qovery/dockerfile.md).
+At Qovery we're using the well known Dockerfile to build multi staged containers. In the case you're not familiar with Dockerfiles, you can look to the [dedicated section here](../extending-qovery/dockerfile.md).
 

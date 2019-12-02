@@ -1,5 +1,5 @@
 ---
-description: Deploy in production/staging/dev/whatever..
+description: Deploy your application in production
 ---
 
 # Deploy
@@ -18,13 +18,13 @@ git push
 
 ## Deployment status
 
-You'll be able to watch the activity with Qovery CLI or from the Web interface.
-
-To know what's currently happening on your Qovery account:
+To know what's the status of your deployment and project info, run this command:
 
 ```bash
 $ qovery status
 
+* External DNS name               : <myapplicationid>.qovery.io
+* SSL/TLS enabled                 : https://myexample.qovery.io
 * Current deployed version        : 7b3aeb5 (Marty McFly) / 2014-05-13 02:56
 * In progress deployment          : b0b03ab (Ada Lovelace) / 75% done
 * Pending deployments in the pipe : 0
@@ -32,7 +32,11 @@ $ qovery status
 * Total rollback today:           : 0
 ```
 
-To know more about deployments process, you can read the [deployment strategies](../extending-qovery/deployments-strategies.md) section.
+{% hint style="success" %}
+Your application is automatically available on https://myexample.qovery.io
+{% endhint %}
+
+You can also get those information from the Web interface of course. To know more about deployments process, you can read the [deployment strategies](../extending-qovery/deployments-strategies.md) section.
 
 ## Code a new feature
 

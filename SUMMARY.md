@@ -8,12 +8,13 @@
 
 * [Getting Started](quickstart/getting-started.md)
 * [Sign Up](quickstart/sign-up.md)
-* [Build container](quickstart/build.md)
+* [Sample project](quickstart/build.md)
 * [Initialization](quickstart/qovery-config.md)
 * [Deploy](quickstart/deploy.md)
 
 ## Services
 
+* [Application](services/application.md)
 * [Network](services/network/README.md)
   * [DNS](services/network/dns.md)
   * [https \(SSL/TLS\)](services/network/https.md)

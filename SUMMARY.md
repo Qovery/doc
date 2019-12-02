@@ -6,6 +6,7 @@
 
 ## Quickstart
 
+* [Getting Started](quickstart/getting-started.md)
 * [Sign Up](quickstart/sign-up.md)
 * [Build container](quickstart/build.md)
 * [Initialization](quickstart/qovery-config.md)

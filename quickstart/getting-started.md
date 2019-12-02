@@ -19,7 +19,7 @@ $ git clone git@github.com:<your-github-nickname>/doc-examples.git
 $ cd doc-examples/java/spring-boot/simple-example
 ```
 
-In this repository, you'll find an already existing [Dockerfile](../extending-qovery/dockerfile.md) that is able to build and run the application.
+In this repository, you'll find an already existing [Dockerfile](../extending-qovery/dockerfile.md), able to build and run the application.
 
 ## Qovery initialization
 

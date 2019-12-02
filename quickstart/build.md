@@ -13,8 +13,8 @@ At Qovery we're using the well known Dockerfile to build multi staged containers
 From the Qovery cli, you can generate a Dockerfile. Here is how to do with a sample project:
 
 ```bash
-$ git clone git@github.com:Qovery/doc-example.git
-$ cd doc-example
+$ git clone git@github.com:Qovery/doc-examples.git
+$ cd doc-examples/java/spring-boot
 $ qovery init
 
 ➤ Java application detected, do you want to generate a Dockerfile for it (y/n): y

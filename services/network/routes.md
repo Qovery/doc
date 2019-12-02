@@ -9,7 +9,7 @@ Qovery allows you to manage routing to your multiple applications.
 Here is how to do it in the Qovery configuration file:
 
 1. Create a router and name it
-2. You can optionaly request a dns name
+2. You can optionally request a dns name
 3. Create associated routes paths to an application
 
 {% tabs %}

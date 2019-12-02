@@ -8,7 +8,30 @@ This page explains how you can perform application upgrades. Qovery handles the 
 
 This to **avoid your application unexpected behavior,** when you're trying to upgrade the current running version. Several options exists, you can **choose the one you want per application**.
 
-## Ramped \(default\)
+## Blue/Green \(default\)
+
+The blue/green strategy allows to **quickly switch from one version to another in an instant**. It starts as many new containers version \(green\) as there are already started old container version \(blue\). Then, when all the containers \(green\) are started, all the traffic is redirected at once to the green containers. The blue containers are then stopped.
+
+| Pros | Cons |
+| :--- | :--- |
+| Instant rollout | Requires to double the resources |
+| Avoid API/Application versioning issue | Perfect application testing is required before going to production |
+
+Here is the strategy configuration to set in the Qovery configuration file:
+
+{% tabs %}
+{% tab title=".qovery.yml" %}
+```yaml
+application:
+  name: myapp
+  project: test
+  upgrade-strategy:
+    type: blue-green
+```
+{% endtab %}
+{% endtabs %}
+
+## Ramped
 
 The Ramped strategy **slowly replace old application version by the new one**. During the deployment, the number of old container version decrease. And the new version increase, until the correct number of container to support your workload is reached.
 
@@ -86,26 +109,5 @@ application:
 {% endtab %}
 {% endtabs %}
 
-## Blue/Green
 
-The blue/green strategy allows to **quickly switch from one version to another in an instant**. It starts as many new containers version \(green\) as there are already started old container version \(blue\). Then, when all the containers \(green\) are started, all the traffic is redirected at once to the green containers. The blue containers are then stopped.
-
-| Pros | Cons |
-| :--- | :--- |
-| Instant rollout | Requires to double the resources |
-| Avoid API/Application versioning issue | Perfect application testing is required before going to production |
-
-Here is the strategy configuration to set in the Qovery configuration file:
-
-{% tabs %}
-{% tab title=".qovery.yml" %}
-```yaml
-application:
-  name: myapp
-  project: test
-  upgrade-strategy:
-    type: blue-green
-```
-{% endtab %}
-{% endtabs %}
 

@@ -12,31 +12,37 @@ We'll need to first build the application and then create a dedicated minimal co
 
 ![](../.gitbook/assets/q-quickstart-build.png)
 
-Here is an example of a Dockerfile to build a Java application:
+Here is [an example of a Dockerfile](https://github.com/Qovery/doc-examples/java/spring-boot/simple-example) to build a Java application:
 
 {% tabs %}
 {% tab title="Dockerfile" %}
 ```bash
 # Build your application with this image called "build"
-FROM openjdk:11 AS build
+FROM adoptopenjdk/openjdk8:alpine AS build
+
 # Add the required packages
-RUN apk -U add bash
+RUN apk update && apk upgrade && apk add bash
+
 # Add your specifc dependencies
-RUN cd /usr/local/bin && \
-    wget https://services.gradle.org/distributions/gradle-6.0-bin.zip && \
-    /usr/bin/unzip gradle-5.6-all.zip && \
-    ln -s /usr/local/bin/gradle-5.6/bin/gradle /usr/bin/gradle && \
-    mkdir -p /app
+RUN cd /usr/local/bin && wget https://services.gradle.org/distributions/gradle-5.6-all.zip && \
+/usr/bin/unzip gradle-5.6-all.zip && ln -s /usr/local/bin/gradle-5.6/bin/gradle /usr/bin/gradle
+
 # Copy your code in the build container and move into it
+RUN mkdir -p /app
 COPY . /app
 WORKDIR /app
-# Build your application
-RUN gradle build
 
-# The container which will run
-FROM openjdk:11-alpine
+# Build your application
+RUN gradle build -x test
+
+# The container that will run
+FROM adoptopenjdk/openjdk8:alpine-slim
+
+EXPOSE 8080
+
 # Get the build artifact (can be a folder)
-COPY --from=build /app/build/libs/app.jar /app.jar
+COPY --from=build /app/build/libs/simple-example-1.0.jar /app.jar
+
 # Set specific environment variables
 ENV JAVA_OPTS=""
 # Command to run your application

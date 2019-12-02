@@ -48,6 +48,10 @@ $ qovery init
 
 In your current directory, you now have a **".qovery.yml" file describing the desired configuration** you've just asked for.
 
+{% hint style="info" %}
+Commit the .qovery.yml configuration file to save your changes
+{% endhint %}
+
 ## Deploy
 
 Are you ready to deploy?
@@ -64,7 +68,7 @@ git push
 
 ## Deployment status
 
-To know what's the status of your deployment and project info, run this command:
+To know what's the status of your deployment and project info, run the Qovery status command:
 
 ```bash
 $ qovery status

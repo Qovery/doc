@@ -25,8 +25,8 @@ routers:
     routes:
       - application-name: myapp
         paths:
-          - /api/v1/user/\w+/.*
-          - /api/v1/stat/\w+/.*
+          - \/api\/v1\/user\/\w+\/.*
+          - \/api\/v1\/stat\/\w+\/.*
 ```
 {% endtab %}
 {% endtabs %}

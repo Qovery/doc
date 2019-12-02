@@ -6,11 +6,8 @@
 
 ## Quickstart
 
-* [Getting Started](quickstart/getting-started.md)
 * [Sign Up](quickstart/sign-up.md)
-* [Sample project](quickstart/build.md)
-* [Initialization](quickstart/qovery-config.md)
-* [Deploy](quickstart/deploy.md)
+* [Getting started](quickstart/getting-started.md)
 
 ## Services
 

@@ -7,7 +7,7 @@ description: Qovery configuration initialization
 In order to get a quick Qovery configuration file, you can use the CLI to generate one:
 
 ```text
-$ qovery wizard
+$ qovery init
 
 ✓ Dockerfile detected in your root directory
 

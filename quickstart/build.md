@@ -14,14 +14,13 @@ From the Qovery cli, you can generate a Dockerfile. Here is how to do with a sam
 
 ```bash
 $ git clone git@github.com:Qovery/doc-examples.git
-$ cd doc-examples/java/spring-boot
+$ cd doc-examples/java/spring-boot/simple-example
 $ qovery init
-
-➤ Java application detected, do you want to generate a Dockerfile for it (y/n): y
-✓ Dockerfile generated in the Git root directory
 ```
 
 {% hint style="info" %}
 No Dockerfile will be generated if one already exists
 {% endhint %}
+
+
 

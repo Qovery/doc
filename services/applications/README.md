@@ -36,5 +36,11 @@ You can find other proposed services by Qovery like:
 | [Brokers](../brokers/) | Message queuing systems |
 | [Storages](../storage/) | Share data against your applications |
 
-It's as easy as just adding a few lines in your configuration file! Also add the [SDK](../../extending-qovery/sdks.md) to be able to have zero credentials management.
+{% hint style="info" %}
+It's as easy as just adding a few lines in your configuration file!
+{% endhint %}
+
+Also add the [SDK](../../extending-qovery/sdks.md) to be able to have zero credentials management.
+
+
 

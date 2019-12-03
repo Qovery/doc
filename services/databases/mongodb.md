@@ -149,7 +149,7 @@ You can change the window very easily \(use 24h format\):
 application:
   ...
 databases:
-  - name: my-super-instance
+  - name: my-mongodb
     type: mongodb
     backup-window: 21-23
 ```

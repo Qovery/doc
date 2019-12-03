@@ -115,7 +115,7 @@ To know more about your instance status, you can do it this way:
 ```bash
 $ qovery status database
 
-✓ my-mysql:
+✓ my-redis:
 * Branch  : master (Production)
 * Health  : healthy
 * Type    : Redis

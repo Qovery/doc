@@ -10,5 +10,5 @@ Git is the tool used by most of developers today. To make things as simple as po
 * [Gitlab](https://about.gitlab.com)
 * [Bitbucket](https://bitbucket.org/)
 
-What you have to do is to simply connect through [Qovery](https://cloud.qovery.com) and link your account to it by following the instructions.
+What you have to do is to simply connect through [Qovery](../../quickstart/sign-up.md) and link your account to it by following the instructions.
 

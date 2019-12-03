@@ -6,17 +6,17 @@ description: Use containers to build and package your own application
 
 To show you how **Qovery is simple and fast**, here is a sample project to run an application.
 
-## Fork a sample project
+## Fork a sample application
 
-Fork a Qovery sample project \([https://github.com/Qovery/doc-examples](https://github.com/Qovery/doc-examples)\) by **clicking on the Fork button**:
+Fork a [Qovery sample application \(https://github.com/Qovery/simple-example.git\)](https://github.com/Qovery/simple-example.git) by **clicking on the Fork button**:
 
 ![](../.gitbook/assets/github_fork.png)
 
 Once done, clone your forked repository:
 
 ```bash
-$ git clone git@github.com:<your-github-nickname>/doc-examples.git
-$ cd doc-examples/java/spring-boot/simple-example
+$ git clone git@github.com:<your-github-nickname>/simple-example.git
+$ cd simple-example
 ```
 
 In this repository, you'll find an already existing [Dockerfile](../extending-qovery/dockerfile.md), able to build and run the application.
@@ -30,7 +30,9 @@ $ qovery init
 
 ✓ Dockerfile detected in your root directory
 
-➤ Enter the project name: simple-example
+➤ Enter the project name: my-project
+
+➤ Enter the application name: simple-example
 
 ➤ What port number your application is running on? (Hit enter if none): 8080
 
@@ -42,11 +44,25 @@ $ qovery init
 
 ➤ Do you need any broker? (y/n): n
 
+➤ Do you need any storage? (y/n): n
+
 ✓ Your Qovery configuration file has been successfuly created (.qovery.yml)!
 ✓ Commit into your repository and push it to get this deployed.
 ```
 
-In your current directory, you now have a **".qovery.yml" file describing the desired configuration** you've just asked for.
+In your current directory, you now have a **".qovery.yml" file describing the desired configuration** you've just asked for:
+
+{% tabs %}
+{% tab title=".qovery.yaml" %}
+```yaml
+application:
+  name: simple-example
+  project: my-project
+  private-port: 8080
+  public-port: 443
+```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 **Commit** the .qovery.yml configuration file to save your changes

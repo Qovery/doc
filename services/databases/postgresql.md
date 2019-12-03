@@ -18,7 +18,7 @@ $ qovery add database
 2. MongoDB
 ...
 
-➤ Set the instance name: my-super-instance
+➤ Set the database instance name: my-postgres
 
 ➤ Estimated PostgreSQL data size in GiB (default: 10): 20
 
@@ -111,7 +111,7 @@ To know more about your instance status, you can do it this way:
 ```bash
 $ qovery status database
 
-✓ my-super-instance:
+✓ my-postgres:
 * Branch  : master (Production)
 * Health  : healthy
 * Type    : PostgreSQL
@@ -142,7 +142,7 @@ If you want to **delete** a PostgreSQL instance with **all databases and data in
 application:
   ...
 databases:
-  - name: my-super-instance
+  - name: my-postgres
     type: postgresql
     version: 11.4
     size: 20GiB
@@ -170,7 +170,7 @@ You can change the window very easily \(use 24h format\):
 application:
   ...
 databases:
-  - name: my-super-instance
+  - name: my-postgres
     type: postgresql
     backup-window: 21-23
 ```
@@ -186,7 +186,7 @@ You can restore through the CLI or the web interface.
 From the CLI:
 
 ```bash
-$ qovery restore <instance-name>
+$ qovery restore <database-instance-name>
 
 ➤ Choose the version you want to restore:
   25/11/2019 - 22h
@@ -199,7 +199,7 @@ $ qovery restore <instance-name>
 
 ➤ Do you want to perform a backup before restoring? (y/n): y
 
-➤ Please confirm by typing the instance name: my-super-instance
+➤ Please confirm by typing the database instance name: my-postgres
 
 ✓ Backup successfuly created
 ✓ Backup as successfuly been restored (23/11/2019 - 22h)

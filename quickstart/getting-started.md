@@ -114,7 +114,7 @@ As soon as you want to develop a new feature in your code, create a new branch!
 
 To know more about it, look at the [branch dedicated page](../extending-qovery/branches.md).
 
-## Add new services
+## Want more?
 
 Qovery allows you to do more by **adding new services, new functionalities and continue to simplify your developer life**.
 
@@ -127,6 +127,4 @@ Read the dedicated sections to know more:
 * [Storages](../services/storage/)
 
 And feel free to look at "Extending Qovery" section to **push your application at a higher level**.
-
-
 

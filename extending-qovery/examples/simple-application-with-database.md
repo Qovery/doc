@@ -83,9 +83,9 @@ network:
   public-port: 443
    
 databases:
-  - name: my-postgresql
-    type: postgresql
-    version: 11.4
+  - name: my-mysql
+    type: mysql
+    version: 8.0
     size: 20GiB
 
 storage:
@@ -106,8 +106,8 @@ Finally, **once committed and pushed, your application will be live!!!** You can
 ```bash
 $ qovery status
 
-* External DNS name               : myexample.qovery.io
-* SSL/TLS enabled                 : https://myexample.qovery.io
+* External DNS name               : <myexample>.qovery.io
+* SSL/TLS enabled                 : https://<myexample>.qovery.io
 * Current deployed version        : 7b3aeb5 (Marty McFly) / 2014-05-13 02:56
 ...
 ```

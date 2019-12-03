@@ -49,7 +49,7 @@ $ qovery init
 In your current directory, you now have a **".qovery.yml" file describing the desired configuration** you've just asked for.
 
 {% hint style="info" %}
-Commit the .qovery.yml configuration file to save your changes
+**Commit** the .qovery.yml configuration file to save your changes
 {% endhint %}
 
 ## Deploy

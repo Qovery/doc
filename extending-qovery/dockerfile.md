@@ -12,7 +12,7 @@ We'll need to first build the application and then create a dedicated minimal co
 
 ![](../.gitbook/assets/q-quickstart-build.png)
 
-Here is [an example of a Dockerfile](https://github.com/Qovery/doc-examples/java/spring-boot/simple-example) to build a Java application:
+Here is [an example of a Dockerfile](https://github.com/Qovery/doc-examples/blob/master/java/spring-boot/simple-example/Dockerfile) to build a Java application:
 
 {% tabs %}
 {% tab title="Dockerfile" %}

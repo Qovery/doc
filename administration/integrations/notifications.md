@@ -10,7 +10,7 @@ Qovery offers several ways to be notified. It's up to you to chose one or multip
 
 ## Slack
 
-[Slack](https://slack.com/) is a well known collaboration hub teams to work together seamlessly. To be notified, look at the Qovery app on the [Slack Directory](https://qovery.slack.com/apps/qovery), then click on the "Add to Slack" button.
+[Slack](https://slack.com/) is a well known collaboration hub teams to work together seamlessly. To be notified, look at the Qovery app on the Slack Directory, then click on the "Add to Slack" button.
 
 Once done, your Slack account is linked to your project. In order to receive notification for this specific project, you can add this:
 

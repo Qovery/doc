@@ -19,7 +19,7 @@ $ qovery add database
 3. MySQL
 ...
 
-➤ Set the instance name: my-super-instance
+➤ Set the database instance name: my-mysql
 
 ➤ Estimated MySQL data size in GiB (default: 10): 20
 
@@ -112,50 +112,29 @@ To know more about your instance status, you can do it this way:
 ```bash
 $ qovery status database
 
-✓ my-super-instance:
+✓ my-mysql:
 * Branch  : master (Production)
 * Health  : healthy
 * Type    : MySQL
-* Version : 11.4
+* Version : 8.0.16
 * Size    : 20GiB
 * Kind    : Medium (4 vCPU / 16GiB Ram)
 ```
 
 ## Delete an instance
 
-To delete an instance, there are 2 ways to do it, depending on the scenario you are.
+To delete an instance, here are the 2 possible solutions:
+
+1. **Remove from the configuration file**, commit and push if you want to keep your current branch
+2. Once you've finished to work on a feature branch, delete the branch and **the instance will automatically be deleted** as well.
 
 {% hint style="danger" %}
 **Delete action will drop the services and its data!**
 {% endhint %}
 
 {% hint style="success" %}
-**Backups will be kept for 1 month if you need to recover \(just in case** 😉**\)**
+**Backups will be kept for 1 month if you need to recover \(just in case**😉**\)**
 {% endhint %}
-
-### Delete for all branches
-
-If you want to **delete** a MySQL instance with **all databases and data inside** it. You simply have to **delete the corresponding Qovery configuration** in your YAML file.
-
-{% tabs %}
-{% tab title=".qovery.yml" %}
-```yaml
-application:
-  ...
-databases:
-  - name: my-super-instance
-    type: mysql
-    version: 11.4
-    size: 20GiB
-```
-{% endtab %}
-{% endtabs %}
-
-Once done, commit and push to apply the changes.
-
-### Delete for one branch
-
-Once you've finished to work on a feature branch, simply delete the branch and **the instance will automatically be delete** as well.
 
 ## Backups
 
@@ -171,7 +150,7 @@ You can change the window very easily \(use 24h format\):
 application:
   ...
 databases:
-  - name: my-super-instance
+  - name: my-mysql
     type: mysql
     backup-window: 21-23
 ```
@@ -187,7 +166,7 @@ You can restore through the CLI or the web interface.
 From the CLI:
 
 ```bash
-$ qovery restore <instance-name>
+$ qovery restore <database-instance-name>
 
 ➤ Choose the version you want to restore:
   25/11/2019 - 22h
@@ -200,7 +179,7 @@ $ qovery restore <instance-name>
 
 ➤ Do you want to perform a backup before restoring? (y/n): y
 
-➤ Please confirm by typing the instance name: my-super-instance
+➤ Please confirm by typing the database instance name: my-mysql
 
 ✓ Backup successfuly created
 ✓ Backup as successfuly been restored (23/11/2019 - 22h)

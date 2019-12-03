@@ -115,7 +115,7 @@ $ qovery status database
 * Branch  : master (Production)
 * Health  : healthy
 * Type    : PostgreSQL
-* Version : 11.4
+* Version : 12.1
 * Size    : 20GiB
 * Kind    : Medium (4 vCPU / 16GiB Ram)
 ```

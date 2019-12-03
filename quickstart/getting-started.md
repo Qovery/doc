@@ -19,7 +19,7 @@ $ git clone git@github.com:<your-github-nickname>/simple-example.git
 $ cd simple-example
 ```
 
-In this repository, you'll find an already existing [Dockerfile](../extending-qovery/dockerfile.md), able to build and run the application.
+In this repository, you'll find an already existing [Dockerfile](../services/applications/dockerfile.md), able to build and run the application.
 
 ## Qovery initialization
 
@@ -120,13 +120,11 @@ Qovery allows you to do more by **adding new services, new functionalities and c
 
 Read the dedicated sections to know more:
 
-* [Applications](../services/applications.md)
+* [Applications](../services/applications/)
 * [Network](../services/network/)
 * [Databases](../services/databases/)
 * [Brokers](../services/brokers/)
 * [Storages](../services/storage/)
 
 And feel free to look at "Extending Qovery" section to **push your application at a higher level**.
-
-
 

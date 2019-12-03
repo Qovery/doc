@@ -4,7 +4,7 @@ description: Manages your environment workspaces
 
 # Branches
 
-As described in the [Quickstart](), **a new branch will spawn a dedicated \(production replicated\) environment for you**. Qovery is not limited to this and offers many more features. This page will explain them in details.
+As described in the [Qovery concepts](../concepts.md), **a new branch will spawn a dedicated \(production replicated\) environment for you**. Qovery is not limited to this and offers many more features. This page will explain them in details.
 
 ## Restrict production replicated environment
 

@@ -10,7 +10,7 @@ This page explains how to generate a Dockerfile and how to define its content. T
 
 We'll need to first build the application and then create a dedicated minimal container with the application embedded.
 
-![](../.gitbook/assets/q-quickstart-build.png)
+![](../../.gitbook/assets/q-quickstart-build.png)
 
 Here is [an example of a Dockerfile](https://github.com/Qovery/doc-examples/blob/master/java/spring-boot/simple-example/Dockerfile) to build a Java application:
 
@@ -54,7 +54,7 @@ CMD exec java $JAVA_OPTS -jar /app.jar
 {% endtabs %}
 
 1. **Build**: The first part \(from the first line to 15\) represent the dependencies and requirements in order to **build the application**. The application final form is called an **artifact** available in the `/app/build/libs/app.jar` directory.
-2. **Run**: The second part \(from line 18 to last\) represent the content of the container that will **run in production** \([or for a specific branch](branches.md)\). It retrieves the artifact from the build part and store it in the container.
+2. **Run**: The second part \(from line 18 to last\) represent the content of the container that will **run in production** \([or for a specific branch](../../extending-qovery/branches.md)\). It retrieves the artifact from the build part and store it in the container.
 
 {% hint style="danger" %}
 **For security reasons**, for we strongly advise you to:

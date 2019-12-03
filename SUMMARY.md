@@ -11,7 +11,8 @@
 
 ## Services
 
-* [Applications](services/applications.md)
+* [Applications](services/applications/README.md)
+  * [Dockerfile](services/applications/dockerfile.md)
 * [Network](services/network/README.md)
   * [DNS](services/network/dns.md)
   * [https \(SSL/TLS\)](services/network/https.md)
@@ -32,7 +33,6 @@
 
 ## Extending Qovery
 
-* [Dockerfile](extending-qovery/dockerfile.md)
 * [Branches](extending-qovery/branches.md)
 * [SDKs](extending-qovery/sdks.md)
 * [Upgrade strategies](extending-qovery/deployments-strategies.md)

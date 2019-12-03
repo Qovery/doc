@@ -15,7 +15,7 @@ Both will help you to authenticate and do more afterwards.
 
 ## Web interface
 
-1. To sign up using Qovery Web Interface, you just have to go on [cloud.qovery.com](https://cloud.qovery.com).
+1. To sign up using Qovery Web Interface, you just have to go on cloud.qovery.com.
 2. You have the choice to sign up by using [Github](https://github.com/), [Gitlab](https://about.gitlab.com) and [Bitbucket](https://bitbucket.org/).
 
 ![](../.gitbook/assets/q-register.png)

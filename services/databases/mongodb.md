@@ -18,7 +18,7 @@ $ qovery add database
 2. MongoDB
 ...
 
-➤ Set the instance name: my-super-instance
+➤ Set the database instance name: my-mongodb
 
 ➤ Estimated MongoDB data size in GiB (default: 10): 20
 
@@ -111,7 +111,7 @@ To know more about your instance status, you can do it this way:
 ```bash
 $ qovery status database
 
-✓ my-super-instance:
+✓ my-mongodb:
 * Branch  : master (Production)
 * Health  : healthy
 * Type    : MongoDB
@@ -142,8 +142,8 @@ If you want to **delete** a MongoDB instance with **all databases and data insid
 application:
   ...
 databases:
-  - type: mongodb
-    name: my-super-instance
+  - name: my-mongodb
+    type: mongodb
     version: 11.4
     size: 20GiB
 ```
@@ -199,7 +199,7 @@ $ qovery restore <instance-name>
 
 ➤ Do you want to perform a backup before restoring? (y/n): y
 
-➤ Please confirm by typing the instance name: my-super-instance
+➤ Please confirm by typing the instance name: my-mongodb
 
 ✓ Backup successfuly created
 ✓ Backup as successfuly been restored (23/11/2019 - 22h)

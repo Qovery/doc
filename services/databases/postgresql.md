@@ -122,7 +122,10 @@ $ qovery status database
 
 ## Delete an instance
 
-To delete an instance, there are 2 ways to do it, depending on the scenario you are.
+To delete an instance, here are the 2 possible solutions:
+
+1. **Remove from the configuration file**, commit and push if you want to keep your current branch
+2. Once you've finished to work on a feature branch, delete the branch and **the instance will automatically be deleted** as well.
 
 {% hint style="danger" %}
 **Delete action will drop the services and its data!**
@@ -131,30 +134,6 @@ To delete an instance, there are 2 ways to do it, depending on the scenario you 
 {% hint style="success" %}
 **Backups will be kept for 1 month if you need to recover \(just in case**😉**\)**
 {% endhint %}
-
-### Delete for all branches
-
-If you want to **delete** a PostgreSQL instance with **all databases and data inside** it. You simply have to **delete the corresponding Qovery configuration** in your YAML file.
-
-{% tabs %}
-{% tab title=".qovery.yml" %}
-```yaml
-application:
-  ...
-databases:
-  - name: my-postgres
-    type: postgresql
-    version: 11.4
-    size: 20GiB
-```
-{% endtab %}
-{% endtabs %}
-
-Once done, commit and push to apply the changes.
-
-### Delete for one branch
-
-Once you've finished to work on a feature branch, simply delete the branch and **the instance will automatically be delete** as well.
 
 ## Backups
 
@@ -203,6 +182,5 @@ $ qovery restore <database-instance-name>
 
 ✓ Backup successfuly created
 ✓ Backup as successfuly been restored (23/11/2019 - 22h)
-
 ```
 

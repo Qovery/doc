@@ -29,5 +29,12 @@ Commit this file to your repository, push it and it's automatically deployed.
 
 You can find other proposed services by Qovery like:
 
+| Services | Comments |
+| :--- | :--- |
+| [Network](../network/) | Custom DNS, SSL/TLS, Routes etc... |
+| [Databases](../databases/) | SQL or NoSQL databases |
+| [Brokers](../brokers/) | Message queuing systems |
+| [Storages](../storage/) | Share data against your applications |
 
+It's as easy as just adding a few lines in your configuration file! Also add the [SDK](../../extending-qovery/sdks.md) to be able to have zero credentials management.
 

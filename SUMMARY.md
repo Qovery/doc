@@ -46,7 +46,6 @@
 * [Auto-Scaling](extending-qovery/scaling.md)
 * [Examples](extending-qovery/examples/README.md)
   * [Simple application](extending-qovery/examples/simple-application-with-database.md)
-  * [Micro-services application](extending-qovery/examples/micro-services-application.md)
 
 ## Administration
 

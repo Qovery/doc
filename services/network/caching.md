@@ -35,6 +35,8 @@ To enable Qovery caching, you simply have to add the "cache" line like:
 application:
   name: myapp
   project: test
+
+network:
   cache: qovery
   private-port: 8080
   public-port: 443

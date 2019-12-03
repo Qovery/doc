@@ -16,6 +16,8 @@ In order to get a SSL/TLS certificate, **you simply have to set the "public-port
 application:
   name: myapp
   project: test
+
+network:
   private-port: 8080
   public-port: 443
 ```

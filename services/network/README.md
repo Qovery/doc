@@ -40,6 +40,8 @@ To do so, in the Qovery configuration file \(.qovery.yml\) of the "App1" applica
 app:
   name: myapp
   project: test
+
+network:
   private-port: 8080
 ```
 {% endtab %}
@@ -57,6 +59,8 @@ If you have multiple ports to privately expose to other applications of the same
 application:
   name: myapp
   project: test
+
+network:
   private-port:
     - 8080
     - 8081
@@ -78,6 +82,8 @@ Then you have to declare in the Qovery configuration file \(.qovery.yaml\), the 
 application:
   name: myapp
   project: test
+
+network:
   private-port: 8080
   public-port: 80
 ```
@@ -94,6 +100,8 @@ If you have multiple ports to publicly expose, you need to use "public-ports" in
 application:
   name: myapp
   project: test
+
+network:
   private-port: [ 8080, 8081 ]
   public-ports:
     - public-port: 8080

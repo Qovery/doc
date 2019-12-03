@@ -16,6 +16,8 @@ There is **nothing to do, as soon as you define a public port to your applicatio
 application:
   name: myapp
   project: test
+
+network:
   private-port: 8080
   public-port: 80
 ```
@@ -54,6 +56,8 @@ Simply add "dns" line like this in the .qovery.yml file:
 application:
   name: myapp
   project: test
+
+network:
   dns: myapp.mydomain.name
   private-port: 8080
   public-port: 80

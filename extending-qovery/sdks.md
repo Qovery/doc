@@ -97,9 +97,3 @@ Supported versions:
 import "github.com/Qovery/qovery-go-sdk"
 ```
 
-## Other
-
-TBD
-
-
-

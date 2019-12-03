@@ -53,11 +53,13 @@ $ qovery init
 In your current directory, you now have a **".qovery.yml" file describing the desired configuration** you've just asked for:
 
 {% tabs %}
-{% tab title=".qovery.yaml" %}
+{% tab title=".qovery.yml" %}
 ```yaml
 application:
   name: simple-example
   project: my-project
+
+network:
   private-port: 8080
   public-port: 443
 ```

@@ -1,17 +1,25 @@
+---
+description: Let's start with a simple application
+---
+
 # Simple application
 
-## Simple application
+## Description
 
-In this example, we need to go fast and quickly deploy an application.
+In this example, we're taking a **single simple application**. You'll **see how fast it is** to deploy it.
 
-We'll start new project which needs to have:
+We'll start new project with those constraints:
 
-* 1 application \(private port 8080\)
-* Being exposed through internet on https \(public port 443\)
-* 1 database \(PostgreSQL\)
-* Store images on an object storage \(S3\)
+| Prerequisites | Comments |
+| :--- | :--- |
+| 1 application | Private port on 8080 |
+| Being exposed through internet on https | Public port on 443 |
+| 1 single database | MySQL database instance |
+| Store images on a shared storage | S3 object storage |
 
-The first thing to do is to initiate qovery in the repository:
+## Generate configuration
+
+The first thing to do is to initiate Qovery in the repository:
 
 ```text
 $ qovery init
@@ -19,6 +27,8 @@ $ qovery init
 ✓ Dockerfile detected in your root directory
 
 ➤ Enter the project name: my-project
+
+➤ Enter the application name: simple-example
 
 ➤ What port number your application ir running on? (Hit enter if none): 8080
 
@@ -28,7 +38,7 @@ $ qovery init
 
 ➤ Do you need any database? (y/n): y
 
-➤ Set the instance name: my-super-instance
+➤ Set the instance name: my-mysql
 
 ➤ Estimated MySQL data size in GiB (default: 10): 20
 
@@ -44,28 +54,36 @@ c. Custom Mode
 
 ➤ Do you need any borker? (y/n): n
 
+➤ Do you need any storage? (y/n): y
+
+➤ Set the bucket name: images
+
+➤ Should "images" bucket name needs to be publicly accessible? (y/n): n
+
 ✓ Your Qovery configuration file has been successfuly created (.qovery.yml)!
 
 ➤ Commit into your repository and push it to get this deployed.
 ```
 
-If you do not already have your Dockerfile, one will be suggested according to your repository content.
+{% hint style="info" %}
+If you do not already have a Dockerfile in your repository, one will be suggested according to your repository content.
+{% endhint %}
 
-Now that you have your application and database declared in your Qovery configuration file. 
-
-Now we need to add an S3 storage. Your full Qovery configuration will look like this:
+Now that you have declared your prerequisites, you can find the result in your Qovery configuration file:
 
 {% tabs %}
 {% tab title=".qovery.yml" %}
 ```yaml
 application:
-  name: my-super-instance
+  name: simple-example
   project: my-project
+
+network:
   private-port: 8080
   public-port: 443
    
 databases:
-  - name: my-super-instance
+  - name: my-postgresql
     type: postgresql
     version: 11.4
     size: 20GiB
@@ -79,16 +97,18 @@ storage:
 {% endtab %}
 {% endtabs %}
 
-Then you have to add in your code the Qovery SDK to easily manage the credentials part.
+Then you have to add in your code the [Qovery SDK](../sdks.md) to easily manage the credentials part.
 
-Finally, once commited and pushed, you can check the status and retrieve the URL like this:
+## Deploy
+
+Finally, **once committed and pushed, your application will be live!!!** You can check the status and retrieve the URL like this:
 
 ```bash
 $ qovery status
 
-* External DNS name        : <myapplicationid>.qovery.io
-* SSL/TLS enabled          : https://<myapplicationid>.qovery.io
-* Current deployed version : 7b3aeb5 (Marty McFly) / 2014-05-13 02:56
+* External DNS name               : myexample.qovery.io
+* SSL/TLS enabled                 : https://myexample.qovery.io
+* Current deployed version        : 7b3aeb5 (Marty McFly) / 2014-05-13 02:56
 ...
 ```
 

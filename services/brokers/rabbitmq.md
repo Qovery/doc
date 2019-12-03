@@ -17,7 +17,7 @@ $ qovery add database
 1. RabbitMQ
 2. Kafka
 
-➤ Set the instance name: my-super-instance
+➤ Set the broker instance name: my-rabbitmq
 
 ➤ Estimated RabbitMQ data size in GiB (default: 5): 10
 
@@ -110,18 +110,21 @@ To know more about your instance status, you can do it this way:
 ```bash
 $ qovery status broker
 
-✓ my-super-instance:
+✓ my-rabbitmq:
 * Branch  : master (Production)
 * Health  : healthy
 * Type    : RabbitMQ
-* Version : 11.4
+* Version : 3.8
 * Size    : 20GiB
 * Kind    : Medium (4 vCPU / 16GiB Ram)
 ```
 
 ## Delete an instance
 
-To delete an instance, there are 2 ways to do it, depending on the scenario you are.
+To delete an instance, here are the 2 possible solutions:
+
+1. **Remove from the configuration file**, commit and push if you want to keep your current branch
+2. Once you've finished to work on a feature branch, delete the branch and **the instance will automatically be deleted** as well.
 
 {% hint style="danger" %}
 **Delete action will drop the services and its data!**
@@ -130,29 +133,6 @@ To delete an instance, there are 2 ways to do it, depending on the scenario you 
 {% hint style="success" %}
 **Backups will be kept for 1 month if you need to recover \(just in case**😉**\)**
 {% endhint %}
-
-### Delete for all branches
-
-If you want to **delete** a RabbitMQ instance with **data inside** it. You simply have to **delete the corresponding Qovery configuration** in your YAML file.
-
-{% tabs %}
-{% tab title=".qovery.yml" %}
-```yaml
-application:
-  ...
-brokers:
-  - type: rabbitmq
-    version: 11.4
-    size: 20GiB
-```
-{% endtab %}
-{% endtabs %}
-
-Once done, commit and push to apply the changes.
-
-### Delete for one branch
-
-Once you've finished to work on a feature branch, simply delete the branch and **the instance will automatically be delete** as well.
 
 ## Backups
 
@@ -168,8 +148,8 @@ You can change the window very easily \(use 24h format\):
 application:
   ...
 databases:
-  - name: my-super-instance
-    type: redis
+  - name: my-rabbitmq
+    type: rabbitmq
     backup-window: 21-23
 ```
 {% endtab %}
@@ -184,7 +164,7 @@ You can restore through the CLI or the web interface.
 From the CLI:
 
 ```bash
-$ qovery restore <instance-name>
+$ qovery restore <broker-instance-name>
 
 ➤ Choose the version you want to restore:
   25/11/2019 - 22h
@@ -197,7 +177,7 @@ $ qovery restore <instance-name>
 
 ➤ Do you want to perform a backup before restoring? (y/n): y
 
-➤ Please confirm by typing the instance name: my-super-instance
+➤ Please confirm by typing the broker instance name: my-broker
 
 ✓ Backup successfuly created
 ✓ Backup as successfuly been restored (23/11/2019 - 22h)

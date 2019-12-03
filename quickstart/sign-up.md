@@ -1,5 +1,5 @@
 ---
-description: Qovery Sigh Up
+description: Qovery Sign Up
 ---
 
 # Sign Up

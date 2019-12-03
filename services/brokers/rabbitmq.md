@@ -119,12 +119,12 @@ $ qovery status broker
 * Kind    : Medium (4 vCPU / 16GiB Ram)
 ```
 
-## Delete an instance
+## Delete a broker instance
 
-To delete an instance, here are the 2 possible solutions:
+To delete a broker instance, here are the 2 possible solutions:
 
-1. **Remove from the configuration file**, commit and push if you want to keep your current branch
-2. Once you've finished to work on a feature branch, delete the branch and **the instance will automatically be deleted** as well.
+1. **Remove it from the configuration file**, commit and push
+2. If you worked on feature branch, delete the branch and **the broker instance will automatically be deleted** as well.
 
 {% hint style="danger" %}
 **Delete action will drop the services and its data!**

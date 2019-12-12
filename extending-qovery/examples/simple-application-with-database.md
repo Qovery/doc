@@ -79,7 +79,6 @@ application:
   project: my-project
 
 network:
-  private-port: 8080
   public-port: 443
    
 databases:

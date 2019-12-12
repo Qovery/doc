@@ -18,7 +18,6 @@ application:
   project: test
 
 network:
-  private-port: 8080
   public-port: 443
 ```
 {% endtab %}

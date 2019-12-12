@@ -38,7 +38,6 @@ application:
 
 network:
   cache: qovery
-  private-port: 8080
   public-port: 443
 ```
 {% endtab %}

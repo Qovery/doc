@@ -18,7 +18,6 @@ application:
   project: test
 
 network:
-  private-port: 8080
   public-port: 80
 ```
 {% endtab %}
@@ -59,7 +58,6 @@ application:
 
 network:
   dns: myapp.mydomain.name
-  private-port: 8080
   public-port: 80
 ```
 {% endtab %}

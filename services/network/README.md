@@ -7,70 +7,46 @@ description: Know how you manage the network part
 On your Qovery project, you can configure the way your applications are accessible from the [outside \(internet\)](./#public-access) or in a [private, dedicated and secure way](./#private-access) with other applications from the same project.
 
 {% hint style="warning" %}
-**By default the access to your application network is closed. Nobody can access to your applications until you explicitly specified it.**
+**By default the access to your application network is private. Nothing outside your project can access to your applications until you explicitly specified it.**
 {% endhint %}
-
-## Closed Access
-
-This is the default behavior, **you don't have anything to do**.
-
-{% hint style="info" %}
-Nobody is able to talk to your application. But your application can talk to anyone
-{% endhint %}
-
-Here App1 can't be contacted by App2, but App1 is able to use S3 and Internet.
-
-![](../../.gitbook/assets/qovery-closed-network.png)
-
-If your application **do not have to listen to a port** \(eg: pure computing or consuming external API or storing some content in [S3](../storage/s3.md)...\) you may not need to expose any kind of port. 
 
 ## Private Access
 
-In the case you have **several applications running in the same Qovery project**, you may need to have applications talking together in a **private, dedicated and secure area**.
+By default, exposed ports in your Dockerfile \([EXPOSE instruction](https://docs.docker.com/engine/reference/builder/#expose)\) are visible by others applications **of the same project**.
 
 ![](../../.gitbook/assets/qovery-private-network.png)
 
-For example, your application "App2" needs to talk to another running application "App1". The "App1" application has to expose its own running port.
-
-To do so, in the Qovery configuration file \(.qovery.yml\) of the "App1" application, add the "private-port" line:
+Here is an example Dockerfile with Expose:
 
 {% tabs %}
-{% tab title=".qovery.yml" %}
-```yaml
-app:
-  name: myapp
-  project: test
+{% tab title="Dockerfile" %}
+```bash
+# Build your application with this image called "build"
+FROM adoptopenjdk/openjdk8:alpine AS build
+RUN apk update && apk upgrade && apk add bash
+RUN cd /usr/local/bin && \
+    wget https://services.gradle.org/distributions/gradle-5.6-all.zip && \
+    /usr/bin/unzip gradle-5.6-all.zip && \
+    ln -s /usr/local/bin/gradle-5.6/bin/gradle /usr/bin/gradle
+RUN mkdir -p /app
+COPY . /app
+WORKDIR /app
+RUN gradle build -x test
 
-network:
-  private-port: 8080
-```
-{% endtab %}
-{% endtabs %}
-
-Here the port "8080" will be securely exposed to other applications. In order to target "App1" application, "App2" application has to point to "App1:8080".
-
-### Multiple private ports
-
-If you have multiple ports to privately expose to other applications of the same dedicated area, you need to use "private-ports" instead. Here is an example:
-
-{% tabs %}
-{% tab title=".qovery.yml" %}
-```yaml
-application:
-  name: myapp
-  project: test
-
-network:
-  private-port:
-    - 8080
-    - 8081
+# The container that will run
+FROM adoptopenjdk/openjdk8:alpine-slim
+# Here expose port is used
+EXPOSE 8080
+COPY --from=build /app/build/libs/simple-example-1.0.jar /app.jar
+ENV JAVA_OPTS=""
+CMD exec java $JAVA_OPTS -jar /app.jar
 ```
 {% endtab %}
 {% endtabs %}
 
 ## Public Access
 
-To allow public access on a specific application port, you have to first expose the port as described in the "[Private Access](./#private-access)" section of this page.
+To allow public access on a specific application port, you first need to be sure that you exposed the port \(in the Dockerfile\) as described in the "[Private Access](./#private-access)" section of this page.
 
 ![](../../.gitbook/assets/qovery-pulic-network.png)
 
@@ -84,7 +60,6 @@ application:
   project: test
 
 network:
-  private-port: 8080
   public-port: 80
 ```
 {% endtab %}
@@ -102,7 +77,6 @@ application:
   project: test
 
 network:
-  private-port: [ 8080, 8081 ]
   public-ports:
     - public-port: 8080
       private-port: 80

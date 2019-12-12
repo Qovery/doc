@@ -1,5 +1,5 @@
 ---
-description: Know how you manage the network part
+description: Manage the network part
 ---
 
 # Network

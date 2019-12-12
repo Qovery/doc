@@ -35,7 +35,7 @@ RUN gradle build -x test
 
 # The container that will run
 FROM adoptopenjdk/openjdk8:alpine-slim
-# Here expose port is used
+# Here you need to declare your EXPOSE ports to be used
 EXPOSE 8080
 COPY --from=build /app/build/libs/simple-example-1.0.jar /app.jar
 ENV JAVA_OPTS=""
@@ -43,6 +43,8 @@ CMD exec java $JAVA_OPTS -jar /app.jar
 ```
 {% endtab %}
 {% endtabs %}
+
+You can declare one or multiple ports if you need using multiple lines.
 
 ## Public Access
 

@@ -8,7 +8,11 @@ The SSL/TLS certificates are mandatory to get a **secure** website.
 
 ## Get a certificate
 
-In order to get a SSL/TLS certificate, **you simply have to set the "public-port" parameter to "443"** in the .qovery.yml file:
+{% hint style="success" %}
+You don't have to perform any actions to get https. By default, all declared public ports have a SSL/TLS certificate.
+{% endhint %}
+
+Y**ou simply have to set the "public-port" parameter to the one your want \(default is 443 for https\)** in the .qovery.yml file:
 
 {% tabs %}
 {% tab title=".qovery.yml" %}

@@ -46,7 +46,7 @@ curl -s https://raw.githubusercontent.com/Qovery/qovery-cli/master/install.sh | 
 The classic way to install binaries on Windows is to use [Scoop](https://scoop.sh/):
 
 ```text
-scoop bucket add app https://github.com/org/repo.git
+scoop bucket add qovery https://github.com/Qovery/scoop-qovery-cli
 scoop install qoveryc-cli
 ```
 
@@ -56,15 +56,13 @@ You can [download the latest releas](https://github.com/Qovery/qovery-cli/releas
 
 Now in the Command line Terminal, you can type "qovery".
 
-#### Linux
+#### Linux \(manual\)
 
-You can download and install Qovery CLI:
+You can download and install Qovery CLI from on every Linux distribution:
 
 ```text
 curl -s https://raw.githubusercontent.com/Qovery/qovery-cli/master/install.sh | bash
 ```
-
-You may also find "qovery" CLI to install from your package manager. Please refer to it to know more.
 
 ### Sign Up
 

@@ -38,7 +38,7 @@ brew install qovery
 This is the solution to install qovery manually:
 
 ```text
-curl -LO https://cli.qovery.com/darwin/qovery
+curl -s https://raw.githubusercontent.com/Qovery/qovery-cli/master/install.sh | bash
 ```
 
 #### Windows

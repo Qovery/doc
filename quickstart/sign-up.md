@@ -1,5 +1,5 @@
 ---
-description: Qovery Sign Up
+description: Get Qovery CLI and sign up/in
 ---
 
 # Sign Up
@@ -20,11 +20,11 @@ Both will help you to authenticate and do more afterwards.
 
 ![](../.gitbook/assets/q-register.png)
 
-## CLI
+## CLI installation
 
-### Installation
+### Mac OS
 
-#### Mac OS \(brew\)
+#### Homebrew
 
 The common solution to install a command line binary on Mac OS is to use [brew](https://brew.sh/):
 
@@ -33,7 +33,7 @@ brew tap Qovery/qovery-cli
 brew install qovery
 ```
 
-#### Mac OS \(manual\)
+#### Manual
 
 This is the solution to install qovery manually:
 
@@ -41,7 +41,9 @@ This is the solution to install qovery manually:
 curl -s https://get.qovery.com | bash
 ```
 
-#### Windows \(scoop\)
+### Windows
+
+#### Scoop
 
 The classic way to install binaries on Windows is to use [Scoop](https://scoop.sh/):
 
@@ -50,13 +52,11 @@ scoop bucket add qovery https://github.com/Qovery/scoop-qovery-cli
 scoop install qoveryc-cli
 ```
 
-#### Windows \(manual\)
+#### Manual
 
 You can [download the latest releas](https://github.com/Qovery/qovery-cli/releases)e and uncompress its content to _C:\Windows_.
 
-Now in the Command line Terminal, you can type "qovery".
-
-#### Linux \(manual\)
+### Linux
 
 You can download and install Qovery CLI from on every Linux distribution:
 
@@ -64,23 +64,25 @@ You can download and install Qovery CLI from on every Linux distribution:
 curl -s https://get.qovery.com | bash
 ```
 
-### Sign Up
+## Sign Up/In
 
 To sign up using Qovery CLI, it's simple. Run this command:
 
 ```text
-qovery connect
+qovery auth
 ```
 
-You'll get a window open on your browser to link with your GitHub account.
+You'll get a window open on your browser to link with your account. In this example we chose GitHub :
 
-### Help
+![](../.gitbook/assets/qovery_auth.png)
 
-To list all available commands
+We need to access to your account to be able to clone your repository for future application build:
 
-```text
-qovery help
-```
+![](../.gitbook/assets/github_connect.png)
 
-CLI [source code](https://github.com/Qovery/qovery-cli) is available on GitHub
+Then we need to validate it on our side:
+
+![](../.gitbook/assets/github_auth.png)
+
+That's it, you should have a message saying: "_Authentication successful. You can close this window_."
 

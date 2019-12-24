@@ -24,15 +24,18 @@ Both will help you to authenticate and do more afterwards.
 
 ### Installation
 
-#### Mac OS
+#### Mac OS \(brew\)
 
-There are 2 ways to install the Qovery CLI on Mac OS. First the common one with [brew](https://brew.sh/):
+The common solution to install a command line binary on Mac OS is to use [brew](https://brew.sh/):
 
 ```text
+brew tap Qovery/qovery-cli
 brew install qovery
 ```
 
-The second option is with this command line:
+#### Mac OS \(manual\)
+
+This is the solution to install qovery manually:
 
 ```text
 curl -LO https://cli.qovery.com/darwin/qovery

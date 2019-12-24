@@ -4,22 +4,6 @@ description: Get Qovery CLI and sign up/in
 
 # Sign Up
 
-**Qovery Sign Up is the first step before using it.**
-
-To do so, you have 2 options, select the one you're more familiar with:
-
-1. \*\*\*\*[**Web interface**](sign-up.md#web-interface): if you prefer visual interfaces, more graphical, use our dedicated web interface.
-2. \*\*\*\*[**CLI**](sign-up.md#cli): if you prefer the command line, you can safely use our CLI. It contains a wizard to help you to quickly generate a configuration.
-
-Both will help you to authenticate and do more afterwards.
-
-## Web interface
-
-1. To sign up using Qovery Web Interface, you just have to go on cloud.qovery.com.
-2. You have the choice to sign up by using [Github](https://github.com/), [Gitlab](https://about.gitlab.com) and [Bitbucket](https://bitbucket.org/).
-
-![](../.gitbook/assets/q-register.png)
-
 ## CLI installation
 
 ### Mac OS

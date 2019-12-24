@@ -38,7 +38,7 @@ brew install qovery
 This is the solution to install qovery manually:
 
 ```text
-curl -s https://raw.githubusercontent.com/Qovery/qovery-cli/master/install.sh | bash
+curl -s https://get.qovery.com | bash
 ```
 
 #### Windows \(scoop\)
@@ -61,7 +61,7 @@ Now in the Command line Terminal, you can type "qovery".
 You can download and install Qovery CLI from on every Linux distribution:
 
 ```text
-curl -s https://raw.githubusercontent.com/Qovery/qovery-cli/master/install.sh | bash
+curl -s https://get.qovery.com | bash
 ```
 
 ### Sign Up

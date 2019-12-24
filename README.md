@@ -4,7 +4,7 @@ description: Welcome to the official Qovery documentation!
 
 # Welcome to Qovery
 
-![](.gitbook/assets/qovery_logo_with_name_dark_2048.png)
+![](.gitbook/assets/qovery_logo.png)
 
 [**Qovery**](https://www.qovery.com) **helps tech companies to accelerate and scale application development cycle with zero infrastructure management investment.**
 

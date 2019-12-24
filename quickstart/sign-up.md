@@ -41,20 +41,27 @@ This is the solution to install qovery manually:
 curl -s https://raw.githubusercontent.com/Qovery/qovery-cli/master/install.sh | bash
 ```
 
-#### Windows
+#### Windows \(scoop\)
 
-Qovery CLI can be installed on Windows from this [link](https://cli.qovery.com/windows/qovery).
+The classic way to install binaries on Windows is to use [Scoop](https://scoop.sh/):
 
-Then add it in one folder of your PATH \(eg. C:\Windows\)
+```text
+scoop bucket add app https://github.com/org/repo.git
+scoop install qoveryc-cli
+```
+
+#### Windows \(manual\)
+
+You can [download the latest releas](https://github.com/Qovery/qovery-cli/releases)e and uncompress its content to _C:\Windows_.
+
+Now in the Command line Terminal, you can type "qovery".
 
 #### Linux
 
 You can download and install Qovery CLI:
 
 ```text
-curl -LO https://cli.qovery.com/linux-x64/qovery
-chmod 755 qovery
-sudo mv qovery-cli /usr/local/bin/qovery
+curl -s https://raw.githubusercontent.com/Qovery/qovery-cli/master/install.sh | bash
 ```
 
 You may also find "qovery" CLI to install from your package manager. Please refer to it to know more.

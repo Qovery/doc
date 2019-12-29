@@ -33,7 +33,7 @@ The classic way to install binaries on Windows is to use [Scoop](https://scoop.s
 
 ```text
 scoop bucket add qovery https://github.com/Qovery/scoop-qovery-cli
-scoop install qoveryc-cli
+scoop install qovery-cli
 ```
 
 #### Manual

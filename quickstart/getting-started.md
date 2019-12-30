@@ -27,27 +27,35 @@ In order to be able to deploy this application through Qovery, we have to initia
 
 ```text
 $ qovery init
-
-✓ Dockerfile detected in your root directory
+Reply to the following questions to initialize Qovery for this application
+For more info: https://docs.qovery.com
 
 ➤ Enter the project name: my-project
 
-➤ Enter the application name: simple-example
+➤ Choose the region where you want to host your project and applications:
+0. none
+1. aws/eu-west-3
+➤ Your choice: 1
 
-➤ What port number your application is running on? (Hit enter if none): 8080
+➤ Enter the application name [default: simple-example]:
+unexpected newline
 
-➤ Is this port accessible from other applications of the same project? (y/n): y
+➤ Do you need a database? (PostgreSQL, MySQL, MongoDB, ...) (y/n) [default=n]: n
 
-➤ Would you like to expose publicly your application on https? (y/n): y
+!!!IMPORTANT!!!
+Qovery needs to get access to your git repository
+https://github.com/apps/qovery/installations/new/permissions?target_id=XXXXXX
 
-➤ Do you need any database? (y/n): n
+➤ Would you like to open the link above? (y/n) [default=n]: y
 
-➤ Do you need any broker? (y/n): n
+!!!IMPORTANT!!!
+1/ Commit and push the ".qovery.yml" file to get your app deployed
+➤ Run: git add .qovery.yml && git commit -m "add .qovery.yml" && git push -u origin master
 
-➤ Do you need any storage? (y/n): n
+2/ Check the status of your deployment
+➤ Run: qovery status
 
-✓ Your Qovery configuration file has been successfuly created (.qovery.yml)!
-✓ Commit into your repository and push it to get this deployed.
+Enjoy! 👋
 ```
 
 In your current directory, you now have a **".qovery.yml" file describing the desired configuration** you've just asked for:
@@ -55,12 +63,18 @@ In your current directory, you now have a **".qovery.yml" file describing the de
 {% tabs %}
 {% tab title=".qovery.yml" %}
 ```yaml
+qovery:
+  key: ****************************
 application:
   name: simple-example
   project: my-project
-
-network:
-  public-port: 443
+  publicly_accessible: true
+routers:
+- name: main
+  routes:
+  - application_name: simple-example
+    paths:
+    - /*
 ```
 {% endtab %}
 {% endtabs %}

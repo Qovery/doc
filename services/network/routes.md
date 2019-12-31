@@ -18,6 +18,7 @@ Here is how to do it in the Qovery configuration file:
 application:
   name: myapp
   project: test
+  publicly_accessible: true
 ...
 routers:
   - name: backend-router

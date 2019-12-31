@@ -71,16 +71,10 @@ You can validate your Dockerfile by running a build on your machine.
 You need to have [Docker binary installed](https://docs.docker.com/install/) on your computer to validate the build
 {% endhint %}
 
-You simply have to run:
+You simply have to run this command:
 
 ```bash
-qovery build
-```
-
-or by using Docker:
-
-```bash
-docker build .
+qovery run
 ```
 
 ## Other references

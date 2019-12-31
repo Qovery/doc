@@ -44,15 +44,15 @@ CMD exec java $JAVA_OPTS -jar /app.jar
 {% endtab %}
 {% endtabs %}
 
-You can declare one or multiple ports if you need using multiple lines.
+For the moment only one port is supported.
 
 ## Public Access
 
-To allow public access on a specific application port, you first need to be sure that you exposed the port \(in the Dockerfile\) as described in the "[Private Access](./#private-access)" section of this page.
+To allow public access, you first need to be sure that you exposed the port \(in the Dockerfile\) as described in the "[Private Access](./#private-access)" section of this page.
 
 ![](../../.gitbook/assets/qovery-pulic-network.png)
 
-Then you have to declare in the Qovery configuration file \(.qovery.yaml\), the desired port for external access \(here 443, the https port\):
+Then add to the Qovery configuration file \(.qovery.yaml\), "publicly\_accessible" parameter to allow external access from https \(port 443\):
 
 {% tabs %}
 {% tab title=".qovery.yml" %}

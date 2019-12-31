@@ -16,9 +16,7 @@ There is **nothing to do, as soon as you define a public port to your applicatio
 application:
   name: myapp
   project: test
-
-network:
-  public-port: 80
+  publicly_accessible: true
 ```
 {% endtab %}
 {% endtabs %}
@@ -28,9 +26,13 @@ To check the DNS name, you can do it through CLI:
 ```bash
 $ qovery status
 
-* External DNS name               : <myapplication>.qovery.io
-* Current deployed version        : 7b3aeb5 (Marty McFly) / 2014-05-13 02:56
-...
+Environment
+branch  status  endpoints                    applications  databases  brokers  storage
+master  LIVE    https://xxxxxxxx.qovery.io   1             0          0        0
+
+Applications
+name            status  databases  brokers  storage
+myapp-test      LIVE    0          0        0
 ```
 
 You can also see it from the Web interface.
@@ -38,10 +40,6 @@ You can also see it from the Web interface.
 ## Custom DNS
 
 You can define custom DNS name with your company name.
-
-{% hint style="warning" %}
-**https \(SSL/TLS\) is not supported on custom DNS name**
-{% endhint %}
 
 {% hint style="info" %}
 **Custom DNS name is only activated on master branch**
@@ -70,9 +68,13 @@ Finally you have to **configure a "A" record name to your DNS registrar** \(or t
 ```bash
 $ qovery status
 
-* External DNS name               : myapp.mydomain.name / <ip_address>
-* Current deployed version        : 7b3aeb5 (Marty McFly) / 2014-05-13 02:56
-...
+Environment
+branch  status  endpoints                    applications  databases  brokers  storage
+master  LIVE    https://myapp.mydomain.name  1             0          0        0
+
+Applications
+name            status  databases  brokers  storage
+myapp-test      LIVE    0          0        0
 ```
 
 The record name should be configured to point to the IP address like:

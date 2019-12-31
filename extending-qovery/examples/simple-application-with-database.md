@@ -14,8 +14,6 @@ We'll start new project with those constraints:
 | :--- | :--- |
 | 1 application | Private port on 8080 |
 | Being exposed through internet on https | Public port on 443 |
-| 1 single database | MySQL database instance |
-| Store images on a shared storage | S3 object storage |
 
 ## Generate configuration
 
@@ -23,46 +21,40 @@ The first thing to do is to initiate Qovery in the repository:
 
 ```text
 $ qovery init
+Reply to the following questions to initialize Qovery for this application
+For more info: https://docs.qovery.com
 
-✓ Dockerfile detected in your root directory
+➤ What do you want?:
+1. create a new project
+2. select an existing project
+➤ Your choice: 1
 
-➤ Enter the project name: my-project
+➤ Enter the project name: project-demo
 
-➤ Enter the application name: simple-example
+➤ Choose the region where you want to host your project and applications:
+0. none
+1. aws/eu-west-3
+➤ Your choice: 1
 
-➤ What port number your application ir running on? (Hit enter if none): 8080
+➤ Enter the application name [default: simple-example]: demo
 
-➤ Is this port accessible from other applications of the same project? (y/n): y
+➤ Do you need a database? (PostgreSQL, MySQL, MongoDB, ...) (y/n) [default=n]: n
+✓ Your Qovery configuration file has been successfully created (.qovery.yml)
 
-➤ Would you like to expose publicly your application on https? (y/n): y
+!!!IMPORTANT!!!
+Qovery needs to get access to your git repository
+https://github.com/apps/qovery/installations/new
 
-➤ Do you need any database? (y/n): y
+➤ Would you like to open the link above? (y/n) [default=n]: y
 
-➤ Set the instance name: my-mysql
+!!!IMPORTANT!!!
+1/ Commit and push the ".qovery.yml" file to get your app deployed
+➤ Run: git add .qovery.yml && git commit -m "add .qovery.yml" && git push -u origin master
 
-➤ Estimated MySQL data size in GiB (default: 10): 20
+2/ Check the status of your deployment
+➤ Run: qovery status
 
-➤ Please choose the performances you need: 1
-1. Tiny   : 1 vCPU / 2GiB Ram
-2. Small  : 2 vCPU / 8Gib Ram
-3. Medium : 4 vCPU / 16GiB Ram
-4. Big    : 8 vCPU / 32GiB Ram
-5. Huge   : 16 vCPU / 64GiB Ram
-c. Custom Mode
-
-➤ Do you need any other database? (y/n): n
-
-➤ Do you need any borker? (y/n): n
-
-➤ Do you need any storage? (y/n): y
-
-➤ Set the bucket name: images
-
-➤ Should "images" bucket name needs to be publicly accessible? (y/n): n
-
-✓ Your Qovery configuration file has been successfuly created (.qovery.yml)!
-
-➤ Commit into your repository and push it to get this deployed.
+Enjoy! 👋
 ```
 
 {% hint style="info" %}
@@ -74,24 +66,18 @@ Now that you have declared your prerequisites, you can find the result in your Q
 {% tabs %}
 {% tab title=".qovery.yml" %}
 ```yaml
+qovery:
+  key: ****************************
 application:
   name: simple-example
   project: my-project
-
-network:
-  public-port: 443
-   
-databases:
-  - name: my-mysql
-    type: mysql
-    version: 8.0
-    size: 20GiB
-
-storage:
-  - name: s3-images
-    type: object-storage
-    bucket: images
-    public-access: no
+  publicly_accessible: true
+routers:
+- name: main
+  routes:
+  - application_name: simple-example
+    paths:
+    - /*
 ```
 {% endtab %}
 {% endtabs %}
@@ -105,9 +91,21 @@ Finally, **once committed and pushed, your application will be live!!!** You can
 ```bash
 $ qovery status
 
-* External DNS name               : <myexample>.qovery.io
-* SSL/TLS enabled                 : https://<myexample>.qovery.io
-* Current deployed version        : 7b3aeb5 (Marty McFly) / 2014-05-13 02:56
-...
+Environment
+branch  status  endpoints                    applications  databases  brokers  storage
+master  LIVE    https://xxxxxxxx.qovery.io   1             0          0        0
+
+Applications
+name            status  databases  brokers  storage
+project-demo    LIVE    0          0        0
+
+Databases
+name  status  type  version  endpoint  port  username  password  application
+
+Brokers
+name  status  type  version  endpoint  port  username  password  application
+
+Storage
+name  status  type  version  endpoint  port  username  password  application
 ```
 

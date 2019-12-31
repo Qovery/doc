@@ -35,10 +35,7 @@ To enable Qovery caching, you simply have to add the "cache" line like:
 application:
   name: myapp
   project: test
-
-network:
   cache: qovery
-  public-port: 443
 ```
 {% endtab %}
 {% endtabs %}

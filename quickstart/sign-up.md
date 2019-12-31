@@ -14,7 +14,7 @@ The common solution to install a command line binary on Mac OS is to use [brew](
 
 ```text
 brew tap Qovery/qovery-cli
-brew install qovery-cli
+brew install qovery
 ```
 
 #### Manual

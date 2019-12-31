@@ -63,7 +63,15 @@ https://github.com/apps/qovery/installations/new
 Enjoy! 👋
 ```
 
-In your current directory, you now have a **".qovery.yml" file describing the desired configuration** you've just asked for:
+We need to get access to your git repository to be able to build an image container and access to your ".qovery.yml" configuration. You'll have to allow Qovery \(only the first time\) to access to it:
+
+![](../.gitbook/assets/gh_install_qovery.png)
+
+Then you'll see Qovery access permissions:
+
+![](../.gitbook/assets/gh_qovery_access.png)
+
+You may noticed that in your current directory, you now have a **".qovery.yml" file describing the desired configuration** you've just asked for:
 
 {% tabs %}
 {% tab title=".qovery.yml" %}

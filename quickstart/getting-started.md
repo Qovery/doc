@@ -30,21 +30,26 @@ $ qovery init
 Reply to the following questions to initialize Qovery for this application
 For more info: https://docs.qovery.com
 
-➤ Enter the project name: my-project
+➤ What do you want?:
+1. create a new project
+2. select an existing project
+➤ Your choice: 1
+
+➤ Enter the project name: project-demo
 
 ➤ Choose the region where you want to host your project and applications:
 0. none
 1. aws/eu-west-3
 ➤ Your choice: 1
 
-➤ Enter the application name [default: simple-example]:
-unexpected newline
+➤ Enter the application name [default: simple-example]: demo
 
 ➤ Do you need a database? (PostgreSQL, MySQL, MongoDB, ...) (y/n) [default=n]: n
+✓ Your Qovery configuration file has been successfully created (.qovery.yml)
 
 !!!IMPORTANT!!!
 Qovery needs to get access to your git repository
-https://github.com/apps/qovery/installations/new/permissions?target_id=XXXXXX
+https://github.com/apps/qovery/installations/new
 
 ➤ Would you like to open the link above? (y/n) [default=n]: y
 
@@ -110,7 +115,7 @@ master  LIVE    https://xxxxxxxx.qovery.io   1             0          0        0
 
 Applications
 name            status  databases  brokers  storage
-simple-example  LIVE    0          0        0
+project-demo    LIVE    0          0        0
 
 Databases
 name  status  type  version  endpoint  port  username  password  application

@@ -52,7 +52,7 @@ To allow public access on a specific application port, you first need to be sure
 
 ![](../../.gitbook/assets/qovery-pulic-network.png)
 
-Then you have to declare in the Qovery configuration file \(.qovery.yaml\), the desired port for external access \(here 80, the http port\):
+Then you have to declare in the Qovery configuration file \(.qovery.yaml\), the desired port for external access \(here 443, the https port\):
 
 {% tabs %}
 {% tab title=".qovery.yml" %}
@@ -60,9 +60,7 @@ Then you have to declare in the Qovery configuration file \(.qovery.yaml\), the 
 application:
   name: myapp
   project: test
-
-network:
-  public-port: 80
+  publicly_accessible: true
 ```
 {% endtab %}
 {% endtabs %}

@@ -22,6 +22,16 @@ Not yet, the product is currently in beta. We hope having a production ready ver
 
 Qovery rely on the excellent AWS \(Amazon Web Services\) infrastructure. Qovery is available in United States, Canada, South America, Europe, Africa, Asia. 
 
+## Qovery says it's deployed but I've an error "Could not resolve host"
+
+It's generally a DNS cache issue. Very common on Mac OS, you can flush your cache this way:
+
+```bash
+sudo killall -HUP mDNSResponder
+```
+
+If you want to know more about it, please take a look at the [official Apple page](https://support.apple.com/en-us/HT202516). 
+
 ## My application is not able to start, I've a timeout error
 
 This can happen if your application is too long to start. Please take a look on how to change the [boot time](../extending-qovery/monitoring/monitoring.md#change-start-time-delay).

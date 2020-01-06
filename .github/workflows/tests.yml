@@ -20,4 +20,4 @@ jobs:
         npm install broken-link-checker -g
     - name: Check broken links
       run: |
-        blc -g --filter-level 2 -r https://docs.qovery.com
+        blc -g --filter-level 1 -r https://docs.qovery.com

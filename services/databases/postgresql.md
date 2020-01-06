@@ -141,7 +141,24 @@ To delete a database instance, here are the 2 possible solutions:
 By default, backups are made every day between 1h and 5h.
 {% endhint %}
 
-## Restore \(coming soon\)
+You can change the window very easily \(use 24h format\):
+
+{% tabs %}
+{% tab title=".qovery.yml" %}
+```yaml
+application:
+  ...
+databases:
+  - name: my-postgres
+    type: postgresql
+    backup-window: 21-23
+```
+{% endtab %}
+{% endtabs %}
+
+As described here, the backup will occur between 9PM and 11PM.
+
+## Restore
 
 You can restore through the CLI or the web interface.
 

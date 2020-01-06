@@ -37,7 +37,7 @@ myapp-test      LIVE    0          0        0
 
 You can also see it from the Web interface.
 
-## Custom DNS \(coming soon\)
+## Custom DNS
 
 You can define custom DNS name with your company name.
 

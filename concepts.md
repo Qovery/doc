@@ -12,7 +12,7 @@ In this page, you'll find information explaining how [Qovery](https://www.qovery
 
 The main Qovery requirement is **Git**. As you \(developer\) are already using it to manage your application code. Qovery project's configuration is driven entirely by YAML files into your Git repository.
 
-The [Services](services/network/) and [Extending](extending-qovery/branches.md) Qovery sections covers those in more detail and can serve as both tutorial and quick-reference.
+The [Services](services/network/) and Extending Qovery sections covers those in more detail and can serve as both tutorial and quick-reference.
 
 Qovery supports the well known [**Docker**](https://www.docker.com/) **containers** technology and a number of different [Databases](services/databases/) and other services \(available in [Services](services/network/) section\).
 
@@ -70,7 +70,7 @@ Qovery respects the structure of branches. It's entirely up to you.
 
 Qovery relies on AWS to run components of its own infrastructure.
 
-Qovery manages the CI/CD by its own and uses AWS services for the [Network](services/network/), [Databases](services/databases/), [Brokers](services/brokers/) and [Storage](services/storage/) part.
+Qovery manages the CI/CD by its own and uses AWS services for the [Network](services/network/), [Databases](services/databases/), Brokers and Storage part.
 
 {% hint style="success" %}
 **Our clients benefits of the best guaranties in term of stability, availability and scalability**

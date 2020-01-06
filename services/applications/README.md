@@ -33,8 +33,8 @@ You can find other proposed services by Qovery like:
 | :--- | :--- |
 | [Network](../network/) | Custom DNS, SSL/TLS, Routes etc... |
 | [Databases](../databases/) | SQL or NoSQL databases |
-| [Brokers](../brokers/) | Message queuing systems |
-| [Storages](../storage/) | Share data against your applications |
+| Brokers | Message queuing systems |
+| Storages | Share data against your applications |
 
 {% hint style="info" %}
 It's as easy as just adding a few lines in your configuration file!

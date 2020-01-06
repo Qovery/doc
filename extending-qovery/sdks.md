@@ -23,7 +23,7 @@ Here is the list of supported languages:
 If your language is not supported yet please use the "**Other**" way
 {% endhint %}
 
-## NodeJS
+## NodeJS \(coming soon\)
 
 Minimum supported version:
 
@@ -44,12 +44,12 @@ Supported versions:
 * 3.x
 
 ```bash
-pip install qovery
+pip install qovery-client
 ```
 
 [Checkout available versions](https://github.com/Qovery/qovery-php-sdk)
 
-## PHP
+## PHP \(coming soon\)
 
 Supported versions:
 
@@ -87,13 +87,13 @@ compile group: 'com.qovery', name: 'client', version: '1.0.0'
 
 [Checkout available versions](https://github.com/Qovery/qovery-java-sdk)
 
-## Go
+## Go \(coming soon\)
 
 Supported versions:
 
 * 1.10+
 
 ```bash
-import "github.com/Qovery/qovery-go-sdk"
+import "github.com/Qovery/qovery-go-client"
 ```
 

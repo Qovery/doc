@@ -34,7 +34,7 @@ If you want to know more about it, please take a look at the [official Apple pag
 
 ## My application is not able to start, I've a timeout error
 
-This can happen if your application is too long to start. Please contact us [support@qovery.com](mailto:support@qovery.com).
+This can happen if your application is too long to start. Please take a look on how to change the [boot time](../extending-qovery/monitoring/monitoring.md#change-start-time-delay).
 
 ## How can I contact you?
 

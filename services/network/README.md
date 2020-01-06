@@ -65,3 +65,31 @@ application:
 {% endtab %}
 {% endtabs %}
 
+### Multiple public ports
+
+If you have multiple ports to publicly expose, you need to use "public-ports" instead. Here is an example:
+
+{% tabs %}
+{% tab title=".qovery.yml" %}
+```yaml
+application:
+  name: myapp
+  project: test
+
+network:
+  public-ports:
+    - public-port: 8080
+      private-port: 80
+    - public-port: 8080
+      private-port: 443
+    - public-port: 8081
+      private-port: 1234
+```
+{% endtab %}
+{% endtabs %}
+
+To explain it simply:
+
+* The port exposed 8080 on the private network, is publicly exposed to the port 80 and 443
+* The port exposed 8081 on the private network, is publicly exposed to the port 1234
+

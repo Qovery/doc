@@ -23,7 +23,7 @@ Here is the list of supported languages:
 If your language is not supported yet please use the "**Other**" way
 {% endhint %}
 
-## NodeJS \(coming soon\)
+## NodeJS
 
 Minimum supported version:
 
@@ -32,7 +32,7 @@ Minimum supported version:
 * 10
 
 ```bash
-npm install qovery
+npm install qovery-client
 ```
 
 [Checkout available versions](https://github.com/Qovery/qovery-javascript-sdk)

@@ -6,34 +6,26 @@ description: 'PostgreSQL is a high-performance, standards-compliant relational S
 
 [PostgreSQL](https://www.postgresql.org/) is a powerful, open source **object-relational database system** with over 30 years of active development that has earned it a strong reputation for **reliability, feature robustness, and performance**.
 
-## Add a new instance to an existing application
+## Add a new database instance to an existing application
 
-To **add a new dedicated PostgreSQL instance** to an existing application, you can use Qovery CLI to do it:
+To **add a new dedicated PostgreSQL instance** to an existing application, you can use update the configuration file by adding these lines:
 
+{% tabs %}
+{% tab title=".qovery.yml" %}
 ```bash
-$ qovery add database
-
-➤ Choose the database instance you want to add: 1
-1. PostgreSQL
-2. MongoDB
+application:
 ...
-
-➤ Set the database instance name: my-postgres
-
-➤ Estimated PostgreSQL data size in GiB (default: 10): 20
-
-➤ Please choose the kind of performances you need: 3
-1. Tiny   : 1 vCPU / 2GiB Ram
-2. Small  : 2 vCPU / 8Gib Ram
-3. Medium : 4 vCPU / 16GiB Ram
-4. Big    : 8 vCPU / 32GiB Ram
-5. Huge   : 16 vCPU / 64GiB Ram
-c. Custom Mode
-
-✓ Your Qovery configuration file has been successfuly updated (.qovery.yml)!
-
-➤ Commit into your repository and push it to get this deployed.
+databases:
+- type: postgresql
+  version: "11.5"
+  name: my-postgresql-6132005
 ```
+{% endtab %}
+{% endtabs %}
+
+* **name**: the name of your postgres database
+* **version**: the versions of PostgreSQL
+* **type**: the database engine
 
 ## Access to an instance
 
@@ -109,15 +101,11 @@ public class PostgreSQLSample {
 To know more about your instance status, you can do it this way:
 
 ```bash
-$ qovery status database
-
-✓ my-postgres:
-* Branch  : master (Production)
-* Health  : healthy
-* Type    : PostgreSQL
-* Version : 12.1
-* Size    : 20GiB
-* Kind    : Medium (4 vCPU / 16GiB Ram)
+$ qovery status
+...
+Databases
+name                   status  type        version  endpoint           port  username   password  application
+my-postgresql-3498225  LIVE    POSTGRESQL  11.5     xxx.amazonaws.com  5432  user       password  client-example-postgresql
 ```
 
 ## Delete a database instance
@@ -141,24 +129,7 @@ To delete a database instance, here are the 2 possible solutions:
 By default, backups are made every day between 1h and 5h.
 {% endhint %}
 
-You can change the window very easily \(use 24h format\):
-
-{% tabs %}
-{% tab title=".qovery.yml" %}
-```yaml
-application:
-  ...
-databases:
-  - name: my-postgres
-    type: postgresql
-    backup-window: 21-23
-```
-{% endtab %}
-{% endtabs %}
-
-As described here, the backup will occur between 9PM and 11PM.
-
-## Restore
+## Restore \(coming soon\)
 
 You can restore through the CLI or the web interface.
 

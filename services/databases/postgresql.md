@@ -12,7 +12,7 @@ To **add a new dedicated PostgreSQL instance** to an existing application, you c
 
 {% tabs %}
 {% tab title=".qovery.yml" %}
-```bash
+```yaml
 application:
 ...
 databases:

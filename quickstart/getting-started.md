@@ -147,7 +147,7 @@ As soon as you want to develop a new feature in your code, create a new branch!
 **A new branch will spawn a dedicated \(production replicated\) environment for you**
 {% endhint %}
 
-To know more about it, look at the [branch dedicated page](../extending-qovery/branches.md).
+To know more about it, look at the [branch dedicated page](../extending-qovery/branches-and-environments.md).
 
 ## Want more?
 
@@ -158,8 +158,8 @@ Read the dedicated sections to know more:
 * [Applications](../services/applications/)
 * [Network](../services/network/)
 * [Databases](../services/databases/)
-* [Brokers](../services/brokers/)
-* [Storages](../services/storage/)
+* Brokers \(coming soon\)
+* Storages \(coming soon\)
 
 And feel free to look at "Extending Qovery" section to **push your application at a higher level**.
 

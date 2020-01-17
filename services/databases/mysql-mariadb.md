@@ -2,7 +2,7 @@
 description: 'MySQL is a high-performance, relational SQL database.'
 ---
 
-# MySQL
+# MySQL \(coming soon\)
 
 [MySQL](https://www.mysql.com/) is the world's most popular open source database. Whether you are a fast growing web property, technology ISV or large enterprise, MySQL can cost-effectively help you deliver high performance, scalable database applications.
 
@@ -159,7 +159,7 @@ databases:
 
 As described here, the backup will occur between 9PM and 11PM.
 
-## Restore
+## Restore \(coming soon\)
 
 You can restore through the CLI or the web interface.
 

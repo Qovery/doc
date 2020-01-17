@@ -54,7 +54,7 @@ That's it, **you don't need to setup anything manually**. Everything like the we
 
 As a developer, for developing or testing purpose, have you never been annoyed by being **not able to get a testing environment similar to production**? 99,99% of the time, the answer is **Yes**!
 
-That's why on any [branches](extending-qovery/branches.md), you'll get a copy of your dependencies \(database, search index, object storage...\).
+That's why on any [branches](extending-qovery/branches-and-environments.md), you'll get a copy of your dependencies \(database, search index, object storage...\).
 
 You can use these concepts to replicate a traditional development/staging/production workflow or even to **give every feature its own effective staging environment before merging to production** \(empowering you to use git-flow like methodologies even better\). You could also have an intermediary integration branch for several other branches.
 

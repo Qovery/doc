@@ -1,5 +1,5 @@
 ---
-description: Get Qovery CLI and sign up/in
+description: Sign up to Qovery
 ---
 
 # Sign Up

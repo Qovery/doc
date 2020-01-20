@@ -31,5 +31,6 @@
 
 ## Others
 
+* [CLI](others/cli.md)
 * [FAQ](others/faq.md)
 

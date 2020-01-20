@@ -23,14 +23,12 @@
 
 ## Extending Qovery
 
+* [CLI](extending-qovery/cli.md)
 * [SDKs](extending-qovery/sdks.md)
 * [Branches and Environments](extending-qovery/branches-and-environments.md)
 * [Backups and Restore](extending-qovery/backups-and-restore.md)
 * [Examples](extending-qovery/examples/README.md)
   * [Simple application](extending-qovery/examples/simple-application-with-database.md)
-
-## Others
-
-* [CLI](others/cli.md)
-* [FAQ](others/faq.md)
+* [FAQ](faq.md)
+* [Help and Support](help-and-support.md)
 

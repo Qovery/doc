@@ -20,7 +20,7 @@ brew install qovery-cli
 This is the solution to install Qovery manually:
 
 ```text
-curl -s https://get.qovery.com | bash
+curl -s https://get.qovery.com | sudo bash
 ```
 
 ### Windows

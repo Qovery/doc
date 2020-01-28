@@ -18,7 +18,7 @@ Here is [an example of a Dockerfile](https://github.com/Qovery/doc-examples/blob
 {% tab title="Dockerfile" %}
 ```bash
 # Build your application with this image called "build"
-FROM adoptopenjdk/openjdk8:alpine AS build
+FROM openjdk:8-alpine AS build
 
 # Add the required packages
 RUN apk update && apk upgrade && apk add bash
@@ -38,9 +38,17 @@ WORKDIR /app
 RUN gradle build -x test
 
 # The container that will run
-FROM adoptopenjdk/openjdk8:alpine-slim
+FROM openjdk:8-alpine AS run
 
+# Choose the port to publicly expose to the internet
 EXPOSE 8080
+
+# Add required packages
+RUN apk update && apk upgrade && apk add shadow
+
+# Create a dedicated user to run your app with (for security reasons)
+RUN useradd -ms /bin/bash qovery
+USER qovery
 
 # Get the build artifact (can be a folder)
 COPY --from=build /app/build/libs/simple-example-1.0.jar /app.jar
@@ -59,8 +67,9 @@ CMD exec java $JAVA_OPTS -jar /app.jar
 {% hint style="danger" %}
 **For security reasons**, for we strongly advise you to:
 
-1. Use [Docker Official Images](https://hub.docker.com/search/?q=&type=image&image_filter=official)
-2. Use the lightest image as possible such as scratch or alpine
+1. Use [Docker **Official Images**](https://hub.docker.com/search/?q=&type=image&image_filter=official)\*\*\*\*
+2. Use the **lightest image** as possible such as scratch or alpine
+3. Never run your application **with root user**
 {% endhint %}
 
 ## Validate your Dockerfile

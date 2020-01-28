@@ -20,7 +20,7 @@ By default, any configuration will have at least those variables:
 For any added services \(database, brokers, storage\), you will get additional default variables. There is a naming convention for this:
 
 ```text
-QOVERY_<SERVICE>_<TYPE>_<NAME>
+QOVERY_<SERVICE_TYPE>_<NAME>
 ```
 
 Let's take a simple example with a database. You configuration should looks similar to this one:

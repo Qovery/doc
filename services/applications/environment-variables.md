@@ -43,7 +43,7 @@ You will automatically get those variables:
 | Variable name | Value example | Description |
 | :--- | :--- | :--- |
 | QOVERY\_DATABASE\_MY\_POSTGRESQL\_NAME | my-postgresql | Name of your PostgreSQL database |
-| QOVERY\_DATABASE\_MY\_POSTGRESQL\_TYPE | true/false | Your defined production branch |
+| QOVERY\_DATABASE\_MY\_POSTGRESQL\_TYPE | postgresql | Type of database engine |
 | QOVERY\_DATABASE\_MY\_POSTGRESQL\_VERSION | 10.10 | PostgreSQL version |
 | QOVERY\_DATABASE\_MY\_POSTGRESQL\_URI | postgresql://&lt;username&gt;:&lt;password&gt;@&lt;host&gt;:&lt;port&gt;/&lt;db\_name&gt; | PostgreSQL URI address |
 | QOVERY\_DATABASE\_MY\_POSTGRESQL\_HOST | &lt;host&gt;.amazonaws.com | PostgreSQL host address |

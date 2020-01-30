@@ -52,7 +52,7 @@ You will automatically get those variables:
 | QOVERY\_DATABASE\_MY\_POSTGRESQL\_USERNAME | username | PostgreSQL username |
 | QOVERY\_DATABASE\_MY\_POSTGRESQL\_PASSWORD | password | PostgreSQL password |
 
-## Custom environment variables
+## Custom environment variables \(coming soon\)
 
  
 

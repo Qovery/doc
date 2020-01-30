@@ -13,7 +13,7 @@ We'll cover in that page, how to deploy a specific version and how rollback work
 What happens if the application is not able to start \(because of a bad configuration or a bug that crashes the application at start\)?
 
 {% hint style="success" %}
-**Qovery automatically rollback your application to the latest working one, if it's not able to start!**
+**If the application is not able to start, Qovery automatically rollback your application to the latest working one!**
 {% endhint %}
 
 In order to avoid this kind of failures, we strongly advise you to:

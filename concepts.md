@@ -48,6 +48,8 @@ That's it, **you don't need to setup anything manually**. Everything like the we
 
 ### Branches and environments
 
+![](.gitbook/assets/q_branch_model.png)
+
 {% hint style="info" %}
 **Every branch you push is a fully independent environment-complete**
 {% endhint %}

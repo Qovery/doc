@@ -4,11 +4,15 @@ description: Use default variables and add your custom ones
 
 # Environment variables
 
-By default, Qovery provides environment variables to help you to find useful information. You can also add your environment variable if you need. This page will cover all those aspects.
+By default, Qovery supports environment variables to help you to find useful information regarding your application and the environment related to your branch.
+
+![](../../.gitbook/assets/q_envs.png)
+
+You can also add your custom environment variable if you need. This page will cover all those aspects.
 
 ## Default environment variables
 
-By default, any configuration will have at least those variables:
+By default, any environment will have at least those variables:
 
 | Variable name | Value example | Description |
 | :--- | :--- | :--- |

@@ -12,7 +12,7 @@ By default, each branch has an environment associated with it.
 
 If a branch is created, then a new environment is created from the data of the branch from which it was created.
 
--&gt; schema
+![](../.gitbook/assets/q_envs.png)
 
 During a Merge from one branch to another, the environment is then deactivated and deleted.
 

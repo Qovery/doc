@@ -8,7 +8,7 @@ As described in the [Qovery concepts](../concepts.md), each branch can have its 
 
 By default, each branch has an environment associated with it.
 
--&gt; schema
+![](../.gitbook/assets/q_branch_model.png)
 
 If a branch is created, then a new environment is created from the data of the branch from which it was created.
 

@@ -28,6 +28,8 @@ Our promise is simple:
 **If your container can locally run, Qovery makes it running in the Cloud at scale.**
 {% endhint %}
 
+![](.gitbook/assets/q_app_deployed.png)
+
 ## Git Driven Infrastructure
 
 Qovery automatically manages everything your application needs in order to run. That means **you view your infrastructure dependencies as part of your application**. As well, **you version-control it** as part of your application.

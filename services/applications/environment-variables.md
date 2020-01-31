@@ -101,7 +101,7 @@ $ qovery project env list
 $ qovery environment env list
 ```
 
-## Custom Environment Variables \(Envs\)
+## Custom environment variables \(Envs\)
 
 You can manage by your own the variables associated to projects, environments and applications. We've previously seen how to [list them](environment-variables.md#list-environment-variables). We're now going to see how to add and remove them.
 

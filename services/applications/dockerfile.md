@@ -67,9 +67,9 @@ CMD exec java $JAVA_OPTS -jar /app.jar
 {% hint style="danger" %}
 **For security reasons**, for we strongly advise you to:
 
-1. Use [Docker **Official Images**](https://hub.docker.com/search/?q=&type=image&image_filter=official)\*\*\*\*
-2. Use the **lightest image** as possible such as scratch or alpine
-3. Never run your application **with root user**
+1. Use [Docker **Official** Images](https://hub.docker.com/search/?q=&type=image&image_filter=official) ****or [**Distroless**](https://github.com/GoogleContainerTools/distroless) images
+2. Use the **lightest image** as possible such as [Distroless](https://github.com/GoogleContainerTools/distroless), [Scratch](https://hub.docker.com/_/scratch), [Debian-slim](https://hub.docker.com/_/debian) or [Alpine](https://hub.docker.com/_/alpine)
+3. Never run your application **with root user** but **a** [**dedicated user instead**](https://docs.docker.com/engine/reference/builder/#user)\*\*\*\*
 {% endhint %}
 
 ## Validate your Dockerfile

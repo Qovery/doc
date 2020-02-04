@@ -18,7 +18,7 @@ application:
 databases:
 - type: postgresql
   version: "11.5"
-  name: my-postgresql-3498225
+  name: my-postgresql-6132005
 ```
 {% endtab %}
 {% endtabs %}

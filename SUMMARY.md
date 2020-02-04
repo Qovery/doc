@@ -21,7 +21,7 @@
   * [Routes](services/network/routes.md)
 * [Databases](services/databases/README.md)
   * [PostgreSQL](services/databases/postgresql.md)
-  * [MySQL \(coming soon\)](services/databases/mysql-mariadb.md)
+  * [MySQL](services/databases/mysql-mariadb.md)
 
 ## Extending Qovery
 

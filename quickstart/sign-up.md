@@ -4,7 +4,13 @@ description: Sign up to Qovery
 
 # Sign Up
 
-To sign up using [Qovery CLI](../extending-qovery/cli.md), it's simple. Run this command:
+To sign up using [Qovery CLI](../extending-qovery/cli.md), it's simple:
+
+{% hint style="info" %}
+First of all,[ **install Qovery CLI**](../extending-qovery/cli.md).
+{% endhint %}
+
+Then, run this command:
 
 ```text
 qovery auth

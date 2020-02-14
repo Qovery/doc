@@ -20,8 +20,6 @@ During a Merge from one branch to another, the environment is then deactivated a
 
 To limit costs, it is possible to limit the creation of the environment to certain branches.
 
--&gt; schema
-
 {% tabs %}
 {% tab title=".qovery.yml" %}
 ```yaml

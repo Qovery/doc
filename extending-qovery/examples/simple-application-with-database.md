@@ -66,8 +66,6 @@ Now that you have declared your prerequisites, you can find the result in your Q
 {% tabs %}
 {% tab title=".qovery.yml" %}
 ```yaml
-qovery:
-  key: ****************************
 application:
   name: simple-example
   project: my-project

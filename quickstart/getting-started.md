@@ -76,6 +76,8 @@ You may noticed that in your current directory, you now have a **".qovery.yml" f
 {% tabs %}
 {% tab title=".qovery.yml" %}
 ```yaml
+qovery:
+  key: ****************************
 application:
   name: simple-example
   project: my-project
@@ -90,22 +92,9 @@ routers:
 {% endtab %}
 {% endtabs %}
 
-Then commit this configuration:
-
-```bash
-git add .qovery.yml
-git commit -m "Adding first Qovery configuration" .qovery.yml
-```
-
-## Validate your Dockerfile and application
-
-In order to locally **validate your Dockerfile and your application**, run this command. It will **build a Docker image and run it from your machine** with all the Qovery magic sauce:
-
-```bash
-qovery run
-```
-
-Note: This command is an equivalent to docker build and docker run but with environment variables and Qovery specificities.
+{% hint style="info" %}
+**Commit** the .qovery.yml configuration file to save your changes
+{% endhint %}
 
 ## Deploy
 

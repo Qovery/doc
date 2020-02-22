@@ -14,9 +14,24 @@ If a branch is created, then a new environment is created from the data of the b
 
 ![](../.gitbook/assets/q_envs.png)
 
-During a Merge from one branch to another, the environment is then deactivated and deleted.
+## Virtual branches
 
--&gt; schema
+In order to get a complete working environment, when a branch is created for an application, **Qovery create virtual branches automatically \(with the same branch name\)** to other applications of the same project.
+
+The virtual branches are **created from their respective master branch**. They are **automatically updated** from their master branch, as soon as a new commit pushed on this named branch.
+
+To make it crystal clear, here is an example where we have 2 applications in the same project:
+
+* Both applications \(AppA and AppB\) have a master branch
+* AppA create a branch named "staging"
+* AppB will inherit from that branch name "staging"
+* The virtual branch "staging" on AppB will be created from its own master branch
+* When AppA will deploy on staging, AppB will automatically be available in the "staging" environment
+* If AppA deploys a new commit on staging and AppB has new commits on its master branch, then AppB will be updated from latest commit on its "master" branch and AppA will be deployed from its last commit as well.
+
+On a given application, **when a virtual branch already exists and a branch with the same is created, the virtual branch is then replaced by the real new one**.
+
+## Restrict branches deployments
 
 To limit costs, it is possible to limit the creation of the environment to certain branches.
 

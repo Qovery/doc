@@ -4,11 +4,7 @@ description: View your application logs
 
 # Logs
 
-Once you've deployed your application, you can use the `status` parameter to look at the status.
-
-But in case of failure, your application may encounter an issue to start. Looking at the application logs is generally the first thing to do.
-
-That's why you can **use the CLI to visualize logs**:
+Once an application is deployed, you can look at the logs with the help of the CLI:
 
 ```bash
 $ qovery log

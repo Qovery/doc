@@ -12,11 +12,11 @@ An environment is a standalone copy of your site, complete with code, data, and 
 
 ## Are databases backed-up?
 
-Yes, Qovery databases rely on Managed Services provided by AWS \(Amazon Web Services\). All databases are fully backed-up every hour and incrementally on each write.
+Yes, Qovery databases rely on Managed Services provided by AWS \(Amazon Web Services\). All databases are fully backed-up every day and incrementally on each write.
 
 ## Is Qovery production ready?
 
-Not yet, the product is currently in beta. We hope having a production ready version for February 2020.
+Not yet, the product is currently in beta. We hope having a production ready version for June 2020.
 
 ## Where are located your servers?
 
@@ -27,7 +27,10 @@ Qovery rely on the excellent AWS \(Amazon Web Services\) infrastructure. Qovery 
 It's generally a DNS cache issue. Very common on Mac OS, you can flush your cache this way:
 
 ```bash
+sudo dscacheutil -flushcache
 sudo killall -HUP mDNSResponder
+sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist
+sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist
 ```
 
 If you want to know more about it, please take a look at the [official Apple page](https://support.apple.com/en-us/HT202516). 

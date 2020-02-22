@@ -29,7 +29,7 @@ To make it crystal clear, here is an example where we have 2 applications in the
 * When AppA will deploy on staging, AppB will automatically be available in the "staging" environment
 * If AppA deploys a new commit on staging and AppB has new commits on its master branch, then AppB will be updated from latest commit on its "master" branch and AppA will be deployed from its last commit as well.
 
-On a given application, **when a virtual branch already exists and a branch with the same is created, the virtual branch is then replaced by the real new one**.
+On a given application, **when a virtual branch already exists and a new branch with the same is created, the virtual branch is then replaced by the real new one**.
 
 ## Restrict branches deployments
 

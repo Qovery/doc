@@ -12,11 +12,11 @@ An environment is a standalone copy of your site, complete with code, data, and 
 
 ## Are databases backed-up?
 
-Yes, Qovery databases rely on Managed Services provided by AWS \(Amazon Web Services\). All databases are fully backed-up every hour and incrementally on each write.
+Yes, Qovery databases rely on Managed Services provided by AWS \(Amazon Web Services\). All databases are fully backed-up every day and incrementally on each write.
 
 ## Is Qovery production ready?
 
-Not yet, the product is currently in beta. We hope having a production ready version for February 2020.
+Not yet, the product is currently in beta. We hope having a production ready version for June 2020.
 
 ## Where are located your servers?
 

@@ -21,13 +21,13 @@ $ qovery log -f
 In the case you just want to display the last 100 lines of the logs:
 
 ```bash
-$ qovery log 100
+$ qovery log --tail 100
 ```
 
 You can also combine them:
 
 ```bash
-$ qovery log 100 -f
+$ qovery log --tail 100 -f
 ```
 
 It will display the last 100 log lines and continue to show in real time the logs.

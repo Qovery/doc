@@ -18,7 +18,7 @@ Exit
 $ qovery log -f
 ```
 
-In the case you just want to display the last 100 lines of the logs:
+In the case you just want to **display the last 100 lines** of the logs:
 
 ```bash
 $ qovery log --tail 100

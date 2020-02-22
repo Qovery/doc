@@ -14,6 +14,7 @@
 * [Applications](services/applications/README.md)
   * [Dockerfile](services/applications/dockerfile.md)
   * [Environment variables](services/applications/environment-variables.md)
+  * [Logs](services/applications/logs.md)
   * [Rollbacks](services/applications/rollbacks.md)
 * [Network](services/network/README.md)
   * [DNS](services/network/dns.md)

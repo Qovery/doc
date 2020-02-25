@@ -36,7 +36,7 @@ scoop install qovery-cli
 
 #### Manual
 
-You can [download the latest releas](https://github.com/Qovery/qovery-cli/releases)e and uncompress its content to _C:\Windows_.
+You can [download the latest releas](https://github.com/Qovery/qovery-cli/releases)e and uncompress \(ex: using [7zip](https://www.7-zip.org/)\) its content to _C:\Windows_.
 
 ### Linux
 

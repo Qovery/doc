@@ -2,39 +2,30 @@
 description: 'MySQL is a high-performance, relational SQL database.'
 ---
 
-# MySQL \(coming soon\)
+# MySQL
 
 [MySQL](https://www.mysql.com/) is the world's most popular open source database. Whether you are a fast growing web property, technology ISV or large enterprise, MySQL can cost-effectively help you deliver high performance, scalable database applications.
 
-## Add a new instance to an existing application
+## Add a new database instance to an existing application
 
-To **add a new dedicated MySQL instance** to an existing application, you can use Qovery CLI to do it:
+To **add a new dedicated MySQL instance** to an existing application, you can use update the configuration file by adding these lines:
 
-```bash
-$ qovery add database
-
-➤ Choose the database instance you want to add: 3
-1. PostgreSQL
-2. MongoDB
-3. MySQL
+{% tabs %}
+{% tab title=".qovery.yml" %}
+```yaml
+application:
 ...
-
-➤ Set the database instance name: my-mysql
-
-➤ Estimated MySQL data size in GiB (default: 10): 20
-
-➤ Please choose the kind of performances you need: 3
-1. Tiny   : 1 vCPU / 2GiB Ram
-2. Small  : 2 vCPU / 8Gib Ram
-3. Medium : 4 vCPU / 16GiB Ram
-4. Big    : 8 vCPU / 32GiB Ram
-5. Huge   : 16 vCPU / 64GiB Ram
-c. Custom Mode
-
-✓ Your Qovery configuration file has been successfuly updated (.qovery.yml)!
-
-➤ Commit into your repository and push it to get this deployed.
+databases:
+- type: mysql
+  version: "8.0"
+  name: my-mysql
 ```
+{% endtab %}
+{% endtabs %}
+
+* **name**: the name of your MySQL database
+* **version**: the versions of MySQL
+* **type**: the database engine
 
 ## Access to an instance
 
@@ -43,7 +34,7 @@ The following samples give you the way to access all necessaries information to 
 {% tabs %}
 {% tab title="NodeJS" %}
 ```javascript
-const { Pool } = require('pg');
+const { Pool } = require('mysql');
 const { Qovery } = require('qovery');
 
 const dbConfiguration = new Qovery().databaseConfiguration();
@@ -88,7 +79,7 @@ public class PostgreSQLSample {
         String databaseName = "test";
 
         // connection URI string
-        String uri = "jdbc:postgresql://" + 
+        String uri = "jdbc:mysql://" + 
             config.getHost() + ":" + 
             config.getPort() + "/" + 
             databaseName;
@@ -110,15 +101,11 @@ public class PostgreSQLSample {
 To know more about your instance status, you can do it this way:
 
 ```bash
-$ qovery status database
-
-✓ my-mysql:
-* Branch  : master (Production)
-* Health  : healthy
-* Type    : MySQL
-* Version : 8.0.16
-* Size    : 20GiB
-* Kind    : Medium (4 vCPU / 16GiB Ram)
+$ qovery status
+...
+Databases
+name      status  type    version  endpoint           port  username   password  application
+my-mysql  LIVE    MYSQL   8.0      xxx.amazonaws.com  3306  user       password  client-example-mysql
 ```
 
 ## Delete a database instance

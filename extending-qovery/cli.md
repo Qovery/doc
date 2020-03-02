@@ -4,6 +4,8 @@ description: Qovery Command Line Interface (CLI)
 
 # CLI
 
+## Installation
+
 ### Mac OS
 
 #### Homebrew
@@ -45,4 +47,18 @@ You can download and install Qovery CLI from on every Linux distribution:
 ```text
 curl -s https://get.qovery.com | sudo bash
 ```
+
+## Upgrade
+
+To upgrade with your package manager, please report to it to know the upgrade recommendations.
+
+To manually upgrade the binary, use the built in function:
+
+```bash
+sudo qovery upgrade
+```
+
+
+
+
 

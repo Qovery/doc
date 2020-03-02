@@ -89,21 +89,14 @@ Finally, **once committed and pushed, your application will be live!!!** You can
 ```bash
 $ qovery status
 
-Environment
-branch  status  endpoints                    applications  databases  brokers  storage
-master  LIVE    https://xxxxxxxx.qovery.io   1             0          0        0
+BRANCHES NAME	STATUS        	ENDPOINTS                       APPLICATIONS	DATABASES	BROKERS	STORAGE 
+master       	up and running	https://xxx-main-gtw.qovery.io	1           	1        	0      	0      	
 
-Applications
-name            status  databases  brokers  storage
-project-demo    LIVE    0          0        0
+APPLICATIONS NAME	STATUS        	ENDPOINTS                     DATABASES	BROKERS	STORAGE 
+simple-example   	up and running	https://yyy-xxx-app.qovery.io	1        	0      	0      	
 
-Databases
-name  status  type  version  endpoint  port  username  password  application
+DATABASES NAME	STATUS        	TYPES	VERSIONS	ENDPOINTS                     PORTS	USERNAME 	PASSWORDS       	APPLICATIONS   
+my-mysql      	up and running	MYSQL	8.0     	xxx-yyy-zzz.aaa.amazonaws.com	3306 	username	password	        simple-example	
 
-Brokers
-name  status  type  version  endpoint  port  username  password  application
-
-Storage
-name  status  type  version  endpoint  port  username  password  application
 ```
 

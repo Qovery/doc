@@ -103,9 +103,9 @@ To know more about your instance status, you can do it this way:
 ```bash
 $ qovery status
 ...
-Databases
-name      status  type    version  endpoint           port  username   password  application
-my-mysql  LIVE    MYSQL   8.0      xxx.amazonaws.com  3306  user       password  client-example-mysql
+DATABASES NAME	STATUS        	TYPES	VERSIONS	ENDPOINTS        	PORTS	USERNAME 	PASSWORDS       	APPLICATIONS   
+my-mysql      	up and running	MYSQL	8.0     	xxx.amazonaws.com	3306 	username	password	client-example-mysql
+
 ```
 
 ## Delete a database instance

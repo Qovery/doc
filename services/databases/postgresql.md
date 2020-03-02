@@ -103,9 +103,8 @@ To know more about your instance status, you can do it this way:
 ```bash
 $ qovery status
 ...
-Databases
-name                   status  type        version  endpoint           port  username   password  application
-my-postgresql-3498225  LIVE    POSTGRESQL  11.5     xxx.amazonaws.com  5432  user       password  client-example-postgresql
+DATABASES NAME	STATUS        	TYPES	      VERSIONS	ENDPOINTS        	PORTS	USERNAME 	PASSWORDS       	APPLICATIONS   
+my-mysql      	up and running	POSTGRESQL	11.5     	xxx.amazonaws.com	3306 	username	password	        client-example-postgresql
 ```
 
 ## Delete a database instance

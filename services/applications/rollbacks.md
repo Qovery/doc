@@ -29,15 +29,10 @@ Look how the rollback is simple. First look at the last deployments \(limited to
 
 ```bash
 $ qovery deploy list
-branch  date         commit id                                 deployed
-master  one day ago  cd8e726d08b4ba3fa5c5cd4054a3339a5c15446a  ✓
-master  6 days ago   72bb69ffc7b50367cdf6bb89881117ad48cdbcff  𐄂
-master  6 days ago   c1e788c21692d791784f85e8b525db232a944595  𐄂
-master  8 days ago   ab4748c618b73f5a07b9d22e8d5cf2f4f0b6c91d  𐄂
-master  2019-12-16   9f7d0d800aab92985e30fabb01c72717c93a09e1  𐄂
-master  2019-12-03   cf762fd0ab4bbe45572302e374d6fa1b3256daad  𐄂
-master  2019-12-03   c2dda20ed08758843cd8b592954a3a3bb3f21119  𐄂
-master  2019-12-03   888cc296b6b0b17d0d6fab4572689f6524857254  𐄂
+BRANCH	COMMIT DATE                  	COMMIT ID                               	COMMIT AUTHOR    	DEPLOYED 
+master	2020-02-04 15:59:14 +0100 CET	e9ebe3e4f380e5ac6d7f2e9bcb2b626382b8b77d	Pierre Mavro     	✓       	
+master	2020-01-27 14:48:51 +0100 CET	cd8e726d08b4ba3fa5c5cd4054a3339a5c15446a	Pierre Mavro     	        	
+master	2020-01-22 18:00:01 +0100 CET	72bb69ffc7b50367cdf6bb89881117ad48cdbcff	Pierre Mavro   
 ```
 
 As you can see, our current deployment is on the commit id `cd8e726...` But now we want to rollback on the previous one, we just have to indicate the previous commit ID:

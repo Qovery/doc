@@ -77,7 +77,7 @@ For a given application, you can list the current variables:
 
 ```text
 $ qovery application env list
-scope        key                                                   value
+SCOPE        KEY                                                   VALUE
 BUILT_IN     QOVERY_BRANCH_NAME                                    feature_a
 BUILT_IN     QOVERY_IS_PRODUCTION                                  false
 BUILT_IN     QOVERY_DATABASE_MY_POSTGRESQL_3498225_PASSWORD        xxxxxxxxxxxxxxxxxxxx
@@ -137,7 +137,7 @@ Let's look at what we want to delete by listing environment variables:
 
 ```text
 $ qovery application env list                                                                                                                                                               Fri Jan 31 17:51:19 2020
-scope        key          value
+SCOPE        KEY          VALUE
 APPLICATION  my_env_name  my_value
 ```
 

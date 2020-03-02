@@ -32,13 +32,11 @@ Then, to get the status of your application from the CLI to get the https URL:
 ```bash
 $ qovery status
 
-Environment
-branch  status  endpoints                    applications  databases  brokers  storage
-master  LIVE    https://xxxxxxxx.qovery.io   1             0          0        0
+BRANCHES NAME	STATUS        	ENDPOINTS                       APPLICATIONS	DATABASES	BROKERS	STORAGE 
+master       	up and running	https://xxx-main-gtw.qovery.io	1           	1        	0      	0      	
 
-Applications
-name            status  databases  brokers  storage
-myapp-test      LIVE    0          0        0
+APPLICATIONS NAME	STATUS        	ENDPOINTS                    	DATABASES	BROKERS	STORAGE 
+simple-example   	up and running	https://yyy-xxx-app.qovery.io	1        	0      	0      	
 ```
 
 You can also see it from the Web interface.

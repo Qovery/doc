@@ -20,12 +20,12 @@ Qovery supports the well known [**Docker**](https://www.docker.com/) **container
 Databases are running on resilient and dedicated instances. [Learn more..](services/databases/)
 {% endhint %}
 
-Finally, Qovery is really fast to set up and perfectly integrate with your Git environment.
+Finally, Qovery is really fast to set up and integrates perfectly with your Git environment.
 
 Our promise is simple:
 
 {% hint style="success" %}
-**If your container can locally run, Qovery makes it running in the Cloud at scale.**
+**If your container can run locally, Qovery will run it at scale in the Cloud.**
 {% endhint %}
 
 ![](.gitbook/assets/q_app_deployed.png)

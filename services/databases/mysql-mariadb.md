@@ -29,83 +29,38 @@ databases:
 
 ## Access to an instance
 
-The following samples give you the way to access all necessaries information to access your MySQL instance.
+To get the connection information of your database, you can use the CLI:
 
-{% tabs %}
-{% tab title="NodeJS" %}
-```javascript
-const { Pool } = require('mysql');
-const { Qovery } = require('qovery');
-
-const dbConfiguration = new Qovery().databaseConfiguration();
-
-const pool = new Pool({
-    host: dbConfiguration.host,
-    port: dbConfiguration.port,
-    user: dbConfiguration.user,
-    password: dbConfiguration.password,
-    database: 'test', 
-});
-
-// your code
+```bash
+$ qovery application env list -c
+  SCOPE       | KEY                                                         | VALUE     
+--------------+-------------------------------------------------------------+-----------
+  BUILT_IN    | QOVERY_JSON_B64                                             | <base64>  
+  BUILT_IN    | QOVERY_BRANCH_NAME                                          | master    
+  BUILT_IN    | QOVERY_IS_PRODUCTION                                        | true      
+  BUILT_IN    | QOVERY_DATABASE_MY_MYSQL_NAME                               | my-mysql  
+  BUILT_IN    | QOVERY_DATABASE_MY_MYSQL_TYPE                               | MYSQL     
+  BUILT_IN    | QOVERY_DATABASE_MY_MYSQL_VERSION                            | 8.0       
+  BUILT_IN    | QOVERY_DATABASE_MY_MYSQL_CONNECTION_URI                     | <hidden>  
+  BUILT_IN    | QOVERY_DATABASE_MY_MYSQL_CONNECTION_URI_WITHOUT_CREDENTIALS | <hidden>  
+  BUILT_IN    | QOVERY_DATABASE_MY_MYSQL_HOST                               | <hidden>  
+  BUILT_IN    | QOVERY_DATABASE_MY_MYSQL_FQDN                               | <hidden>  
+  BUILT_IN    | QOVERY_DATABASE_MY_MYSQL_PORT                               | <hidden>  
+  BUILT_IN    | QOVERY_DATABASE_MY_MYSQL_USERNAME                           | <hidden>  
+  BUILT_IN    | QOVERY_DATABASE_MY_MYSQL_PASSWORD                           | <hidden>  
+  BUILT_IN    | QOVERY_DATABASE_MY_MYSQL_DATABASE                           | mysql 
 ```
-{% endtab %}
-
-{% tab title="Java" %}
-```java
-package com.qovery.languages.sample;
-
-import com.qovery.Qovery;
-import com.qovery.DatabaseConfiguration;
-
-import javax.sql.DataSource;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
-public class PostgreSQLSample {
-
-    @Override
-    public String get() {
-        // Create a new config object to ease reading the Qovery environment variables.
-        // You can alternatively use getenv() yourself.
-        Qovery qovery = new Qovery();
-
-        // "my-super-instance" is the database name instance to access
-        DatabaseConfiguration config = qovery.getDatabaseConfiguration("my-super-instance");
-        
-        // your database name
-        String databaseName = "test";
-
-        // connection URI string
-        String uri = "jdbc:mysql://" + 
-            config.getHost() + ":" + 
-            config.getPort() + "/" + 
-            databaseName;
-
-        // Connect to the database
-        try (Connection connection = DriverManager.getConnection(uri, config.getUsername(), config.getPassword())) {
-            // your code here :)
-        } catch (SQLException exp) {
-            throw new RuntimeException("An error when execute PostgreSQL", exp);
-        }
-    }
-}
-```
-{% endtab %}
-{% endtabs %}
 
 ## Get instance status
 
 To know more about your instance status, you can do it this way:
 
 ```bash
-$ qovery status
+$ qovery status -c
 ...
-DATABASES NAME	STATUS        	TYPES	VERSIONS	ENDPOINTS        	PORTS	USERNAME 	PASSWORDS       	APPLICATIONS   
-my-mysql      	up and running	MYSQL	8.0     	xxx.amazonaws.com	3306 	username	password	client-example-mysql
-
+  DATABASE NAME | STATUS  | TYPE  | VERSION | ENDPOINT | PORT     | USERNAME | PASSWORD | APPLICATIONS    
+----------------+---------+-------+---------+----------+----------+----------+----------+-----------------
+  my-mysql      | running | MYSQL | 8.0     | <hidden> | <hidden> | <hidden> | <hidden> | simple-example  
 ```
 
 ## Delete a database instance

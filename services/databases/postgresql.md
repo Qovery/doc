@@ -60,7 +60,7 @@ $ qovery status -c
 ...
   DATABASE NAME | STATUS  | TYPE       | VERSION | ENDPOINT | PORT     | USERNAME | PASSWORD | APPLICATIONS    
 ----------------+---------+------------+---------+----------+----------+----------+----------+-----------------
-  my-mysql      | running | POSTGRESQL | 11.5     | <hidden> | <hidden> | <hidden> | <hidden> | simple-example
+  my-pg         | running | POSTGRESQL | 11.5     | <hidden> | <hidden> | <hidden> | <hidden> | simple-example
 ```
 
 ## Delete a database instance

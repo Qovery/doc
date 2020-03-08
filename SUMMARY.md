@@ -32,6 +32,6 @@
 * [Backups and Restore](extending-qovery/backups-and-restore.md)
 * [Examples](extending-qovery/examples/README.md)
   * [Simple application](extending-qovery/examples/simple-application-with-database.md)
-* [FAQ](faq.md)
-* [Help and Support](help-and-support.md)
+* [FAQ](extending-qovery/faq.md)
+* [Help and Support](extending-qovery/help-and-support.md)
 

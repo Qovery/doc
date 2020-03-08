@@ -18,7 +18,7 @@ application:
 databases:
 - type: postgresql
   version: "11.5"
-  name: my-postgresql-3498225
+  name: my-pg
 ```
 {% endtab %}
 {% endtabs %}
@@ -29,82 +29,38 @@ databases:
 
 ## Access to an instance
 
-The following samples give you the way to access all necessaries information to access your PostgreSQL instance.
+To get the connection information of your database, you can use the CLI:
 
-{% tabs %}
-{% tab title="NodeJS" %}
-```javascript
-const { Pool } = require('pg');
-const { Qovery } = require('qovery');
-
-const dbConfiguration = new Qovery().databaseConfiguration();
-
-const pool = new Pool({
-    host: dbConfiguration.host,
-    port: dbConfiguration.port,
-    user: dbConfiguration.user,
-    password: dbConfiguration.password,
-    database: 'test', 
-});
-
-// your code
+```bash
+$ qovery application env list -c
+  SCOPE       | KEY                                                               | VALUE     
+--------------+-------------------------------------------------------------------+-----------
+  BUILT_IN    | QOVERY_JSON_B64                                                   | <base64>  
+  BUILT_IN    | QOVERY_BRANCH_NAME                                                | master    
+  BUILT_IN    | QOVERY_IS_PRODUCTION                                              | true      
+  BUILT_IN    | QOVERY_DATABASE_MY_POSTGRESSQL_NAME                               | my-pg  
+  BUILT_IN    | QOVERY_DATABASE_MY_POSTGRESSQL_TYPE                               | POSTGRESQL     
+  BUILT_IN    | QOVERY_DATABASE_MY_POSTGRESSQL_VERSION                            | 11.5    
+  BUILT_IN    | QOVERY_DATABASE_MY_POSTGRESSQL_CONNECTION_URI                     | <hidden>  
+  BUILT_IN    | QOVERY_DATABASE_MY_POSTGRESSQL_CONNECTION_URI_WITHOUT_CREDENTIALS | <hidden>  
+  BUILT_IN    | QOVERY_DATABASE_MY_POSTGRESSQL_HOST                               | <hidden>  
+  BUILT_IN    | QOVERY_DATABASE_MY_POSTGRESSQL_FQDN                               | <hidden>  
+  BUILT_IN    | QOVERY_DATABASE_MY_POSTGRESSQL_PORT                               | <hidden>  
+  BUILT_IN    | QOVERY_DATABASE_MY_POSTGRESSQL_USERNAME                           | <hidden>  
+  BUILT_IN    | QOVERY_DATABASE_MY_POSTGRESSQL_PASSWORD                           | <hidden>  
+  BUILT_IN    | QOVERY_DATABASE_MY_POSTGRESSQL_DATABASE                           | POSTGRESSQL     
 ```
-{% endtab %}
-
-{% tab title="Java" %}
-```java
-package com.qovery.languages.sample;
-
-import com.qovery.Qovery;
-import com.qovery.DatabaseConfiguration;
-
-import javax.sql.DataSource;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
-public class PostgreSQLSample {
-
-    @Override
-    public String get() {
-        // Create a new config object to ease reading the Qovery environment variables.
-        // You can alternatively use getenv() yourself.
-        Qovery qovery = new Qovery();
-
-        // "my-super-instance" is the database name instance to access
-        DatabaseConfiguration config = qovery.getDatabaseConfiguration("my-super-instance");
-        
-        // your database name
-        String databaseName = "test";
-
-        // connection URI string
-        String uri = "jdbc:postgresql://" + 
-            config.getHost() + ":" + 
-            config.getPort() + "/" + 
-            databaseName;
-
-        // Connect to the database
-        try (Connection connection = DriverManager.getConnection(uri, config.getUsername(), config.getPassword())) {
-            // your code here :)
-        } catch (SQLException exp) {
-            throw new RuntimeException("An error when execute PostgreSQL", exp);
-        }
-    }
-}
-```
-{% endtab %}
-{% endtabs %}
 
 ## Get instance status
 
 To know more about your instance status, you can do it this way:
 
 ```bash
-$ qovery status
+$ qovery status -c
 ...
-DATABASES NAME	STATUS        	TYPES	      VERSIONS	ENDPOINTS        	PORTS	USERNAME 	PASSWORDS       	APPLICATIONS   
-my-mysql      	up and running	POSTGRESQL	11.5     	xxx.amazonaws.com	3306 	username	password	        client-example-postgresql
+  DATABASE NAME | STATUS  | TYPE       | VERSION | ENDPOINT | PORT     | USERNAME | PASSWORD | APPLICATIONS    
+----------------+---------+------------+---------+----------+----------+----------+----------+-----------------
+  my-mysql      | running | POSTGRESQL | 11.5     | <hidden> | <hidden> | <hidden> | <hidden> | simple-example
 ```
 
 ## Delete a database instance

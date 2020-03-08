@@ -27,7 +27,7 @@ databases:
 * **version**: the versions of MySQL
 * **type**: the database engine
 
-## Access to an instance
+## Get access to an instance
 
 To get the connection information of your database, you can use the CLI:
 

@@ -16,7 +16,7 @@ To **add a new dedicated MongoDB instance** to an existing application, you can 
 application:
 ...
 databases:
-- type: mongodb
+- type: documentdb
   version: "3.6"
   name: my-mongo
 ```
@@ -33,21 +33,21 @@ To get the connection information of your database, you can use the CLI:
 
 ```bash
 $ qovery application env list -c
-  SCOPE       | KEY                                                           | VALUE     
---------------+---------------------------------------------------------------+-----------
-  BUILT_IN    | QOVERY_BRANCH_NAME                                            | master    
-  BUILT_IN    | QOVERY_IS_PRODUCTION                                          | true      
-  BUILT_IN    | QOVERY_DATABASE_MY_MONGODB_NAME                               | my-mongo  
-  BUILT_IN    | QOVERY_DATABASE_MY_MONGODB_TYPE                               | MONGODB     
-  BUILT_IN    | QOVERY_DATABASE_MY_MONGODB_VERSION                            | 3.6       
-  BUILT_IN    | QOVERY_DATABASE_MY_MONGODB_CONNECTION_URI                     | <hidden>  
-  BUILT_IN    | QOVERY_DATABASE_MY_MONGODB_CONNECTION_URI_WITHOUT_CREDENTIALS | <hidden>  
-  BUILT_IN    | QOVERY_DATABASE_MY_MONGODB_HOST                               | <hidden>  
-  BUILT_IN    | QOVERY_DATABASE_MY_MONGODB_FQDN                               | <hidden>  
-  BUILT_IN    | QOVERY_DATABASE_MY_MONGODB_PORT                               | <hidden>  
-  BUILT_IN    | QOVERY_DATABASE_MY_MONGODB_USERNAME                           | <hidden>  
-  BUILT_IN    | QOVERY_DATABASE_MY_MONGODB_PASSWORD                           | <hidden>  
-  BUILT_IN    | QOVERY_DATABASE_MY_MONGODB_DATABASE                           | MONGODB 
+  SCOPE       | KEY                                                              | VALUE     
+--------------+------------------------------------------------------------------+-----------
+  BUILT_IN    | QOVERY_BRANCH_NAME                                               | master    
+  BUILT_IN    | QOVERY_IS_PRODUCTION                                             | true      
+  BUILT_IN    | QOVERY_DATABASE_MY_DOCUMENTDB_NAME                               | my-mongo  
+  BUILT_IN    | QOVERY_DATABASE_MY_DOCUMENTDB_TYPE                               | DOCUMENTDB     
+  BUILT_IN    | QOVERY_DATABASE_MY_DOCUMENTDB_VERSION                            | 3.6       
+  BUILT_IN    | QOVERY_DATABASE_MY_DOCUMENTDB_CONNECTION_URI                     | <hidden>  
+  BUILT_IN    | QOVERY_DATABASE_MY_DOCUMENTDB_CONNECTION_URI_WITHOUT_CREDENTIALS | <hidden>  
+  BUILT_IN    | QOVERY_DATABASE_MY_DOCUMENTDB_HOST                               | <hidden>  
+  BUILT_IN    | QOVERY_DATABASE_MY_DOCUMENTDB_FQDN                               | <hidden>  
+  BUILT_IN    | QOVERY_DATABASE_MY_DOCUMENTDB_PORT                               | <hidden>  
+  BUILT_IN    | QOVERY_DATABASE_MY_DOCUMENTDB_USERNAME                           | <hidden>  
+  BUILT_IN    | QOVERY_DATABASE_MY_DOCUMENTDB_PASSWORD                           | <hidden>  
+  BUILT_IN    | QOVERY_DATABASE_MY_DOCUMENTDB_DATABASE                           | DOCUMENTDB 
 ```
 
 ## Get instance status
@@ -57,9 +57,9 @@ To know more about your instance status, you can do it this way:
 ```bash
 $ qovery status -c
 ...
-  DATABASE NAME | STATUS  | TYPE    | VERSION | ENDPOINT | PORT     | USERNAME | PASSWORD | APPLICATIONS    
-----------------+---------+---------+---------+----------+----------+----------+----------+-----------------
-  my-mongo      | running | MONGODB | 3.6     | <hidden> | <hidden> | <hidden> | <hidden> | simple-example  
+  DATABASE NAME | STATUS  | TYPE       | VERSION | ENDPOINT | PORT     | USERNAME | PASSWORD | APPLICATIONS    
+----------------+---------+------------+---------+----------+----------+----------+----------+-----------------
+  my-mongo      | running | DOCUMENTDB | 3.6     | <hidden> | <hidden> | <hidden> | <hidden> | simple-example  
 ```
 
 ## Delete a database instance
@@ -92,7 +92,7 @@ application:
   ...
 databases:
   - name: my-mongo
-    type: mongodb
+    type: documentdb
     backup-window: 21-23
 ```
 {% endtab %}

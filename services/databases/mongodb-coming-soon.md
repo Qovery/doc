@@ -2,7 +2,7 @@
 description: 'MongoDB is a cross-platform, document-oriented database.'
 ---
 
-# MongoDB \(coming soon\)
+# MongoDB
 
 [MongoDB](https://www.mongodb.com/) is a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schema.
 

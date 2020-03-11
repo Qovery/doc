@@ -14,6 +14,10 @@ For each database we rely on Managed services provided by a cloud provider like 
 
 {% page-ref page="mysql-mariadb.md" %}
 
+## NoSQL
+
+{% page-ref page="mongodb.md" %}
+
 
 
 

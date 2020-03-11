@@ -23,7 +23,7 @@
 * [Databases](services/databases/README.md)
   * [PostgreSQL](services/databases/postgresql.md)
   * [MySQL](services/databases/mysql-mariadb.md)
-  * [MongoDB](services/databases/mongodb-coming-soon.md)
+  * [MongoDB](services/databases/mongodb.md)
 
 ## Extending Qovery
 

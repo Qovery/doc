@@ -131,6 +131,14 @@ For example, for a given environment, we want to override an application env. **
 Even BUILT-IN environment variable can be overridden
 {% endhint %}
 
+### Environment variable alias \(env\)
+
+You can create an environment variable alias from another environment variable
+
+```text
+$ qovery application env add DB_HOST $QOVERY_DATABASE_MY_POSTGRESQL_HOST
+```
+
 ### Delete environment variable \(env\)
 
 Let's look at what we want to delete by listing environment variables:

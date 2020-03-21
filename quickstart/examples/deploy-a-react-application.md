@@ -1,8 +1,10 @@
 ---
-description: Deploy a React application with Qovery
+description: >-
+  Quickstart to deploy a React application with Qovery - Estimated time: < 2 min
+  30
 ---
 
-# React
+# Deploy a React application
 
 ### Step 1: Installing Qovery CLI \(estimated time: 15 sec\)
 

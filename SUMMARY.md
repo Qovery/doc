@@ -10,7 +10,7 @@
 * [Sign Up](quickstart/sign-up.md)
 * [Getting started](quickstart/getting-started.md)
 * [Examples](quickstart/examples/README.md)
-  * [React](quickstart/examples/react.md)
+  * [Deploy a React application](quickstart/examples/deploy-a-react-application.md)
   * [Simple application](quickstart/examples/simple-application-with-database.md)
 
 ## Services

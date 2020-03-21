@@ -2,7 +2,6 @@
 
 * [Welcome to Qovery](README.md)
 * [Concepts](concepts.md)
-* [Pricing](https://www.qovery.com/pricing)
 * [Roadmap](https://roadmap.qovery.com)
 
 ## Quickstart

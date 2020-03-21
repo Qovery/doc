@@ -6,7 +6,7 @@ description: Welcome to the official Qovery documentation!
 
 ![](.gitbook/assets/qovery_logo.png)
 
-[**Qovery**](https://www.qovery.com) **helps tech companies to accelerate and scale application development cycle with zero infrastructure management investment.**
+[**Qovery**](https://www.qovery.com) **helps developers to deploy their application in the Cloud \(AWS\) in just a few seconds.**
 
 ```python
 if (qovery.use == "first time") {

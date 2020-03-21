@@ -133,10 +133,15 @@ Even BUILT-IN environment variable can be overridden
 
 ### Environment variable alias \(env\)
 
-You can create an environment variable alias from another environment variable
+You can create an environment variable alias from another environment variable.
+
+Alias is useful when:
+
+* you are not satisfied by the built in names
+* you can't change the predefined environment variable used by your application
 
 ```text
-$ qovery application env add DB_HOST $QOVERY_DATABASE_MY_POSTGRESQL_HOST
+$ qovery application env add DB_HOST '$QOVERY_DATABASE_MY_POSTGRESQL_HOST'
 ```
 
 ### Delete environment variable \(env\)

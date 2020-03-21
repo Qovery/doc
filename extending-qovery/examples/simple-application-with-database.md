@@ -80,7 +80,7 @@ routers:
 {% endtab %}
 {% endtabs %}
 
-Then you have to add in your code the [Qovery SDK](../sdks.md) to easily manage the credentials part.
+Then you have to add in your code the [Qovery SDK]() to easily manage the credentials part.
 
 ## Deploy
 

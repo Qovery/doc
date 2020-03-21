@@ -25,6 +25,20 @@ application:
 
 Commit this file to your repository, push it and it's automatically deployed.
 
+## Status
+
+You can get your application status with the status command:
+
+```text
+$ qovery status
+BRANCH NAME | STATUS  | ENDPOINTS             | APPLICATIONS | DATABASES | BROKERS | STORAGE  
+master      | running | https://xxx.qovery.io | 1            | 0         | 0       | 0        
+
+APPLICATION NAME | STATUS  | ENDPOINT                  | DATABASES | BROKERS | STORAGE  
+myapp            | running | https://yyy-app.qovery.io | 0         | 0       | 0        
+
+```
+
 ## Add services
 
 You can find other proposed services by Qovery like:
@@ -40,7 +54,25 @@ You can find other proposed services by Qovery like:
 It's as easy as just adding a few lines in your configuration file!
 {% endhint %}
 
-Also add the [SDK](../../extending-qovery/sdks.md) to be able to have zero credentials management.
+## Delete an application with its services
 
+You can delete an application and its associated services by deleting the environment name. First, list the deployed environments:
 
+```bash
+  $ qovery environment list
+  BRANCH  | STATUS  | ENDPOINTS             | APPLICATION | DATABASES | BROKERS | STORAGE  
+  master  | running | https://xxx.qovery.io | 1           | 2         | 0       | 0       
+```
+
+Ensure you're set on the correct branch \(`git checkout <branch_name>`\) and ask for suppression:
+
+```text
+$ qovery environment delete
+
+➤ Type 'master' to delete this environment and erase its associated data: master
+deletion in progress...
+Hint: type "qovery status --watch" to track the progression of the deletion
+```
+
+Type the name of the branch you want to delete to validate it.
 

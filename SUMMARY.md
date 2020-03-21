@@ -2,7 +2,8 @@
 
 * [Welcome to Qovery](README.md)
 * [Concepts](concepts.md)
-* [Pricing](pricing.md)
+* [Pricing](https://www.qovery.com/pricing)
+* [Roadmap](https://roadmap.qovery.com)
 
 ## Quickstart
 
@@ -14,7 +15,7 @@
 * [Applications](services/applications/README.md)
   * [Dockerfile](services/applications/dockerfile.md)
   * [Environment variables](services/applications/environment-variables.md)
-  * [Logs](services/applications/logs.md)
+  * [Logs and debug](services/applications/logs.md)
   * [Rollbacks](services/applications/rollbacks.md)
 * [Network](services/network/README.md)
   * [DNS](services/network/dns.md)
@@ -28,7 +29,7 @@
 ## Extending Qovery
 
 * [CLI](extending-qovery/cli.md)
-* [SDKs](extending-qovery/sdks.md)
+* [API](https://api.qovery.io/swagger-ui.html#/)
 * [Branches and Environments](extending-qovery/branches-and-environments.md)
 * [Backups and Restore](extending-qovery/backups-and-restore.md)
 * [Examples](extending-qovery/examples/README.md)

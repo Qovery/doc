@@ -9,6 +9,8 @@
 
 * [Sign Up](quickstart/sign-up.md)
 * [Getting started](quickstart/getting-started.md)
+* [Examples](quickstart/examples/README.md)
+  * [Simple application](quickstart/examples/simple-application-with-database.md)
 
 ## Services
 
@@ -32,8 +34,6 @@
 * [API](https://api.qovery.io/swagger-ui.html#/)
 * [Branches and Environments](extending-qovery/branches-and-environments.md)
 * [Backups and Restore](extending-qovery/backups-and-restore.md)
-* [Examples](extending-qovery/examples/README.md)
-  * [Simple application](extending-qovery/examples/simple-application-with-database.md)
 * [FAQ](extending-qovery/faq.md)
 * [Help and Support](extending-qovery/help-and-support.md)
 

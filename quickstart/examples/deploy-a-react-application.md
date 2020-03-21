@@ -34,8 +34,8 @@ COPY . .
 RUN npm install
 # application listen on port 3000
 EXPOSE 3000
-# run node
-CMD node ./bin/www
+# start app
+CMD ["npm", "start"]
 ```
 {% endcode %}
 

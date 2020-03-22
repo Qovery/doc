@@ -7,20 +7,20 @@ description: Sign up to Qovery
 To sign up using [Qovery CLI](../extending-qovery/cli.md), it's simple:
 
 {% hint style="info" %}
-First of all,[ **install Qovery CLI**](../extending-qovery/cli.md).
+First time using Qovery?[ **install Qovery CLI**](../extending-qovery/cli.md).
 {% endhint %}
 
-Then, run this command:
+Then run the following command:
 
 ```text
-qovery auth
+$ qovery auth
 ```
 
-You'll get a window open on your browser to link with your account. In this example we chose GitHub :
+You'll get a window open on your browser to link with your account. In this example we chose GitHub
 
 ![](../.gitbook/assets/qovery_auth.png)
 
-We need to access to your account to be able to clone your repository for future application build:
+Qovery needs to access to your account \([click here](https://github.com/apps/qovery/installations/new)\) to be able to clone your repository for future application build. 
 
 ![](../.gitbook/assets/github_connect.png)
 

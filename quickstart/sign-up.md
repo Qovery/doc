@@ -7,7 +7,7 @@ description: Sign up to Qovery
 To sign up using [Qovery CLI](../extending-qovery/cli.md), it's simple:
 
 {% hint style="info" %}
-First time using Qovery?[ **install Qovery CLI**](../extending-qovery/cli.md).
+First time using Qovery?[ **install the Qovery CLI**](../extending-qovery/cli.md).
 {% endhint %}
 
 Then run the following command:

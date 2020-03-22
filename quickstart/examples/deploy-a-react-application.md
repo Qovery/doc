@@ -64,5 +64,5 @@ $ qovery status
 
 ### Do you need any help?
 
-[Join us on Discord](https://discord.gg/Bed5FRa)
+[Join us on Discord](https://discord.qovery.com)
 

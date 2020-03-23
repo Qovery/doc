@@ -1,10 +1,10 @@
 ---
 description: >-
-  Quickstart to deploy a React application with Qovery - Estimated time: < 2 min
-  20
+  Quickstart to deploy a Gatsby application with Qovery - Estimated time: < 2
+  min 20
 ---
 
-# Deploy a React application
+# Deploy a Gatsby application
 
 ### Step 1: Installing Qovery CLI \(estimated time: 15 sec\)
 
@@ -16,7 +16,7 @@ Instructions are available [here](../sign-up.md)
 
 ### Step 3: Deploying \(estimated time: 2 min\)
 
-You can deploy your React application by running the following command in the root of the project directory:
+You can deploy your Gatsby application by running the following command in the root of the project directory:
 
 ```bash
 # Generate the .qovery.yml file
@@ -27,15 +27,18 @@ Add this Dockerfile at the root of your project directory
 
 {% code title="Dockerfile" %}
 ```bash
-FROM node:13-alpine
-# copy source to docker image
-COPY . .
-# download dependencies
-RUN npm install
-# application listen on port 3000
-EXPOSE 3000
-# start app
-CMD ["npm", "start"]
+FROM node:12-buster as build
+
+RUN yarn global add gatsby-cli
+WORKDIR /app
+ADD . ./
+RUN yarn
+RUN gatsby build
+
+FROM gatsbyjs/gatsby
+COPY --from=build /app/public /pub
+
+EXPOSE 80
 ```
 {% endcode %}
 

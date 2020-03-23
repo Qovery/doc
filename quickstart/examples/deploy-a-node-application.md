@@ -23,7 +23,7 @@ You can deploy your Node application by running the following command in the roo
 $ qovery init
 ```
 
-Add this Dockerfile at the root of your directory
+Add this Dockerfile at the root of your project directory
 
 {% code title="Dockerfile" %}
 ```bash

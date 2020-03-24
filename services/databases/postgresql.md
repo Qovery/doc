@@ -84,7 +84,7 @@ To delete a database instance, here are the 2 possible solutions:
 By default, backups are made every day between 1h and 5h.
 {% endhint %}
 
-## Restore \(coming soon\)
+## Restore \(coming soon: [I want this feature](https://roadmap.qovery.com/c/26-restore-a-database)\)
 
 You can restore through the CLI or the web interface.
 

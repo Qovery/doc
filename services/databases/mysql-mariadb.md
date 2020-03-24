@@ -101,7 +101,7 @@ databases:
 
 As described here, the backup will occur between 9PM and 11PM.
 
-## Restore \(coming soon\)
+## Restore \(coming soon: [I want this feature](https://roadmap.qovery.com/c/26-restore-a-database)\)
 
 You can restore through the CLI or the web interface.
 

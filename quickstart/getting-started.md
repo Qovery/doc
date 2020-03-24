@@ -169,8 +169,8 @@ Read the dedicated sections to know more:
 * [Applications](../services/applications/)
 * [Network](../services/network/)
 * [Databases](../services/databases/)
-* Brokers \(coming soon\)
-* Storages \(coming soon\)
+* Brokers \(coming soon: [I want this feature](https://roadmap.qovery.com/tabs/1-under-consideration)\)
+* Storage \(coming soon:[ I want this feature](https://roadmap.qovery.com/tabs/1-under-consideration)\)
 
 And feel free to look at "Extending Qovery" section to **push your application at a higher level**.
 

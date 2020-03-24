@@ -35,7 +35,7 @@ simple-example   	up and running	https://yyy-xxx-app.qovery.io	1        	0      
 
 You can also see it from the Web interface.
 
-## Custom DNS \(coming soon\)
+## Custom DNS \(coming soon: [I want this feature](https://roadmap.qovery.com/c/8-custom-domain)\)
 
 You can define custom DNS name with your company name.
 

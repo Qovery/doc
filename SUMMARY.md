@@ -36,6 +36,8 @@
 * [API](https://api.qovery.io/swagger-ui.html#/)
 * [Branches and Environments](extending-qovery/branches-and-environments.md)
 * [Backups and Restore](extending-qovery/backups-and-restore.md)
+* [Integration](extending-qovery/integration/README.md)
+  * [IDE plugins](extending-qovery/integration/ide-plugins.md)
 * [FAQ](extending-qovery/faq.md)
 * [Help and Support](extending-qovery/help-and-support.md)
 

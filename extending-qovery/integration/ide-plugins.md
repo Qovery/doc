@@ -16,7 +16,13 @@ Once installed, you can see a demo here of the power of it:
 
 
 
-## VS Code \(coming soon...\)
+## VS Code
+
+VS Code has his module available on the [Marketplace](https://marketplace.visualstudio.com/items?itemName=qovery.vscode-qovery-extension).
+
+Once installed, you can look at its advantages:
+
+![](../../.gitbook/assets/vscode-module.gif)
 
 
 

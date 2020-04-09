@@ -12,6 +12,7 @@
   * [Deploy a Node application](quickstart/examples/deploy-a-node-application.md)
   * [Deploy a React application](quickstart/examples/deploy-a-react-application.md)
   * [Deploy a Gatsby application](quickstart/examples/deploy-a-gatsby-application.md)
+  * [Deploy a Hasura application with PostgreSQL](quickstart/examples/deploy-a-hasura-application-with-postgresql.md)
   * [Simple application](quickstart/examples/simple-application-with-database.md)
 
 ## Services

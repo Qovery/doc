@@ -38,7 +38,7 @@ scoop install qovery-cli
 
 #### Manual
 
-You can [download the latest releas](https://github.com/Qovery/qovery-cli/releases)e and uncompress its content to _C:\Windows_.
+You can [download the latest releas](https://github.com/Qovery/qovery-cli/releases)e and uncompress its content to any arbitrary folder of your choosing on your local workstation (e.g. c:\qovery, c:\myapps). We suggest you also add that folder to your PATH enviroment to simplify the way your run the qovery CLI.
 
 ### Linux
 
